@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masters & System Settings • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/masters-admin-exact.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR" selected>BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR">Executive Board (GEB)</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box -->
+        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue -->
+        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility -->
+        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin (Active) -->
+        <a href="masters-admin.html" class="sig-nav-item active" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="content-area">
+    <div class="adm-dashboard-container">
+
+      <!-- 1. Header Card -->
+      <div class="adm-header-card">
+        <div>
+          <div class="adm-eyebrow">
+            <span>⚙️</span>
+            <span>System Architecture &amp; Enterprise Governance</span>
+          </div>
+          <h1 class="adm-title">Masters &amp; Schema Configuration</h1>
+          <p class="adm-subtitle">Manage group operating sectors, leadership cohorts, CAB themes, role catalogs &amp; access control matrices</p>
+        </div>
+
+        <button type="button" class="adm-btn-add" onclick="openAddMasterModal()">
+          <span>+</span>
+          <span>Add Master Entry</span>
+        </button>
+      </div>
+
+      <!-- 2. 4-Card System Health Ribbon -->
+      <div class="adm-kpi-ribbon">
+        <!-- Status 1 -->
+        <div class="adm-kpi-card">
+          <div class="adm-kpi-top">
+            <span class="adm-kpi-label">SAP HR / ERP SYNC</span>
+            <div class="adm-kpi-icon-wrap emerald">🔄</div>
+          </div>
+          <div class="adm-kpi-main">Real-Time Connected</div>
+          <div class="adm-kpi-sub">✓ 134 Profiles Ingested</div>
+        </div>
+
+        <!-- Status 2 -->
+        <div class="adm-kpi-card">
+          <div class="adm-kpi-top">
+            <span class="adm-kpi-label">PEOPLESTRONG PMS</span>
+            <div class="adm-kpi-icon-wrap blue">📈</div>
+          </div>
+          <div class="adm-kpi-main">Ratings Synced</div>
+          <div class="adm-kpi-sub">✓ FY26 Calibrations Live</div>
+        </div>
+
+        <!-- Status 3 -->
+        <div class="adm-kpi-card">
+          <div class="adm-kpi-top">
+            <span class="adm-kpi-label">GRAPH API GATEWAY</span>
+            <div class="adm-kpi-icon-wrap red">⚡</div>
+          </div>
+          <div class="adm-kpi-main">Payload Schema v2.6</div>
+          <div class="adm-kpi-sub" style="color: #475569;">99.98% Gateway Uptime</div>
+        </div>
+
+        <!-- Status 4 -->
+        <div class="adm-kpi-card">
+          <div class="adm-kpi-top">
+            <span class="adm-kpi-label">BHR AUDIT ENGINE</span>
+            <div class="adm-kpi-icon-wrap amber">🛡️</div>
+          </div>
+          <div class="adm-kpi-main">Rule 01_Logic Enforced</div>
+          <div class="adm-kpi-sub">100% Provenance Logged</div>
+        </div>
+      </div>
+
+      <!-- 3. Masters Segmented Tabs Card -->
+      <div class="adm-tabs-card">
+        <div class="adm-tab-bar">
+          <button type="button" class="adm-tab-btn active" id="tabSectors" onclick="switchMasterTab('sectors')">
+            🏢 Sectors &amp; Businesses (6)
+          </button>
+          <button type="button" class="adm-tab-btn" id="tabProgrammes" onclick="switchMasterTab('programmes')">
+            🎓 Programmes &amp; Cohorts (5)
+          </button>
+          <button type="button" class="adm-tab-btn" id="tabCab" onclick="switchMasterTab('cab')">
+            💡 CAB Capability Themes (12)
+          </button>
+          <button type="button" class="adm-tab-btn" id="tabRoles" onclick="switchMasterTab('roles')">
+            👔 Role Families Catalogue (8)
+          </button>
+          <button type="button" class="adm-tab-btn" id="tabRbac" onclick="switchMasterTab('rbac')">
+            🔒 Role Access Matrix
+          </button>
+        </div>
+
+        <!-- Sectors Pane -->
+        <div id="paneSectors" class="adm-tab-pane active">
+          <div class="adm-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Sector ID</th>
+                  <th>Sector Name</th>
+                  <th>Short Code</th>
+                  <th>Key Operating Business Units</th>
+                  <th>Sector President / GEB Lead</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="sectorsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Programmes Pane -->
+        <div id="paneProgrammes" class="adm-tab-pane">
+          <div class="adm-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Leadership Programme Name</th>
+                  <th>Active Cohorts</th>
+                  <th>Calibrated Headcount</th>
+                  <th>Emphasis &amp; Journey Stage</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="programmesTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CAB Themes Pane -->
+        <div id="paneCab" class="adm-tab-pane">
+          <div class="adm-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Theme ID</th>
+                  <th>Pillar Category</th>
+                  <th>CAB Theme &amp; Capability</th>
+                  <th>Definition &amp; Behavioural Markers</th>
+                  <th>Active Talents</th>
+                </tr>
+              </thead>
+              <tbody id="cabTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Role Families Pane -->
+        <div id="paneRoles" class="adm-tab-pane">
+          <div class="adm-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Role Family</th>
+                  <th>Executive Band Range</th>
+                  <th>Key Responsibilities</th>
+                  <th>Succession Pool Depth</th>
+                  <th>Mobility Readiness</th>
+                </tr>
+              </thead>
+              <tbody id="rolesTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- RBAC Pane -->
+        <div id="paneRbac" class="adm-tab-pane">
+          <div class="adm-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Talent Card Section</th>
+                  <th>Employee (Self)</th>
+                  <th>Reporting Manager</th>
+                  <th>Business HR (BHR)</th>
+                  <th>Executive Board (GEB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Personal &amp; Contact Info</strong></td>
+                  <td><span class="badge badge-verified">Read / Edit</span></td>
+                  <td><span class="badge badge-persona-mlp26">Read Only</span></td>
+                  <td><span class="badge badge-verified">Full Approval</span></td>
+                  <td><span class="badge badge-persona-mlp26">Read Only</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Rotational Stints &amp; Summer SIP</strong></td>
+                  <td><span class="badge badge-persona-mlp26">Read / Suggest</span></td>
+                  <td><span class="badge badge-verified">Endorse Impact</span></td>
+                  <td><span class="badge badge-verified">Full Verification</span></td>
+                  <td><span class="badge badge-persona-mlp26">Read Only</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Performance Ratings &amp; 9-Box</strong></td>
+                  <td><span class="badge badge-resigned">Hidden / Masked</span></td>
+                  <td><span class="badge badge-persona-mlp26">Submit Rating</span></td>
+                  <td><span class="badge badge-verified">Calibrate</span></td>
+                  <td><span class="badge badge-verified">Full Board Review</span></td>
+                </tr>
+                <tr>
+                  <td><strong>IDP &amp; Leadership Capabilities</strong></td>
+                  <td><span class="badge badge-verified">Edit Actions</span></td>
+                  <td><span class="badge badge-verified">Quarterly Review</span></td>
+                  <td><span class="badge badge-verified">Audit Sign-Off</span></td>
+                  <td><span class="badge badge-persona-mlp26">Read Only</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Succession Plan &amp; Mobility Slating</strong></td>
+                  <td><span class="badge badge-resigned">Hidden</span></td>
+                  <td><span class="badge badge-persona-mlp26">Suggest Slates</span></td>
+                  <td><span class="badge badge-verified">Manage Horizons</span></td>
+                  <td><span class="badge badge-verified">Executive Approval</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="portal-footer" style="margin-top: 16px;">
+      <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential &amp; Proprietary)</div>
+      <div>Governing MLP, GMC &amp; MALT Leadership Tracks</div>
+    </footer>
+  </main>
+</div>
+
+<!-- Add Master Modal -->
+<div id="addMasterModalOverlay" class="modal-overlay">
+  <div class="modal-box animate-fade-up" style="max-width: 520px;">
+    <div class="modal-header">
+      <h3 style="font-size: 1.15rem; color: var(--adm-text-primary);">+ Add New Master Catalog Entry</h3>
+      <button type="button" class="btn btn-ghost btn-sm" onclick="App.closeModal('addMasterModalOverlay')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group" style="margin-bottom: 14px;">
+        <label class="form-label font-bold text-xs required">Target Master Catalog</label>
+        <select class="form-control" id="masterCatalogSelect">
+          <option value="Sectors">Sector / Operating Business</option>
+          <option value="Programmes">Programme / Cohort</option>
+          <option value="CAB">CAB Capability Theme</option>
+          <option value="Roles">Role Family Catalog</option>
+        </select>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 14px;">
+        <label class="form-label font-bold text-xs required">Entry Name / Title</label>
+        <input type="text" class="form-control" id="masterEntryName" placeholder="e.g. Cleantech Energy Solutions" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label font-bold text-xs">Code / Identifier Descriptor</label>
+        <input type="text" class="form-control" id="masterEntryCode" placeholder="e.g. SEC-CLEAN">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" onclick="App.closeModal('addMasterModalOverlay')">Cancel</button>
+      <button type="button" class="btn btn-primary" onclick="saveMasterEntry()">Save Master Entry</button>
+    </div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    renderMastersTables();
+  });
+
+  function switchMasterTab(tabId) {
+    ['sectors', 'programmes', 'cab', 'roles', 'rbac'].forEach(t => {
+      const pane = document.getElementById('pane' + capitalize(t));
+      const tab = document.getElementById('tab' + capitalize(t));
+      if (pane && tab) {
+        if (t === tabId) {
+          pane.classList.add('active');
+          tab.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+          tab.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function renderMastersTables() {
+    // Sectors
+    const secTbody = document.getElementById('sectorsTableBody');
+    if (secTbody) {
+      secTbody.innerHTML = `
+        <tr>
+          <td><span class="adm-code-badge">SEC-01</span></td>
+          <td><strong>Automotive &amp; Farm (AFS)</strong></td>
+          <td>AFS</td>
+          <td>Auto BEV, SUV Division, Farm Equipment, Powerol</td>
+          <td>Rajesh Jejurikar (ED &amp; CEO - AFS)</td>
+          <td><span class="badge badge-verified">Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">SEC-02</span></td>
+          <td><strong>Financial Services (MMFSL)</strong></td>
+          <td>MMFSL</td>
+          <td>Rural Retail Lending, Housing Finance, Insurance Broking</td>
+          <td>Raul Rebello (MD &amp; CEO)</td>
+          <td><span class="badge badge-verified">Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">SEC-03</span></td>
+          <td><strong>IT &amp; Digital Services (Tech Mahindra)</strong></td>
+          <td>TechM</td>
+          <td>Mobility Cloud, Telematics, Telecom Networks, Enterprise AI</td>
+          <td>Mohit Joshi (MD &amp; CEO)</td>
+          <td><span class="badge badge-verified">Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">SEC-04</span></td>
+          <td><strong>Aerospace &amp; Defence</strong></td>
+          <td>AERO</td>
+          <td>Mahindra Aerostructures, Defence Land Systems, Composites</td>
+          <td>S. P. Shukla (President)</td>
+          <td><span class="badge badge-verified">Active</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">SEC-05</span></td>
+          <td><strong>Real Estate &amp; Hospitality</strong></td>
+          <td>LFS-CM</td>
+          <td>Mahindra Lifespaces, Club Mahindra Resorts</td>
+          <td>Amit Sinha (MD)</td>
+          <td><span class="badge badge-verified">Active</span></td>
+        </tr>
+      `;
+    }
+
+    // Programmes
+    const progTbody = document.getElementById('programmesTableBody');
+    if (progTbody) {
+      progTbody.innerHTML = `
+        <tr>
+          <td><span class="adm-code-badge">MLP-2027</span></td>
+          <td><strong>Mahindra Leadership Programme (Pre-Join)</strong></td>
+          <td>2027 Batch</td>
+          <td><strong>18 Candidates</strong></td>
+          <td>Pre-join / Campus; SIP Evidence &amp; Pedigree</td>
+          <td><span class="badge badge-persona-mlp27">Active Track</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">MLP-2026</span></td>
+          <td><strong>Mahindra Leadership Programme (Rotations)</strong></td>
+          <td>2026 Batch</td>
+          <td><strong>24 Talents</strong></td>
+          <td>Cross-sector 3-stint journey inside Mahindra</td>
+          <td><span class="badge badge-persona-mlp26">Active Track</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">MLP-2024-25</span></td>
+          <td><strong>Mahindra Leadership Programme (Full-Time)</strong></td>
+          <td>2024–25 Batches</td>
+          <td><strong>32 Talents</strong></td>
+          <td>Completed rotations; now in core leadership roles</td>
+          <td><span class="badge badge-persona-mlp2425">Deployed</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">GMC</span></td>
+          <td><strong>Group Management Cadre (Multi-Year)</strong></td>
+          <td>2019–2023 Batches</td>
+          <td><strong>45 Cadre Leaders</strong></td>
+          <td>Multiple business roles, P&amp;L impact &amp; bench depth</td>
+          <td><span class="badge badge-persona-gmc">Cadre Track</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">MALT</span></td>
+          <td><strong>Mahindra Accelerated Leadership Track</strong></td>
+          <td>Lateral &amp; Senior</td>
+          <td><strong>15 Leaders</strong></td>
+          <td>Experienced hires &amp; strategic accelerated growth</td>
+          <td><span class="badge badge-persona-malt">Senior Track</span></td>
+        </tr>
+      `;
+    }
+
+    // CAB Themes
+    const cabTbody = document.getElementById('cabTableBody');
+    if (cabTbody) {
+      cabTbody.innerHTML = `
+        <tr>
+          <td><span class="adm-code-badge">CAB-01</span></td>
+          <td>Strategic Thinking</td>
+          <td><strong>Future Business Model &amp; Ecosystem Design</strong></td>
+          <td>Anticipates industry disruptions, electric transition, and digital customer journeys.</td>
+          <td><span class="badge badge-verified">28 Talents</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">CAB-02</span></td>
+          <td>Execution Excellence</td>
+          <td><strong>Operational Scale &amp; Lean Manufacturing</strong></td>
+          <td>Drives plant efficiency, zero-defect quality, and vendor supply chain resilience.</td>
+          <td><span class="badge badge-verified">34 Talents</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">CAB-03</span></td>
+          <td>People &amp; Culture</td>
+          <td><strong>Inclusive Leadership &amp; Talent Mentorship</strong></td>
+          <td>Builds high-performing diverse teams, sponsors junior cadre, and champions Rise values.</td>
+          <td><span class="badge badge-verified">41 Talents</span></td>
+        </tr>
+        <tr>
+          <td><span class="adm-code-badge">CAB-04</span></td>
+          <td>Financial Acumen</td>
+          <td><strong>Capital Allocation &amp; P&amp;L Stewardship</strong></td>
+          <td>Manages commercial margins, EBITDA optimization, and strategic ROI hurdle rates.</td>
+          <td><span class="badge badge-verified">22 Talents</span></td>
+        </tr>
+      `;
+    }
+
+    // Role Families
+    const rolesTbody = document.getElementById('rolesTableBody');
+    if (rolesTbody) {
+      rolesTbody.innerHTML = `
+        <tr>
+          <td><strong>P&amp;L / Business Leadership</strong></td>
+          <td>Executive (M6–M8)</td>
+          <td>Overall business revenue, market share, operations, and cross-functional leadership.</td>
+          <td><span class="badge badge-verified">14 Successors Slate</span></td>
+          <td><span class="badge badge-persona-mlp26">High Cross-Sector</span></td>
+        </tr>
+        <tr>
+          <td><strong>Commercial, Sales &amp; Channel Expansion</strong></td>
+          <td>Senior (M4–M6)</td>
+          <td>Dealer networks, regional volume growth, key account management, and pricing models.</td>
+          <td><span class="badge badge-verified">22 Successors Slate</span></td>
+          <td><span class="badge badge-persona-gmc">Ready Now</span></td>
+        </tr>
+        <tr>
+          <td><strong>Product Development &amp; Engineering</strong></td>
+          <td>Principal (M4–M6)</td>
+          <td>Vehicle platforms, powertrain engineering, software defined vehicles, and R&amp;D.</td>
+          <td><span class="badge badge-verified">18 Successors Slate</span></td>
+          <td><span class="badge badge-persona-malt">High Technical</span></td>
+        </tr>
+        <tr>
+          <td><strong>Digital Transformation &amp; Cloud Platform</strong></td>
+          <td>Principal (M4–M6)</td>
+          <td>Cloud connected vehicles, telematics analytics, ERP architecture, and AI models.</td>
+          <td><span class="badge badge-verified">12 Successors Slate</span></td>
+          <td><span class="badge badge-persona-mlp2425">Tech Mahindra / Auto</span></td>
+        </tr>
+      `;
+    }
+  }
+
+  function openAddMasterModal() {
+    document.getElementById('addMasterModalOverlay').classList.add('open');
+  }
+
+  function saveMasterEntry() {
+    const name = document.getElementById('masterEntryName').value;
+    const cat = document.getElementById('masterCatalogSelect').value;
+    if (!name) {
+      App.showToast("Please enter an entry title", "warning");
+      return;
+    }
+    App.closeModal('addMasterModalOverlay');
+    App.showToast(`New Master Entry "${name}" added to ${cat} catalog!`, "success");
+    document.getElementById('masterEntryName').value = "";
+  }
+</script>
+</body>
+</html>

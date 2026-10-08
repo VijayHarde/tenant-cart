@@ -1,0 +1,409 @@
+/* ==========================================================================
+   MAHINDRA RISE - SIGNATURE LIGHT THEME SIDEBAR (NO SCROLL, REDUCED RADIUS)
+   ========================================================================== */
+
+.sig-sidebar {
+  position: sticky;
+  top: 12px;
+  height: calc(100vh - 88px);
+  max-height: calc(100vh - 88px);
+  width: 240px;
+  flex: 0 0 240px;
+  margin: 12px 0 12px 14px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.26s cubic-bezier(0.4, 0, 0.2, 1), flex-basis 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 900;
+  user-select: none;
+  overflow: visible;
+}
+
+/* Left Accent Indicator */
+.sig-sidebar-edge-glow {
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 0;
+  width: 3.5px;
+  background: #e31837;
+  border-radius: 3px 0 0 3px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Protruding Tab Toggle Button */
+.sig-toggle-tab {
+  position: absolute;
+  right: -15px;
+  top: 24px;
+  width: 18px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.06);
+  padding: 0;
+}
+
+.sig-toggle-tab:hover {
+  background: #e31837;
+  color: #ffffff;
+  border-color: #e31837;
+  width: 20px;
+  right: -17px;
+}
+
+.sig-toggle-icon {
+  transition: transform 0.26s ease;
+}
+
+/* Internal Container with NO Scroll */
+.sig-sidebar-scroll {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 10px 10px;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+}
+
+/* 1. Header Block */
+.sig-header-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 4px 8px;
+}
+
+.sig-logo-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 8px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e31837;
+}
+
+.sig-workspace-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sig-brand-highlight {
+  color: #e31837;
+  font-weight: 900;
+}
+
+/* 2. User Profile Block */
+.sig-profile-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  margin-bottom: 8px;
+}
+
+.sig-avatar-wrapper {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+}
+
+.sig-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e2e8f0;
+}
+
+.sig-status-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 0 4px #10b981;
+}
+
+.sig-profile-details {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.sig-profile-name {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sig-profile-sub {
+  font-size: 10.5px;
+  color: #64748b;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+}
+
+.sig-divider {
+  display: none;
+}
+
+/* 3. Search Box inside Sidebar */
+.sig-search-block {
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.sig-search-inner {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 5px 10px;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.sig-search-inner:focus-within {
+  background: #ffffff;
+  border-color: #e31837;
+  box-shadow: 0 0 0 2px rgba(227, 24, 55, 0.12);
+}
+
+.sig-search-ico {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.sig-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 12px;
+  color: #0f172a;
+  width: 100%;
+  font-family: inherit;
+}
+
+.sig-search-input::placeholder {
+  color: #94a3b8;
+}
+
+.sig-search-badge {
+  font-size: 9.5px;
+  color: #64748b;
+  background: #ffffff;
+  padding: 1px 4px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  font-weight: 700;
+}
+
+/* 4. Navigation Links */
+.sig-nav-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.sig-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #475569;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.sig-nav-item:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.sig-nav-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: color 0.15s ease;
+}
+
+.sig-nav-item:hover .sig-nav-icon {
+  color: #0f172a;
+}
+
+.sig-nav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.sig-nav-item.active {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #e31837;
+  font-weight: 700;
+}
+
+.sig-nav-item.active .sig-nav-icon {
+  color: #e31837;
+}
+
+.sig-nav-badge {
+  background: #e31837;
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  margin-left: auto;
+  line-height: 1;
+}
+
+/* 5. Bottom Mahindra Brand Logo */
+.sig-bottom-brand {
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sig-bottom-logo-img {
+  height: 16px;
+  width: auto;
+  max-width: 130px;
+  display: block;
+  object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------
+   COLLAPSED STATE (LIGHT THEME FLOATING SLIM PILL)
+   -------------------------------------------------------------------------- */
+.sig-sidebar.collapsed {
+  width: 60px;
+  flex: 0 0 60px;
+  border-radius: 14px;
+}
+
+.sig-sidebar.collapsed .sig-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.sig-sidebar.collapsed .sig-workspace-title,
+.sig-sidebar.collapsed .sig-profile-details,
+.sig-sidebar.collapsed .sig-search-block,
+.sig-sidebar.collapsed .sig-nav-label,
+.sig-sidebar.collapsed .sig-nav-badge,
+.sig-sidebar.collapsed .sig-code-text {
+  display: none !important;
+}
+
+.sig-sidebar.collapsed .sig-bottom-logo-img {
+  height: 10px;
+  max-width: 44px;
+}
+
+.sig-sidebar.collapsed .sig-sidebar-scroll {
+  padding: 10px 4px 8px;
+  align-items: center;
+}
+
+.sig-sidebar.collapsed .sig-header-block {
+  padding: 2px 0 6px;
+  justify-content: center;
+}
+
+.sig-sidebar.collapsed .sig-profile-block {
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  justify-content: center;
+}
+
+.sig-sidebar.collapsed .sig-avatar-wrapper {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+}
+
+.sig-sidebar.collapsed .sig-nav-stack {
+  width: 100%;
+  align-items: center;
+  gap: 4px;
+}
+
+.sig-sidebar.collapsed .sig-nav-item {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.sig-sidebar.collapsed .sig-nav-item:hover {
+  background: #f1f5f9;
+}
+
+.sig-sidebar.collapsed .sig-nav-item.active {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+}
+
+.sig-sidebar.collapsed .sig-bottom-brand {
+  padding-top: 6px;
+  border-top: none;
+}

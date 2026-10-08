@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive One-Page Talent Card • Mahindra Rise</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <style>
+    body {
+      background: #eef1f5;
+      padding: 24px;
+      font-size: 13px;
+      color: #182230;
+    }
+    .onepager-sheet {
+      max-width: 980px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 32px 36px;
+      border: 1px solid #dfe4ea;
+      position: relative;
+    }
+    .onepager-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .print-bar {
+      max-width: 980px;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+      }
+      .onepager-sheet {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .print-bar {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="print-bar no-print">
+  <a href="talent-card.html" class="btn btn-outline btn-sm">➔ Back to Interactive Talent Card</a>
+  <div class="d-flex gap-sm">
+    <button type="button" class="btn btn-primary btn-sm" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+</div>
+
+<div class="onepager-sheet" id="onePagerContent">
+  <!-- Header Bar -->
+  <div class="onepager-header">
+    <div class="d-flex align-center gap-md">
+      <img src="../assets/images/mahindra-rise-logo.svg" alt="Mahindra Rise" style="height: 32px; width: auto;">
+      <div>
+        <h1 style="font-size: 1.35rem; color: var(--ink); margin-bottom: 2px;">Executive Talent Card</h1>
+        <div style="font-size: 0.72rem; color: var(--slate); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+          Group Leadership Cadre Intelligence (Confidential)
+        </div>
+      </div>
+    </div>
+    <div style="text-align: right;">
+      <div class="badge badge-persona-mlp26" id="opPersonaBadge" style="font-size: 0.78rem; padding: 4px 10px;">MLP 2026</div>
+      <div class="text-xs text-muted" style="margin-top: 4px;">Verified Profile Completeness: <strong id="opCompleteness" style="color: var(--red);">94%</strong></div>
+    </div>
+  </div>
+
+  <!-- Profile Snapshot Grid -->
+  <div style="display: grid; grid-template-columns: 90px 1fr 1fr; gap: 20px; background: #fafbfc; padding: 18px 20px; border-radius: 12px; border: 1px solid #dfe4ea; margin-bottom: 20px;">
+    <img id="opPhoto" src="" style="width: 90px; height: 90px; border-radius: 12px; object-fit: cover; border: 2px solid var(--red);">
+    
+    <div>
+      <h2 id="opFullName" style="font-size: 1.25rem; color: var(--ink); margin-bottom: 3px;">Aditi Deshmukh</h2>
+      <div id="opRole" style="font-weight: 700; color: var(--red); font-size: 0.88rem;">Lead - EV Charging Infra (MEAL)</div>
+      <div class="text-xs text-muted" style="margin-top: 4px;">Token / Emp ID: <strong id="opEmpId" class="font-mono">10928145</strong> • Grade: <strong id="opGrade">M4</strong></div>
+      <div class="text-xs text-muted" style="margin-top: 2px;">Reporting Manager: <strong id="opManager">Suresh Raman (VP - EV Strategy)</strong></div>
+    </div>
+
+    <div>
+      <div class="text-xs text-muted"><strong>Academics:</strong> <span id="opEducation">MBA (IIM Kozhikode) • B.Tech (VJTI Mumbai)</span></div>
+      <div class="text-xs text-muted" style="margin-top: 4px;"><strong>Performance Rating:</strong> <span id="opPerf">FY26 Rating: 4.5/5.0 (Role Model)</span></div>
+      <div class="text-xs text-muted" style="margin-top: 4px;"><strong>9-Box Slating:</strong> <span id="opNineBox" class="badge badge-verified" style="font-size: 0.7rem;">Star Talent (High/High)</span></div>
+      <div class="text-xs text-muted" style="margin-top: 4px;"><strong>Mobility:</strong> <span id="opMobility">Conditional (Mumbai, Pune, Bengaluru)</span></div>
+    </div>
+  </div>
+
+  <!-- 2-Column Core Evidence -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+    <!-- Left: Stints & Project Impact -->
+    <div style="border: 1px solid #dfe4ea; border-radius: 10px; padding: 16px;">
+      <div style="font-weight: 800; font-size: 0.82rem; color: var(--ink); text-transform: uppercase; border-bottom: 1px solid #edf0f3; padding-bottom: 6px; margin-bottom: 10px;">
+        🔄 Mahindra Stint Journey & Quantifiable Impact
+      </div>
+      <div id="opStintsList" style="display: flex; flex-direction: column; gap: 8px;"></div>
+    </div>
+
+    <!-- Right: Strengths, Gaps & Learning IDP -->
+    <div style="border: 1px solid #dfe4ea; border-radius: 10px; padding: 16px;">
+      <div style="font-weight: 800; font-size: 0.82rem; color: var(--ink); text-transform: uppercase; border-bottom: 1px solid #edf0f3; padding-bottom: 6px; margin-bottom: 10px;">
+        🎯 Manager SWOT Assessment & IDP Focus
+      </div>
+      <div id="opStrengthsGaps" style="display: flex; flex-direction: column; gap: 8px;"></div>
+    </div>
+  </div>
+
+  <!-- Career Readiness & Succession Horizon -->
+  <div style="background: #fff0f2; border: 1px solid #fecdca; border-radius: 10px; padding: 16px; margin-bottom: 18px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+      <span style="font-weight: 800; font-size: 0.82rem; color: #b42318; text-transform: uppercase;">
+        🚀 Career Readiness Horizon & Slated Succession Roles
+      </span>
+      <span class="badge badge-persona-mlp26">BHR Endorsed</span>
+    </div>
+    <div id="opReadinessList" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;"></div>
+  </div>
+
+  <!-- Governance Footer -->
+  <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; color: var(--muted); border-top: 1px solid #dfe4ea; padding-top: 10px;">
+    <div>Governance Verifier: <strong id="opVerifier">Megha Patil (BHR Lead)</strong> on <span id="opVerifiedDate">2026-09-19</span></div>
+    <div>Next Scheduled Refresh Trigger: <strong id="opTrigger">End of Stint 2 (31 Mar 2027)</strong></div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const talentId = urlParams.get('id') || 'EMP-109281';
+    const t = TalentStore.getTalentById(talentId);
+
+    document.getElementById('opPhoto').src = t.personal.photo;
+    document.getElementById('opFullName').textContent = t.personal.fullName;
+    document.getElementById('opPersonaBadge').textContent = t.persona;
+    document.getElementById('opRole').textContent = `${t.programme.currentRole} • ${t.programme.currentBusiness}`;
+    document.getElementById('opEmpId').textContent = t.personal.empId;
+    document.getElementById('opGrade').textContent = t.programme.currentGrade;
+    document.getElementById('opManager').textContent = t.programme.reportingManager;
+    document.getElementById('opCompleteness').textContent = `${t.governance.completenessScore}%`;
+
+    document.getElementById('opEducation').textContent = `${t.education.pg.degree} (${t.education.pg.institute}) • ${t.education.ug.degree} (${t.education.ug.institute})`;
+    document.getElementById('opPerf').textContent = (t.performance.history && t.performance.history[0]) ? `${t.performance.history[0].year}: ${t.performance.history[0].rating}` : 'Appraisal Cycle Active';
+    document.getElementById('opNineBox').textContent = t.performance.nineBoxPosition;
+    document.getElementById('opMobility').textContent = `${t.aspirations.mobilityPreference} (${t.aspirations.preferredLocations.join(', ')})`;
+    document.getElementById('opVerifier').textContent = t.governance.lastVerifiedBy;
+    document.getElementById('opVerifiedDate').textContent = t.governance.lastUpdated;
+    document.getElementById('opTrigger').textContent = t.governance.nextTriggerEvent;
+
+    // Stints list
+    const stintsList = document.getElementById('opStintsList');
+    if (t.stints && t.stints.length > 0) {
+      stintsList.innerHTML = t.stints.map(s => `
+        <div style="background: #fafbfc; padding: 8px 10px; border-radius: 4px; font-size: 0.78rem;">
+          <strong style="color: var(--red);">${s.stintNumber}:</strong> ${s.role} (${s.businessUnit})<br>
+          <span style="color: #027a48;"><strong>Impact:</strong> ${s.keyImpact}</span>
+        </div>
+      `).join('');
+    } else if (t.sip) {
+      stintsList.innerHTML = `
+        <div style="background: #fafbfc; padding: 8px 10px; border-radius: 4px; font-size: 0.78rem;">
+          <strong style="color: var(--red);">SIP Project:</strong> ${t.sip.projectTitle}<br>
+          <span style="color: #027a48;"><strong>Impact:</strong> ${t.sip.quantifiableImpact}</span>
+        </div>
+      `;
+    }
+
+    // Strengths & Gaps
+    const sgContainer = document.getElementById('opStrengthsGaps');
+    const strengths = (t.strengthsAndGaps.strengths || []).map(s => `<div style="color: #027a48; font-size: 0.76rem;"><strong>Strength:</strong> ${s.theme} — ${s.evidence}</div>`).join('');
+    const gaps = (t.strengthsAndGaps.gaps || []).map(g => `<div style="color: #b54708; font-size: 0.76rem; margin-top: 4px;"><strong>Opportunity:</strong> ${g.theme} — ${g.gapEvidence}</div>`).join('');
+    sgContainer.innerHTML = strengths + gaps || '<div class="text-muted text-xs">Pre-join stage evaluation.</div>';
+
+    // Readiness
+    const readList = document.getElementById('opReadinessList');
+    readList.innerHTML = (t.readiness.possibleNextRoles || []).map(r => `
+      <div style="background: #fff; padding: 8px 10px; border-radius: 4px; border: 1px solid #fecdca;">
+        <div style="font-weight: 700; font-size: 0.8rem; color: var(--ink);">${r.role}</div>
+        <span class="badge badge-persona-mlp26" style="font-size: 0.68rem; margin-top: 2px;">Horizon: ${r.horizon}</span>
+      </div>
+    `).join('');
+  });
+</script>
+</body>
+</html>

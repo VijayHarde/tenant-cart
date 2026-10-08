@@ -1,0 +1,280 @@
+/* ==========================================================================
+   MAHINDRA RISE - MASTERS & SYSTEM SETTINGS (EXACT LIGHT THEME)
+   ========================================================================== */
+
+:root {
+  --adm-bg-canvas: #f8fafc;
+  --adm-surface: #ffffff;
+  --adm-border: #e2e8f0;
+  --adm-border-focus: #cbd5e1;
+  --adm-red: #e31837;
+  --adm-red-soft: #fff1f2;
+  --adm-text-primary: #0f172a;
+  --adm-text-secondary: #475569;
+  --adm-text-muted: #64748b;
+  --adm-emerald: #10b981;
+  --adm-emerald-soft: #ecfdf5;
+  --adm-amber: #f59e0b;
+  --adm-amber-soft: #fffbeb;
+  --adm-blue: #3b82f6;
+  --adm-blue-soft: #eff6ff;
+  --adm-radius: 12px;
+  --adm-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --adm-shadow-hover: 0 8px 24px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.adm-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header Card */
+.adm-header-card {
+  background: var(--adm-surface);
+  border: 1px solid var(--adm-border);
+  border-radius: var(--adm-radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: var(--adm-shadow);
+}
+
+.adm-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--adm-red);
+}
+
+.adm-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--adm-text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.adm-subtitle {
+  font-size: 12px;
+  color: var(--adm-text-muted);
+  margin: 2px 0 0 0;
+}
+
+.adm-btn-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--adm-red);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(227, 24, 55, 0.25);
+  transition: all 0.15s ease;
+}
+
+.adm-btn-add:hover {
+  background: #b9132b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(227, 24, 55, 0.35);
+}
+
+/* 4-Card System Health Ribbon */
+.adm-kpi-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .adm-kpi-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .adm-kpi-ribbon {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adm-kpi-card {
+  background: var(--adm-surface);
+  border: 1px solid var(--adm-border);
+  border-radius: var(--adm-radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--adm-shadow);
+  transition: all 0.2s ease;
+}
+
+.adm-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--adm-shadow-hover);
+  border-color: var(--adm-border-focus);
+}
+
+.adm-kpi-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.adm-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--adm-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.adm-kpi-icon-wrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.adm-kpi-icon-wrap.emerald { background: var(--adm-emerald-soft); color: var(--adm-emerald); }
+.adm-kpi-icon-wrap.blue { background: var(--adm-blue-soft); color: var(--adm-blue); }
+.adm-kpi-icon-wrap.red { background: var(--adm-red-soft); color: var(--adm-red); }
+.adm-kpi-icon-wrap.amber { background: var(--adm-amber-soft); color: var(--adm-amber); }
+
+.adm-kpi-main {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--adm-text-primary);
+  margin-bottom: 2px;
+}
+
+.adm-kpi-sub {
+  font-size: 11px;
+  font-weight: 700;
+  color: #166534;
+}
+
+/* Masters Segmented Tabs Card */
+.adm-tabs-card {
+  background: var(--adm-surface);
+  border: 1px solid var(--adm-border);
+  border-radius: var(--adm-radius);
+  padding: 18px 20px;
+  box-shadow: var(--adm-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.adm-tab-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1.5px solid #e2e8f0;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.adm-tab-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.adm-tab-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.adm-tab-btn.active {
+  background: var(--adm-red);
+  color: #ffffff;
+  border-color: var(--adm-red);
+  box-shadow: 0 2px 8px rgba(227, 24, 55, 0.28);
+}
+
+.adm-tab-pane {
+  display: none;
+}
+
+.adm-tab-pane.active {
+  display: block;
+}
+
+/* Tables */
+.adm-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adm-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.adm-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border-bottom: 1.5px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.adm-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.adm-table tr:hover td {
+  background: #fcfcfd;
+}
+
+.adm-code-badge {
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Mahindra Brand Colors & Exact Reference Tokens */
+  --red: #e31837;
+  --red-dark: #b3122c;
+  --red-soft: #fff0f2;
+  --red-glow: rgba(227, 24, 55, 0.28);
+  --m-red: #e31837;
+  --m-red-dark: #b3122c;
+  --rising-red: #e31837;
+  --rising-red-hover: #b3122c;
+  --rising-red-glow: rgba(227, 24, 55, 0.25);
+  --rising-red-subtle: rgba(227, 24, 55, 0.08);
+
+  --ink: #111827;
+  --ink-black: #0f172a;
+  --slate: #334155;
+  --steel-grey: #475467;
+  --muted: #64748b;
+  --steel-grey-light: #64748b;
+  --bg: #eef2f8;
+  --bg-slate: #eef2f8;
+  --card: #ffffff;
+  --white: #ffffff;
+  --line: #dfe5ed;
+  --border-grey: #dfe5ed;
+  --border-grey-light: #edf2f7;
+  --nav: #141c2b;
+
+  /* Glassmorphism Design Tokens */
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-surface: rgba(255, 255, 255, 0.72);
+  --glass-surface-strong: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --glass-border-subtle: rgba(223, 229, 237, 0.85);
+  --glass-shadow: 0 14px 40px rgba(18, 30, 60, 0.07), 0 2px 8px rgba(18, 30, 60, 0.03);
+  --glass-shadow-hover: 0 20px 48px rgba(18, 30, 60, 0.12), 0 4px 12px rgba(18, 30, 60, 0.05);
+  --glass-blur: 16px;
+
+  /* Elevation, Shadows & Radii */
+  --radius: 18px;
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow: 0 10px 30px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.03);
+  --shadow-hover: 0 18px 42px rgba(16, 24, 40, 0.11), 0 4px 12px rgba(16, 24, 40, 0.04);
+  --shadow-sm: 0 2px 8px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 8px 24px rgba(16, 24, 40, 0.07);
+  --shadow-lg: 0 20px 50px rgba(16, 24, 40, 0.13);
+  --shadow-card-hover: 0 16px 36px rgba(16, 24, 40, 0.10);
+
+  /* Animation Easing */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-fast: 0.18s var(--ease);
+  --transition-normal: 0.28s var(--ease);
+
+  /* Semantic Status Colors */
+  --success: #059669;
+  --success-bg: #ecfdf5;
+  --success-border: #a7f3d0;
+  --warning: #d97706;
+  --warning-bg: #fffbeb;
+  --warning-border: #fde68a;
+  --info: #0284c7;
+  --info-bg: #f0f9ff;
+  --info-border: #bae6fd;
+  --purple: #7c3aed;
+  --purple-bg: #f5f3ff;
+  --purple-border: #ddd6fe;
+
+  /* Data Source Tiers from Excel 01_Logic */
+  --src-green: #059669;
+  --src-orange: #d97706;
+  --src-red: #e31837;
+
+  /* Typography */
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --sidebar-width: 252px;
+  --sidebar-collapsed-width: 72px;
+  --header-height: 68px;
+  --content-max-width: 1480px;
+}

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Roster & Cross-Sector Mobility Hub • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/team-mobility-exact.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR" selected>BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR">Executive Board (GEB)</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box -->
+        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue -->
+        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility (Active) -->
+        <a href="team-mobility.html" class="sig-nav-item active" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin -->
+        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="content-area">
+    <div class="mob-dashboard-container">
+
+      <!-- 1. Header Card -->
+      <div class="mob-header-card">
+        <div>
+          <div class="mob-eyebrow">
+            <span>🚀</span>
+            <span>Mahindra Leadership Cadre &amp; Rotations Hub</span>
+          </div>
+          <h1 class="mob-title">Team Roster &amp; Cross-Sector Mobility Hub</h1>
+          <p class="mob-subtitle">Manage reporting cadre journeys, active rotational stints, cross-pollination slates &amp; open stint marketplace</p>
+        </div>
+
+        <div class="mob-header-controls">
+          <div class="mob-control-pill">
+            <span>🏢</span>
+            <span>Business:</span>
+            <select class="mob-select-clean" id="sectorFilter">
+              <option value="all">All Mahindra Sectors</option>
+              <option value="afs">Auto &amp; Farm (AFS)</option>
+              <option value="techm">Tech Mahindra</option>
+              <option value="mmfsl">Financial Services (MMFSL)</option>
+              <option value="aero">Aerospace &amp; Defence</option>
+            </select>
+          </div>
+
+          <button type="button" class="mob-btn-action" onclick="openProposeMobilityModal()">
+            <span>+</span>
+            <span>Propose Mobility Transfer</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. 4-Card Hero Ribbon -->
+      <div class="mob-kpi-ribbon">
+        <!-- KPI 1 -->
+        <div class="mob-kpi-card">
+          <div class="mob-kpi-top">
+            <span class="mob-kpi-label">Active Team Cadre</span>
+            <div class="mob-kpi-icon-wrap emerald">👥</div>
+          </div>
+          <div class="mob-kpi-main">14 Members</div>
+          <div class="mob-kpi-sub">8 Core Roles • 6 Rotational Stints</div>
+          <div class="mob-kpi-bar">
+            <div class="mob-kpi-bar-fill" style="width: 100%; background: #10b981;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="mob-kpi-card">
+          <div class="mob-kpi-top">
+            <span class="mob-kpi-label">Cross-Sector Transfers</span>
+            <div class="mob-kpi-icon-wrap red">🔄</div>
+          </div>
+          <div class="mob-kpi-main">31 Stints</div>
+          <div class="mob-kpi-sub">Across 6 Operating Sectors</div>
+          <div class="mob-kpi-bar">
+            <div class="mob-kpi-bar-fill" style="width: 82%; background: var(--mob-red);"></div>
+          </div>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="mob-kpi-card">
+          <div class="mob-kpi-top">
+            <span class="mob-kpi-label">Mobility Readiness</span>
+            <div class="mob-kpi-icon-wrap blue">🎯</div>
+          </div>
+          <div class="mob-kpi-main">78% Ready</div>
+          <div class="mob-kpi-sub">11 Talents in 0–1 yr window</div>
+          <div class="mob-kpi-bar">
+            <div class="mob-kpi-bar-fill" style="width: 78%; background: #3b82f6;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="mob-kpi-card">
+          <div class="mob-kpi-top">
+            <span class="mob-kpi-label">Stint Impact Rating</span>
+            <div class="mob-kpi-icon-wrap amber">⭐</div>
+          </div>
+          <div class="mob-kpi-main">4.9 / 5.0</div>
+          <div class="mob-kpi-sub">BHR &amp; Sponsor Validated</div>
+          <div class="mob-kpi-bar">
+            <div class="mob-kpi-bar-fill" style="width: 98%; background: #f59e0b;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Segmented Tabs & Main Content Shell -->
+      <div class="mob-main-card">
+        <div class="mob-tab-bar">
+          <button type="button" class="mob-tab-btn active" id="tabRoster" onclick="switchMobilityTab('roster')">
+            👥 Cadre Team Roster &amp; Stint Journey (6)
+          </button>
+          <button type="button" class="mob-tab-btn" id="tabMarket" onclick="switchMobilityTab('market')">
+            🏢 Open Rotational Stints Marketplace (4)
+          </button>
+          <button type="button" class="mob-tab-btn" id="tabSlates" onclick="switchMobilityTab('slates')">
+            📊 Team Succession &amp; Mobility Slates
+          </button>
+        </div>
+
+        <!-- Tab 1: Cadre Team Roster Grid -->
+        <div id="paneRoster" class="mob-tab-pane active">
+          <div class="mob-roster-grid">
+
+            <!-- Member 1 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Aditi" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-109281" class="mob-talent-name">Aditi Deshmukh</a>
+                  <div class="mob-talent-role">Lead - EV Charging Infra &amp; Channel Expansion</div>
+                  <span class="badge badge-persona-mlp26" style="align-self: flex-start; margin-top: 4px;">MLP 2026</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Current Stint 2 of 3</span>
+                  <span style="color: var(--mob-red);">Month 7 of 12</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 58%; background: var(--mob-red);"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Financial Services (Fintech) or Tech Mahindra (SDV).
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Verified Ready (0-1y)</span>
+                <a href="talent-card.html?id=EMP-109281" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80" alt="Sneha" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-107721" class="mob-talent-name">Sneha Rao</a>
+                  <div class="mob-talent-role">Head - MSME &amp; Micro-Enterprise Lending</div>
+                  <span class="badge badge-persona-gmc" style="align-self: flex-start; margin-top: 4px;">GMC 2021</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Full Leadership Role</span>
+                  <span style="color: #10b981;">3 Years in Business</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 100%; background: #10b981;"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Auto Business Leadership or Cross-Border Expansion.
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Ready Now for M6</span>
+                <a href="talent-card.html?id=EMP-107721" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80" alt="Rajesh" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-106519" class="mob-talent-name">Rajesh Nair</a>
+                  <div class="mob-talent-role">VP - Composite Aerostructures Program</div>
+                  <span class="badge badge-persona-malt" style="align-self: flex-start; margin-top: 4px;">MALT Senior</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Aerospace Leadership</span>
+                  <span style="color: #3b82f6;">High Priority Track</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 85%; background: #3b82f6;"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Auto Electric MEAL or Group Strategy.
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Ready Now (CEO Slate)</span>
+                <a href="talent-card.html?id=EMP-106519" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&auto=format&fit=crop&q=80" alt="Ananya" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-108842" class="mob-talent-name">Ananya Sen</a>
+                  <div class="mob-talent-role">Chief Architect - Connected Vehicle Cloud</div>
+                  <span class="badge badge-persona-mlp2425" style="align-self: flex-start; margin-top: 4px;">MLP 2024–25</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Deployed Role</span>
+                  <span style="color: #8b5cf6;">Tech Mahindra &amp; Auto</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 90%; background: #8b5cf6;"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Global Digital Platform Lead or US Telecom.
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Verified Ready</span>
+                <a href="talent-card.html?id=EMP-108842" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80" alt="Siddharth" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-107730" class="mob-talent-name">Siddharth Sen</a>
+                  <div class="mob-talent-role">Project Manager - Farm IoT &amp; Telematics</div>
+                  <span class="badge badge-persona-gmc" style="align-self: flex-start; margin-top: 4px;">GMC 2022</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Farm Equipment Stint</span>
+                  <span style="color: #f59e0b;">Month 10 of 12</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 83%; background: #f59e0b;"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Ready for Next Rotation in Financial Services.
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Stint 3 Ready</span>
+                <a href="talent-card.html?id=EMP-107730" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="mob-talent-card">
+              <div class="mob-talent-head">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80" alt="Devansh" class="mob-talent-avatar">
+                <div class="mob-talent-meta">
+                  <a href="talent-card.html?id=EMP-109292" class="mob-talent-name">Devansh Nair</a>
+                  <div class="mob-talent-role">Stint Lead - EV Battery Management Systems</div>
+                  <span class="badge badge-persona-mlp26" style="align-self: flex-start; margin-top: 4px;">MLP 2026</span>
+                </div>
+              </div>
+
+              <div class="mob-stint-progress-box">
+                <div class="mob-stint-label">
+                  <span>Stint 1 of 3</span>
+                  <span style="color: #10b981;">Month 11 of 12</span>
+                </div>
+                <div class="mob-kpi-bar" style="margin-top: 2px;">
+                  <div class="mob-kpi-bar-fill" style="width: 92%; background: #10b981;"></div>
+                </div>
+                <div class="mob-stint-pref">
+                  <strong>Mobility Preference:</strong> Aerospace Composites or Tech Mahindra Cloud.
+                </div>
+              </div>
+
+              <div class="mob-talent-foot">
+                <span class="badge badge-verified">✓ Stint 2 Transfer Scheduled</span>
+                <a href="talent-card.html?id=EMP-109292" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">
+                  Talent Card ➔
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: Open Rotational Stints Marketplace -->
+        <div id="paneMarket" class="mob-tab-pane">
+          <div class="mob-market-grid">
+
+            <!-- Stint Opp 1 -->
+            <div class="mob-stint-opp-card" style="border-left-color: var(--mob-red);">
+              <div>
+                <div class="mob-opp-title">Lead - Fast-Charging Channel Expansion &amp; EV Alliances</div>
+                <div class="mob-opp-sector">🏢 Auto - Electric Vehicles (BEV) • Mumbai / Pune • Stint Duration: 12 Mos</div>
+                <p class="mob-opp-desc">
+                  Drive public charging network partnerships with oil marketing companies and highway operators to establish 2,500 fast chargers for the INGLO platform.
+                </p>
+                <div class="mob-opp-tags">
+                  <span class="badge badge-persona-mlp26">MLP / GMC Stint</span>
+                  <span class="badge badge-verified">Sponsor: Suresh Raman (VP - EV Strategy)</span>
+                </div>
+              </div>
+              <div class="mob-opp-foot">
+                <span style="font-size: 11.5px; color: #64748b; font-weight: 600;">2 Cadre Applicants</span>
+                <button type="button" class="btn btn-primary btn-sm" onclick="nominateTalent('EV Charging Alliances')">
+                  Nominate Team Member ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Stint Opp 2 -->
+            <div class="mob-stint-opp-card" style="border-left-color: #3b82f6;">
+              <div>
+                <div class="mob-opp-title">Product Architect - Software Defined Vehicles (SDV) Cloud</div>
+                <div class="mob-opp-sector">🏢 Tech Mahindra / Mobility • Bengaluru / Hyderabad • Stint Duration: 12 Mos</div>
+                <p class="mob-opp-desc">
+                  Design over-the-air (OTA) update pipelines and in-cabin Android Automotive telemetry systems for next-generation Mahindra electric platforms.
+                </p>
+                <div class="mob-opp-tags">
+                  <span class="badge badge-persona-mlp26">Tech Mahindra Mobility</span>
+                  <span class="badge badge-verified">Sponsor: Ananya Sen (Chief Architect)</span>
+                </div>
+              </div>
+              <div class="mob-opp-foot">
+                <span style="font-size: 11.5px; color: #64748b; font-weight: 600;">1 Cadre Applicant</span>
+                <button type="button" class="btn btn-primary btn-sm" onclick="nominateTalent('SDV Cloud Architect')">
+                  Nominate Team Member ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Stint Opp 3 -->
+            <div class="mob-stint-opp-card" style="border-left-color: #f59e0b;">
+              <div>
+                <div class="mob-opp-title">Head - Rural Dealer Financing &amp; Agritech Credit Modeling</div>
+                <div class="mob-opp-sector">🏢 Financial Services (MMFSL) • Hyderabad / Lucknow • Stint Duration: 12 Mos</div>
+                <p class="mob-opp-desc">
+                  Develop alternate credit risk algorithms utilizing satellite harvest data to provide instant loan approvals for farm mechanization implements.
+                </p>
+                <div class="mob-opp-tags">
+                  <span class="badge badge-persona-gmc">MMFSL Agri Fintech</span>
+                  <span class="badge badge-verified">Sponsor: Raul Rebello (MD &amp; CEO)</span>
+                </div>
+              </div>
+              <div class="mob-opp-foot">
+                <span style="font-size: 11.5px; color: #64748b; font-weight: 600;">3 Cadre Applicants</span>
+                <button type="button" class="btn btn-primary btn-sm" onclick="nominateTalent('Rural Credit Modeling')">
+                  Nominate Team Member ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Stint Opp 4 -->
+            <div class="mob-stint-opp-card" style="border-left-color: #10b981;">
+              <div>
+                <div class="mob-opp-title">Program Lead - High-Precision Carbon Composite Lines</div>
+                <div class="mob-opp-sector">🏢 Mahindra Aerostructures • Bengaluru SEZ • Stint Duration: 12 Mos</div>
+                <p class="mob-opp-desc">
+                  Scale composite aerostructure manufacturing cells for international Tier-1 aviation contracts and transfer autoclave engineering principles to Auto electric battery enclosures.
+                </p>
+                <div class="mob-opp-tags">
+                  <span class="badge badge-persona-malt">MALT / Senior Cadre</span>
+                  <span class="badge badge-verified">Sponsor: Rajesh Nair (VP)</span>
+                </div>
+              </div>
+              <div class="mob-opp-foot">
+                <span style="font-size: 11.5px; color: #64748b; font-weight: 600;">Open for Nominations</span>
+                <button type="button" class="btn btn-primary btn-sm" onclick="nominateTalent('Composite Aerostructures')">
+                  Nominate Team Member ➔
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 3: Team Succession Slates -->
+        <div id="paneSlates" class="mob-tab-pane">
+          <div class="bhr-table-container">
+            <table class="adm-table">
+              <thead>
+                <tr>
+                  <th>Critical Position in Team</th>
+                  <th>Incumbent Lead</th>
+                  <th>Ready-Now Successor (0–1 Year)</th>
+                  <th>Ready in 1–3 Years</th>
+                  <th>Succession Depth</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lead - EV Charging &amp; Channel Expansion</strong></td>
+                  <td>Aditi Deshmukh (M4)</td>
+                  <td><span class="badge badge-verified">Devansh Nair (MLP 2026)</span></td>
+                  <td><span class="badge badge-persona-mlp26">Vikram Singhania (GMC)</span></td>
+                  <td><span class="badge badge-active">3 Candidates</span></td>
+                  <td><a href="talent-analytics.html" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">Inspect Slates ➔</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Head - MSME &amp; Rural Credit Underwriting</strong></td>
+                  <td>Sneha Rao (M5)</td>
+                  <td><span class="badge badge-verified">Siddharth Sen (GMC 2022)</span></td>
+                  <td><span class="badge badge-persona-gmc">Karan Varma</span></td>
+                  <td><span class="badge badge-active">2 Candidates</span></td>
+                  <td><a href="talent-analytics.html" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">Inspect Slates ➔</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Chief Architect - Telematics &amp; Connected Cloud</strong></td>
+                  <td>Ananya Sen (M5)</td>
+                  <td><span class="badge badge-verified">Rohan Joshi (MLP 2025)</span></td>
+                  <td><span class="badge badge-persona-mlp2425">Divya Balan</span></td>
+                  <td><span class="badge badge-active">4 Candidates</span></td>
+                  <td><a href="talent-analytics.html" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 4px 10px;">Inspect Slates ➔</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="portal-footer" style="margin-top: 16px;">
+      <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential &amp; Proprietary)</div>
+      <div>Governing MLP, GMC &amp; MALT Leadership Tracks</div>
+    </footer>
+  </main>
+</div>
+
+<!-- Propose Mobility Modal -->
+<div id="proposeMobilityModalOverlay" class="modal-overlay">
+  <div class="modal-box animate-fade-up" style="max-width: 520px;">
+    <div class="modal-header">
+      <h3 style="font-size: 1.15rem; color: var(--mob-text-primary);">+ Propose Cadre Mobility Transfer</h3>
+      <button type="button" class="btn btn-ghost btn-sm" onclick="App.closeModal('proposeMobilityModalOverlay')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group" style="margin-bottom: 14px;">
+        <label class="form-label font-bold text-xs required">Select Cadre Talent</label>
+        <select class="form-control" id="mobilityTalentSelect">
+          <option>Aditi Deshmukh (MLP 2026 - Auto BEV)</option>
+          <option>Sneha Rao (GMC 2021 - Financial Services)</option>
+          <option>Rajesh Nair (MALT - Aerospace)</option>
+          <option>Ananya Sen (MLP 2024-25 - Tech Mahindra)</option>
+          <option>Siddharth Sen (GMC 2022 - Farm Equipment)</option>
+          <option>Devansh Nair (MLP 2026 - Auto BEV)</option>
+        </select>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 14px;">
+        <label class="form-label font-bold text-xs required">Target Business &amp; Sector</label>
+        <select class="form-control" id="mobilityTargetSector">
+          <option>Tech Mahindra / Software Defined Vehicles (SDV)</option>
+          <option>Financial Services (MMFSL) / Agri Fintech</option>
+          <option>Automotive &amp; Farm (AFS) / Electric Powertrain</option>
+          <option>Mahindra Aerostructures / Composites</option>
+          <option>Mahindra Lifespaces / Hospitality</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label font-bold text-xs">Proposed Rotation Stint Horizon</label>
+        <select class="form-control">
+          <option>Immediate / Q1 FY27 Rotation (Stint 3)</option>
+          <option>Mid-Year Rotation (Q3 FY27)</option>
+          <option>Permanent Strategic Placement</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" onclick="App.closeModal('proposeMobilityModalOverlay')">Cancel</button>
+      <button type="button" class="btn btn-primary" onclick="submitMobilityProposal()">Submit Mobility Proposal</button>
+    </div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script>
+  function switchMobilityTab(tabId) {
+    ['roster', 'market', 'slates'].forEach(t => {
+      const pane = document.getElementById('pane' + capitalize(t));
+      const tab = document.getElementById('tab' + capitalize(t));
+      if (pane && tab) {
+        if (t === tabId) {
+          pane.classList.add('active');
+          tab.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+          tab.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function openProposeMobilityModal() {
+    document.getElementById('proposeMobilityModalOverlay').classList.add('open');
+  }
+
+  function submitMobilityProposal() {
+    const talent = document.getElementById('mobilityTalentSelect').value;
+    const target = document.getElementById('mobilityTargetSector').value;
+    App.closeModal('proposeMobilityModalOverlay');
+    App.showToast(`Mobility proposal submitted for ${talent} ➔ ${target}!`, "success");
+  }
+
+  function nominateTalent(stintName) {
+    App.showToast(`Nomination started for "${stintName}". Opening cadre matching...`, "info");
+    openProposeMobilityModal();
+  }
+</script>
+</body>
+</html>

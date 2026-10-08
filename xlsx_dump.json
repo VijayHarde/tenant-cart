@@ -1,0 +1,3346 @@
+{
+  "01_Logic": [
+    {
+      "row": 1,
+      "cells": {
+        "A1": "MAHINDRA NEXT GEN TALENT CARD ARCHITECTURE",
+        "B1": "",
+        "C1": "",
+        "D1": "",
+        "E1": ""
+      }
+    },
+    {
+      "row": 2,
+      "cells": {
+        "A2": "",
+        "B2": "",
+        "C2": "",
+        "D2": "",
+        "E2": ""
+      }
+    },
+    {
+      "row": 3,
+      "cells": {
+        "A3": "SOURCE",
+        "B3": "Green = already present in the current GMC-MLP Database (30 Sept). Orange = obtain from an integrated system/API. Red = information must be provided or validated by people through the defined workflow.",
+        "C3": "",
+        "D3": ""
+      }
+    },
+    {
+      "row": 4,
+      "cells": {
+        "A4": "INFORMATION ICON (i)",
+        "B4": "Show beside every field, for employee experience",
+        "C4": "",
+        "D4": ""
+      }
+    },
+    {
+      "row": 5,
+      "cells": {
+        "A5": "INPUT FLOW SAME FOR ALL",
+        "B5": "System/API \u2192 Employee view/correction request \u2192 BHR \u2192 Group HR",
+        "C5": "",
+        "D5": ""
+      }
+    },
+    {
+      "row": 6,
+      "cells": {
+        "A6": "BHR RULE",
+        "B6": "Every new/changed value is BHR-verified. Preserve previous verified values and role/stint history.",
+        "C6": "",
+        "D6": "",
+        "E6": ""
+      }
+    },
+    {
+      "row": 7,
+      "cells": {
+        "A7": "PERSONA",
+        "B7": "Yes = required for that persona when applicable/triggered; Optional = visible but not required; No = completely hidden. Only Yes counts in completeness.",
+        "C7": "",
+        "D7": "",
+        "E7": ""
+      }
+    },
+    {
+      "row": 8,
+      "cells": {
+        "A8": "REQUEST / HELP ICON (h)",
+        "B8": "Persistent Request / Help Icon with live counter. User selects field/section + issue type; every request routes to BHR. BHR can send query to IT if needed.",
+        "C8": "",
+        "D8": "",
+        "E8": ""
+      }
+    },
+    {
+      "row": 9,
+      "cells": {
+        "A9": "SAVE / SUBMIT",
+        "B9": "Save & Continue saves Draft only. Final Submit sends entered/changed data for BHR review.",
+        "C9": "",
+        "D9": "",
+        "E9": ""
+      }
+    },
+    {
+      "row": 10,
+      "cells": {
+        "A10": "COMPLETENESS",
+        "B10": "Live % counts visible Yes fields only. Optional and No fields that are not triggered are excluded.",
+        "C10": "",
+        "D10": "",
+        "E10": ""
+      }
+    },
+    {
+      "row": 12,
+      "cells": {
+        "A12": "PERSONA",
+        "B12": "CURRENT STAGE",
+        "C12": "PRIMARY TALENT CARD EMPHASIS",
+        "D12": "",
+        "E12": ""
+      }
+    },
+    {
+      "row": 13,
+      "cells": {
+        "A13": "MLP 2027",
+        "B13": "Pre-join / campus; Mahindra exposure mainly through SIP",
+        "C13": "Personal + education + Class XII + campus evidence + SIP + prior work if any",
+        "F13": "",
+        "G13": "",
+        "H13": ""
+      }
+    },
+    {
+      "row": 14,
+      "cells": {
+        "A14": "MLP 2026",
+        "B14": "Rotational / stint journey inside Mahindra",
+        "C14": "Stints, learning needs, interventions, project impact, early career preferences/readiness",
+        "F14": "",
+        "G14": "",
+        "H14": ""
+      }
+    },
+    {
+      "row": 15,
+      "cells": {
+        "A15": "MLP 2024\u201325",
+        "B15": "Completed rotations; now in full-time role",
+        "C15": "Mahindra role history, impact, performance, learning journey, readiness",
+        "F15": "",
+        "G15": "",
+        "H15": ""
+      }
+    },
+    {
+      "row": 16,
+      "cells": {
+        "A16": "GMC 2019\u201323",
+        "B16": "Older programme cohorts; multiple years in system",
+        "C16": "Multiple Mahindra roles, impact, performance, development, readiness",
+        "F16": "",
+        "G16": "",
+        "H16": ""
+      }
+    },
+    {
+      "row": 17,
+      "cells": {
+        "A17": "MALT",
+        "B17": "Experienced / senior talent; may have external experience and sector rotations",
+        "C17": "Top prior companies/projects, Mahindra journey, performance, recognition, readiness",
+        "F17": "",
+        "G17": "",
+        "H17": ""
+      }
+    },
+    {
+      "row": 19,
+      "cells": {
+        "A19": "BUCKET",
+        "B19": "WHAT IT ANSWERS",
+        "C19": "COLOUR CODING",
+        "D19": "",
+        "E19": ""
+      }
+    },
+    {
+      "row": 20,
+      "cells": {
+        "A20": "Personal Details",
+        "B20": "Who is the person?",
+        "C20": "GREEN - Already available in HR Database"
+      }
+    },
+    {
+      "row": 21,
+      "cells": {
+        "A21": "Programme & Current Mahindra Details",
+        "B21": "Which programme/batch and current Mahindra context apply?",
+        "C21": "ORANGE - Source from system / API"
+      }
+    },
+    {
+      "row": 22,
+      "cells": {
+        "A22": "Education Details",
+        "B22": "What formal/campus background matters?",
+        "C22": "RED - Input required from employee / manager / HR"
+      }
+    },
+    {
+      "row": 23,
+      "cells": {
+        "A23": "Professional Certifications",
+        "B23": "What relevant additional qualifications exist?"
+      }
+    },
+    {
+      "row": 24,
+      "cells": {
+        "A24": "Prior Work Experience",
+        "B24": "What material external experience exists before Mahindra?"
+      }
+    },
+    {
+      "row": 25,
+      "cells": {
+        "A25": "Mahindra Summer Internship Project",
+        "B25": "What Mahindra exposure and outcomes came from SIP?"
+      }
+    },
+    {
+      "row": 26,
+      "cells": {
+        "A26": "Mahindra Full Time Work Experience",
+        "B26": "How has the employee grown across Mahindra roles/stints?"
+      }
+    },
+    {
+      "row": 27,
+      "cells": {
+        "A27": "Learning Needs",
+        "B27": "What capability should be developed?"
+      }
+    },
+    {
+      "row": 28,
+      "cells": {
+        "A28": "Learning Intervention & Action Tracking",
+        "B28": "What was recommended, what action happened, and what changed?"
+      }
+    },
+    {
+      "row": 29,
+      "cells": {
+        "A29": "Performance",
+        "B29": "What formal performance evidence exists?"
+      }
+    },
+    {
+      "row": 30,
+      "cells": {
+        "A30": "Strengths & Areas of Opportunity",
+        "B30": "What is the manager's current evidence-based view?"
+      }
+    },
+    {
+      "row": 31,
+      "cells": {
+        "A31": "Recognition",
+        "B31": "What individual or team/project recognition exists?"
+      }
+    },
+    {
+      "row": 32,
+      "cells": {
+        "A32": "Career Aspiration & Preferences",
+        "B32": "Where does the employee want to grow?"
+      }
+    },
+    {
+      "row": 33,
+      "cells": {
+        "A33": "Career Readiness",
+        "B33": "What could be the next role/stint and when?"
+      }
+    },
+    {
+      "row": 34,
+      "cells": {
+        "A34": "Profile Governance",
+        "B34": "Is the card current and verified?"
+      }
+    }
+  ],
+  "02_Base": [
+    {
+      "row": 1,
+      "cells": {
+        "A1": "Bucket",
+        "B1": "Field",
+        "C1": "Information (i) Icon",
+        "D1": "Design Suggestion",
+        "E1": "Example",
+        "F1": "Input",
+        "G1": "Visible To",
+        "H1": "MLP 2027",
+        "I1": "MLP 2026",
+        "J1": "MLP 2024\u201325",
+        "K1": "GMC 19\u201323",
+        "L1": "MALT"
+      }
+    },
+    {
+      "row": 2,
+      "cells": {
+        "A2": "",
+        "B2": "",
+        "C2": "",
+        "D2": "",
+        "E2": "",
+        "F2": "",
+        "G2": "",
+        "H2": "",
+        "I2": "",
+        "J2": "",
+        "K2": "",
+        "L2": ""
+      }
+    },
+    {
+      "row": 3,
+      "cells": {
+        "A3": "STATUS",
+        "B3": "Status",
+        "C3": "Current status of the employee",
+        "D3": "Dropdown; Active or Exited or Resigned or Retired or Others",
+        "E3": "Active",
+        "F3": "BHR \u2192 Group HR",
+        "G3": "Employee + Manager + BHR + Group HR",
+        "H3": "Yes",
+        "I3": "Yes",
+        "J3": "Yes",
+        "K3": "Yes",
+        "L3": "Yes"
+      }
+    },
+    {
+      "row": 4,
+      "cells": {
+        "A4": "If Not Active",
+        "B4": "Separation Date",
+        "C4": "Essential for year-wise attrition and batch attrition.",
+        "D4": "-",
+        "E4": "Resigned",
+        "F4": "",
+        "G4": "Manager + BHR + Group HR",
+        "H4": "Yes",
+        "I4": "Yes",
+        "J4": "Yes",
+        "K4": "Yes",
+        "L4": "Yes"
+      }
+    },
+    {
+      "row": 5,
+      "cells": {
+        "A5": "If Not Active",
+        "B5": "Separation Reason",
+        "C5": "Needed for Career Opportunity / Compensation / Higher Education / Location / Personal / Role Fit etc. analysis.",
+        "D5": "-",
+        "E5": "Resigned",
+        "F5": "",
+        "G5": "",
+        "H5": "Yes",
+        "I5": "Yes",
+        "J5": "Yes",
+        "K5": "Yes",
+        "L5": "Yes"
+      }
+    },
+    {
+      "row": 6,
+      "cells": {
+        "A6": "",
+        "B6": "",
+        "C6": "",
+        "D6": "",
+        "E6": "",
+        "F6": "",
+        "G6": "",
+        "H6": "",
+        "I6": "",
+        "J6": "",
+        "K6": "",
+        "L6": ""
+      }
+    },
+    {
+      "row": 7,
+      "cells": {
+        "A7": "PROFILE",
+        "B7": "",
+        "C7": "",
+        "D7": "",
+        "E7": "",
+        "F7": "",
+        "G7": "",
+        "H7": "",
+        "I7": "",
+        "J7": "",
+        "K7": "",
+        "L7": ""
+      }
+    },
+    {
+      "row": 8,
+      "cells": {
+        "A8": "Personal Details",
+        "B8": "Photograph",
+        "C8": "Current professional photograph.",
+        "D8": "Image upload; Format Standard; crop/preview.",
+        "E8": "Professional headshot",
+        "F8": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G8": "Employee + Manager + BHR + Group HR",
+        "H8": "Yes",
+        "I8": "Yes",
+        "J8": "Yes",
+        "K8": "Yes",
+        "L8": "Yes"
+      }
+    },
+    {
+      "row": 9,
+      "cells": {
+        "A9": "Personal Details",
+        "B9": "Full Name",
+        "C9": "Current official employee name.",
+        "D9": "-",
+        "E9": "Aditi Deshmukh",
+        "F9": "",
+        "G9": "",
+        "H9": "Yes",
+        "I9": "Yes",
+        "J9": "Yes",
+        "K9": "Yes",
+        "L9": "Yes"
+      }
+    },
+    {
+      "row": 10,
+      "cells": {
+        "A10": "Personal Details",
+        "B10": "Employee ID",
+        "C10": "Unique Mahindra employee identifier.",
+        "D10": "-",
+        "E10": "12345678",
+        "F10": "",
+        "G10": "",
+        "H10": "Yes",
+        "I10": "Yes",
+        "J10": "Yes",
+        "K10": "Yes",
+        "L10": "Yes"
+      }
+    },
+    {
+      "row": 11,
+      "cells": {
+        "A11": "Personal Details",
+        "B11": "Date of Birth",
+        "C11": "Official date of birth.",
+        "D11": "Date picker if manual; future dates blocked",
+        "E11": "15 Jul 2001",
+        "F11": "",
+        "G11": "",
+        "H11": "Yes",
+        "I11": "Yes",
+        "J11": "Yes",
+        "K11": "Yes",
+        "L11": "Yes"
+      }
+    },
+    {
+      "row": 12,
+      "cells": {
+        "A12": "Personal Details",
+        "B12": "Official Email ID",
+        "C12": "Current official Mahindra email address.",
+        "D12": "Email format validation",
+        "E12": "aditi.deshmukh@mahindra.com",
+        "F12": "",
+        "G12": "",
+        "H12": "Yes",
+        "I12": "Yes",
+        "J12": "Yes",
+        "K12": "Yes",
+        "L12": "Yes"
+      }
+    },
+    {
+      "row": 13,
+      "cells": {
+        "A13": "",
+        "B13": "",
+        "C13": "",
+        "D13": "",
+        "E13": "",
+        "F13": "",
+        "G13": "",
+        "H13": "",
+        "I13": "",
+        "J13": "",
+        "K13": "",
+        "L13": ""
+      }
+    },
+    {
+      "row": 14,
+      "cells": {
+        "A14": "PROGRAMME & CURRENT MAHINDRA DETAILS",
+        "B14": "",
+        "C14": "",
+        "D14": "",
+        "E14": "",
+        "F14": "",
+        "G14": "",
+        "H14": "",
+        "I14": "",
+        "J14": "",
+        "K14": "",
+        "L14": ""
+      }
+    },
+    {
+      "row": 15,
+      "cells": {
+        "A15": "Programme Details",
+        "B15": "Programme Name",
+        "C15": "Current talent programme.",
+        "D15": "Dropdown: MLP / GMC / MALT.",
+        "E15": "MLP",
+        "F15": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G15": "Employee + Manager + BHR + Group HR",
+        "H15": "Yes",
+        "I15": "Yes",
+        "J15": "Yes",
+        "K15": "Yes",
+        "L15": "Yes"
+      }
+    },
+    {
+      "row": 16,
+      "cells": {
+        "A16": "Programme Details",
+        "B16": "Batch Year",
+        "C16": "Official programme batch/cohort year.",
+        "D16": "Year dropdown.",
+        "E16": "2027",
+        "F16": "",
+        "G16": "",
+        "H16": "Yes",
+        "I16": "Yes",
+        "J16": "Yes",
+        "K16": "Yes",
+        "L16": "Yes"
+      }
+    },
+    {
+      "row": 17,
+      "cells": {
+        "A17": "Programme Details",
+        "B17": "Assigned Mentor Name",
+        "C17": "Programme mentor assigned.",
+        "D17": "Searchable person list + manual entry. Historical value retained if mentor changes.",
+        "E17": "Rajesh Kumar",
+        "F17": "",
+        "G17": "",
+        "H17": "Yes",
+        "I17": "Optional",
+        "J17": "No",
+        "K17": "No",
+        "L17": "No"
+      }
+    },
+    {
+      "row": 18,
+      "cells": {
+        "A18": "Programme Details",
+        "B18": "Assigned Mentor Email",
+        "C18": "Official email ID of the assigned mentor.",
+        "D18": "Email field; show only when Assigned Mentor Name exists.",
+        "E18": "rajesh.kumar@mahindra.com",
+        "F18": "",
+        "G18": "",
+        "H18": "Yes",
+        "I18": "Optional",
+        "J18": "No",
+        "K18": "No",
+        "L18": "No"
+      }
+    },
+    {
+      "row": 19,
+      "cells": {
+        "A19": "Current Mahindra Details",
+        "B19": "Sector",
+        "C19": "Current Mahindra sector.",
+        "D19": "Dropdown from approved sector list + Other.",
+        "E19": "Farm",
+        "F19": "",
+        "G19": "",
+        "H19": "Yes",
+        "I19": "Yes",
+        "J19": "Yes",
+        "K19": "Yes",
+        "L19": "Yes"
+      }
+    },
+    {
+      "row": 20,
+      "cells": {
+        "A20": "Current Mahindra Details",
+        "B20": "Business",
+        "C20": "Current Mahindra business.",
+        "D20": "Dependent dropdown linked to Sector + Other.",
+        "E20": "Mahindra & Mahindra Ltd.",
+        "F20": "",
+        "G20": "",
+        "H20": "Yes",
+        "I20": "Yes",
+        "J20": "Yes",
+        "K20": "Yes",
+        "L20": "Yes"
+      }
+    },
+    {
+      "row": 21,
+      "cells": {
+        "A21": "Current Mahindra Details",
+        "B21": "Designation",
+        "C21": "Current official designation title.",
+        "D21": "Short text maximum limit 50 characters; use formal role title only.",
+        "E21": "Area Sales Manager",
+        "F21": "",
+        "G21": "",
+        "H21": "Yes",
+        "I21": "Yes",
+        "J21": "Yes",
+        "K21": "Yes",
+        "L21": "Yes"
+      }
+    },
+    {
+      "row": 22,
+      "cells": {
+        "A22": "Current Mahindra Details",
+        "B22": "Grade",
+        "C22": "Current official grade / level.",
+        "D22": "Dropdown from approved grade/level list.",
+        "E22": "Managerial Band",
+        "F22": "",
+        "G22": "",
+        "H22": "Yes",
+        "I22": "Yes",
+        "J22": "Yes",
+        "K22": "Yes",
+        "L22": "Yes"
+      }
+    },
+    {
+      "row": 23,
+      "cells": {
+        "A23": "Current Mahindra Details",
+        "B23": "Function",
+        "C23": "Current primary function.",
+        "D23": "Dropdown from approved function list + Other.",
+        "E23": "Sales & Marketing",
+        "F23": "",
+        "G23": "",
+        "H23": "Yes",
+        "I23": "Yes",
+        "J23": "Yes",
+        "K23": "Yes",
+        "L23": "Yes"
+      }
+    },
+    {
+      "row": 24,
+      "cells": {
+        "A24": "Current Mahindra Details",
+        "B24": "Work Location",
+        "C24": "Current official work/base location.",
+        "D24": "Searchable location list + Other.",
+        "E24": "Pune",
+        "F24": "",
+        "G24": "",
+        "H24": "Yes",
+        "I24": "Yes",
+        "J24": "Yes",
+        "K24": "Yes",
+        "L24": "Yes"
+      }
+    },
+    {
+      "row": 25,
+      "cells": {
+        "A25": "Current Mahindra Details",
+        "B25": "Date of Joining Mahindra",
+        "C25": "Original date of joining Mahindra.",
+        "D25": "Date field; used for tenure calculation.",
+        "E25": "01 Apr 2024",
+        "F25": "",
+        "G25": "",
+        "H25": "Yes",
+        "I25": "Yes",
+        "J25": "Yes",
+        "K25": "Yes",
+        "L25": "Yes"
+      }
+    },
+    {
+      "row": 26,
+      "cells": {
+        "A26": "Current Mahindra Details",
+        "B26": "Total Mahindra Tenure",
+        "C26": "Completed tenure in Mahindra.",
+        "D26": "Portal-calculated Derived from verified Date of Joining till this month.; display Years + Months.",
+        "E26": "2 years 5 months",
+        "F26": "Automatic Portal Calculation from verified DOJ",
+        "G26": "",
+        "H26": "Yes",
+        "I26": "Yes",
+        "J26": "Yes",
+        "K26": "Yes",
+        "L26": "Yes"
+      }
+    },
+    {
+      "row": 27,
+      "cells": {
+        "A27": "Current Mahindra Details",
+        "B27": "Current Role Tenure",
+        "C27": "Time spent in current Mahindra role/stint.",
+        "D27": "Portal-calculated Derived from verified current stint period.; display Years + Months.",
+        "E27": "8 months",
+        "F27": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G27": "",
+        "H27": "Yes",
+        "I27": "Yes",
+        "J27": "Yes",
+        "K27": "Yes",
+        "L27": "Yes"
+      }
+    },
+    {
+      "row": 28,
+      "cells": {
+        "A28": "Current Mahindra Details",
+        "B28": "Reporting Manager Name",
+        "C28": "Current reporting manager.",
+        "D28": "Searchable person list + manual fallback.",
+        "E28": "Kunal Shah",
+        "F28": "",
+        "G28": "",
+        "H28": "Yes",
+        "I28": "Yes",
+        "J28": "Yes",
+        "K28": "Yes",
+        "L28": "Yes"
+      }
+    },
+    {
+      "row": 29,
+      "cells": {
+        "A29": "Current Mahindra Details",
+        "B29": "Reporting Manager Email",
+        "C29": "Official email ID of current reporting manager.",
+        "D29": "Email field linked to Reporting Manager Name or manual fallback.",
+        "E29": "kunal.shah@mahindra.com",
+        "F29": "",
+        "G29": "",
+        "H29": "Yes",
+        "I29": "Yes",
+        "J29": "Yes",
+        "K29": "Yes",
+        "L29": "Yes"
+      }
+    },
+    {
+      "row": 30,
+      "cells": {
+        "A30": "Current Mahindra Details",
+        "B30": "Sector HR Name",
+        "C30": "Current sector-level HR name.",
+        "D30": "Person name field",
+        "E30": "Priya Mehta",
+        "F30": "System/API \u2192  BHR \u2192 Group HR",
+        "G30": "",
+        "H30": "Yes",
+        "I30": "Yes",
+        "J30": "Yes",
+        "K30": "Yes",
+        "L30": "Yes"
+      }
+    },
+    {
+      "row": 31,
+      "cells": {
+        "A31": "Current Mahindra Details",
+        "B31": "Sector HR Mail",
+        "C31": "Current sector-level HR mail.",
+        "D31": "Person mail field",
+        "E31": "kunal.shah@mahindra.com",
+        "F31": "",
+        "G31": "",
+        "H31": "Yes",
+        "I31": "Yes",
+        "J31": "Yes",
+        "K31": "Yes",
+        "L31": "Yes"
+      }
+    },
+    {
+      "row": 32,
+      "cells": {
+        "A32": "Current Mahindra Details",
+        "B32": "Current BHR Name",
+        "C32": "Current Business HR name",
+        "D32": "Person name field",
+        "E32": "Megha Patil",
+        "F32": "",
+        "G32": "",
+        "H32": "Yes",
+        "I32": "Yes",
+        "J32": "Yes",
+        "K32": "Yes",
+        "L32": "Yes"
+      }
+    },
+    {
+      "row": 33,
+      "cells": {
+        "A33": "Current Mahindra Details",
+        "B33": "Current BHR Mail",
+        "C33": "Current Business HR mail",
+        "D33": "Person mail field",
+        "E33": "kunal.shah@mahindra.com",
+        "F33": "",
+        "G33": "",
+        "H33": "Yes",
+        "I33": "Yes",
+        "J33": "Yes",
+        "K33": "Yes",
+        "L33": "Yes"
+      }
+    },
+    {
+      "row": 34,
+      "cells": {
+        "A34": "",
+        "B34": "",
+        "C34": "",
+        "D34": "",
+        "E34": "",
+        "F34": "",
+        "G34": "",
+        "H34": "",
+        "I34": "",
+        "J34": "",
+        "K34": "",
+        "L34": ""
+      }
+    },
+    {
+      "row": 35,
+      "cells": {
+        "A35": "EDUCATION DETAILS",
+        "B35": "",
+        "C35": "",
+        "D35": "",
+        "E35": "",
+        "F35": "",
+        "G35": "",
+        "H35": "",
+        "I35": "",
+        "J35": "",
+        "K35": "",
+        "L35": ""
+      }
+    },
+    {
+      "row": 36,
+      "cells": {
+        "A36": "Postgraduation (PG)",
+        "B36": "Has Postgraduate Qualification?",
+        "C36": "Whether the employee has a postgraduate qualification.",
+        "D36": "Yes / No gate. If No, hide all remaining PG fields and exclude them from completeness.",
+        "E36": "Yes",
+        "F36": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G36": "Employee + Manager + BHR + Group HR",
+        "H36": "Yes",
+        "I36": "Yes",
+        "J36": "Yes",
+        "K36": "Optional",
+        "L36": "Optional"
+      }
+    },
+    {
+      "row": 37,
+      "cells": {
+        "A37": "Postgraduation (PG)",
+        "B37": "Degree Name",
+        "C37": "Postgraduate qualification name.",
+        "D37": "Repeatable record; degree dropdown + Other; maximum 2.",
+        "E37": "MBA",
+        "F37": "",
+        "G37": "",
+        "H37": "Yes",
+        "I37": "Yes",
+        "J37": "Yes",
+        "K37": "Optional",
+        "L37": "Optional"
+      }
+    },
+    {
+      "row": 38,
+      "cells": {
+        "A38": "Postgraduation (PG)",
+        "B38": "Campus",
+        "C38": "Institution / campus for postgraduate qualification.",
+        "D38": "Searchable institution list + Other.",
+        "E38": "IIM Bangalore",
+        "F38": "",
+        "G38": "",
+        "H38": "Yes",
+        "I38": "Yes",
+        "J38": "Yes",
+        "K38": "Optional",
+        "L38": "Optional"
+      }
+    },
+    {
+      "row": 39,
+      "cells": {
+        "A39": "Postgraduation (PG)",
+        "B39": "Specialisation",
+        "C39": "Major specialisation(s) in PG.",
+        "D39": "Multi-select from controlled list + Other; maximum 2.",
+        "E39": "Strategy; Finance",
+        "F39": "",
+        "G39": "",
+        "H39": "Yes",
+        "I39": "Yes",
+        "J39": "Yes",
+        "K39": "Optional",
+        "L39": "Optional"
+      }
+    },
+    {
+      "row": 40,
+      "cells": {
+        "A40": "Postgraduation (PG)",
+        "B40": "Period",
+        "C40": "PG study period.",
+        "D40": "Start Year + End/Expected Year; validate End \u2265 Start.",
+        "E40": "2024\u20132026",
+        "F40": "",
+        "G40": "",
+        "H40": "Yes",
+        "I40": "Yes",
+        "J40": "Yes",
+        "K40": "Optional",
+        "L40": "Optional"
+      }
+    },
+    {
+      "row": 41,
+      "cells": {
+        "A41": "Postgraduation (PG)",
+        "B41": "Academic Score",
+        "C41": "PG academic score where early-career comparison is useful.",
+        "D41": "Store Score Type + Value + Scale. Example: CGPA 8.3/10, Percentage 76/100, or Grade with named scale.",
+        "E41": "8.3/10 CGPA",
+        "F41": "",
+        "G41": "",
+        "H41": "Yes",
+        "I41": "Optional",
+        "J41": "No",
+        "K41": "No",
+        "L41": "No"
+      }
+    },
+    {
+      "row": 42,
+      "cells": {
+        "A42": "PG Highlight",
+        "B42": "Highlight Category",
+        "C42": "Category of a material postgraduate highlight.",
+        "D42": "Repeatable record; maximum 2. Dropdown: Leadership / Competition / Research / Entrepreneurship / Internship / Social Impact / Other.",
+        "E42": "Research",
+        "F42": "Employee \u2192 BHR \u2192 Group HR",
+        "G42": "",
+        "H42": "Optional",
+        "I42": "Optional",
+        "J42": "No",
+        "K42": "No",
+        "L42": "No"
+      }
+    },
+    {
+      "row": 43,
+      "cells": {
+        "A43": "PG Highlight",
+        "B43": "Highlight Title",
+        "C43": "Short factual name of the activity/achievement.",
+        "D43": "Short text; maximum 120 characters. Avoid adjectives such as excellent, outstanding, best unless part of an official award title.",
+        "E43": "Student research paper on rural distribution",
+        "F43": "",
+        "G43": "",
+        "H43": "Optional",
+        "I43": "Optional",
+        "J43": "No",
+        "K43": "No",
+        "L43": "No"
+      }
+    },
+    {
+      "row": 44,
+      "cells": {
+        "A44": "PG Highlight",
+        "B44": "Level",
+        "C44": "Level at which the highlight occurred.",
+        "D44": "Dropdown: Institute / City / State / National / International / Professional.",
+        "E44": "National",
+        "F44": "",
+        "G44": "",
+        "H44": "Optional",
+        "I44": "Optional",
+        "J44": "No",
+        "K44": "No",
+        "L44": "No"
+      }
+    },
+    {
+      "row": 45,
+      "cells": {
+        "A45": "PG Highlight",
+        "B45": "Outcome",
+        "C45": "Objective outcome that proves the highlight.",
+        "D45": "State a verifiable result: rank, selection, publication, funding, quantified result, certificate or formal recognition. No generic learning statement.",
+        "E45": "Paper selected for national student conference",
+        "F45": "",
+        "G45": "",
+        "H45": "Optional",
+        "I45": "Optional",
+        "J45": "No",
+        "K45": "No",
+        "L45": "No"
+      }
+    },
+    {
+      "row": 46,
+      "cells": {
+        "A46": "Undergraduation (UG)",
+        "B46": "Degree Name",
+        "C46": "Undergraduate qualification name.",
+        "D46": "Repeatable record; degree dropdown + Other; maximum 2.",
+        "E46": "B.Tech",
+        "F46": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G46": "",
+        "H46": "Yes",
+        "I46": "Yes",
+        "J46": "Yes",
+        "K46": "Optional",
+        "L46": "Optional"
+      }
+    },
+    {
+      "row": 47,
+      "cells": {
+        "A47": "Undergraduation (UG)",
+        "B47": "Campus",
+        "C47": "Institution / campus for undergraduate qualification.",
+        "D47": "Searchable institution list + Other.",
+        "E47": "VJTI Mumbai",
+        "F47": "",
+        "G47": "",
+        "H47": "Yes",
+        "I47": "Yes",
+        "J47": "Yes",
+        "K47": "Optional",
+        "L47": "Optional"
+      }
+    },
+    {
+      "row": 48,
+      "cells": {
+        "A48": "Undergraduation (UG)",
+        "B48": "Specialisation",
+        "C48": "Major/specialisation within UG.",
+        "D48": "Multi-select from controlled list + Other; maximum 2.",
+        "E48": "Production Engineering",
+        "F48": "",
+        "G48": "",
+        "H48": "Yes",
+        "I48": "Yes",
+        "J48": "Yes",
+        "K48": "Optional",
+        "L48": "Optional"
+      }
+    },
+    {
+      "row": 49,
+      "cells": {
+        "A49": "Undergraduation (UG)",
+        "B49": "Period",
+        "C49": "UG study period.",
+        "D49": "Start Year + End Year; validate End \u2265 Start.",
+        "E49": "2019\u20132023",
+        "F49": "",
+        "G49": "",
+        "H49": "Yes",
+        "I49": "Yes",
+        "J49": "Yes",
+        "K49": "Optional",
+        "L49": "Optional"
+      }
+    },
+    {
+      "row": 50,
+      "cells": {
+        "A50": "Undergraduation (UG)",
+        "B50": "Academic Score",
+        "C50": "UG academic score where early-career comparison is useful.",
+        "D50": "Store Score Type + Value + Scale. Example: CGPA 7.86/10 or Percentage 76/100.",
+        "E50": "7.86/10 CGPA",
+        "F50": "",
+        "G50": "",
+        "H50": "Yes",
+        "I50": "Optional",
+        "J50": "No",
+        "K50": "No",
+        "L50": "No"
+      }
+    },
+    {
+      "row": 51,
+      "cells": {
+        "A51": "UG Highlight",
+        "B51": "Highlight Category",
+        "C51": "Category of a material undergraduate highlight.",
+        "D51": "Repeatable record; maximum 2. Dropdown: Leadership / Competition / Research / Entrepreneurship / Internship / Social Impact / Other.",
+        "E51": "Competition",
+        "F51": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G51": "",
+        "H51": "Optional",
+        "I51": "Optional",
+        "J51": "No",
+        "K51": "No",
+        "L51": "No"
+      }
+    },
+    {
+      "row": 52,
+      "cells": {
+        "A52": "UG Highlight",
+        "B52": "Highlight Title",
+        "C52": "Short factual name of the activity/achievement.",
+        "D52": "Short text; maximum 120 characters.",
+        "E52": "SAE BAJA EV competition",
+        "F52": "",
+        "G52": "",
+        "H52": "Optional",
+        "I52": "Optional",
+        "J52": "No",
+        "K52": "No",
+        "L52": "No"
+      }
+    },
+    {
+      "row": 53,
+      "cells": {
+        "A53": "UG Highlight",
+        "B53": "Level",
+        "C53": "Level at which the highlight occurred.",
+        "D53": "Dropdown: Institute / City / State / National / International / Professional.",
+        "E53": "National",
+        "F53": "",
+        "G53": "",
+        "H53": "Optional",
+        "I53": "Optional",
+        "J53": "No",
+        "K53": "No",
+        "L53": "No"
+      }
+    },
+    {
+      "row": 54,
+      "cells": {
+        "A54": "UG Highlight",
+        "B54": "Outcome",
+        "C54": "Objective outcome that proves the highlight.",
+        "D54": "State verifiable result: rank, selection, publication, prize, quantified result, certificate or formal recognition.",
+        "E54": "1st in category; \u20b920,000 cash prize",
+        "F54": "",
+        "G54": "",
+        "H54": "Optional",
+        "I54": "Optional",
+        "J54": "No",
+        "K54": "No",
+        "L54": "No"
+      }
+    },
+    {
+      "row": 55,
+      "cells": {
+        "A55": "Class XII",
+        "B55": "Board",
+        "C55": "Class XII board.",
+        "D55": "Text/search field.",
+        "E55": "CBSE",
+        "F55": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G55": "",
+        "H55": "Yes",
+        "I55": "Yes",
+        "J55": "Yes",
+        "K55": "Yes",
+        "L55": "Yes"
+      }
+    },
+    {
+      "row": 56,
+      "cells": {
+        "A56": "Class XII",
+        "B56": "School",
+        "C56": "Class XII school name.",
+        "D56": "Text/search field. Keep only for personas where campus academic detail remains useful.",
+        "E56": "ABC School",
+        "F56": "",
+        "G56": "",
+        "H56": "Yes",
+        "I56": "Yes",
+        "J56": "Yes",
+        "K56": "Yes",
+        "L56": "Yes"
+      }
+    },
+    {
+      "row": 57,
+      "cells": {
+        "A57": "Class XII",
+        "B57": "Year",
+        "C57": "Class XII completion year.",
+        "D57": "4-digit year dropdown.",
+        "E57": "2019",
+        "F57": "",
+        "G57": "",
+        "H57": "Yes",
+        "I57": "Yes",
+        "J57": "Yes",
+        "K57": "Yes",
+        "L57": "Yes"
+      }
+    },
+    {
+      "row": 58,
+      "cells": {
+        "A58": "Class XII",
+        "B58": "Academic Score",
+        "C58": "Class XII academic score.",
+        "D58": "Store Score Type + Value + Scale. Example: Percentage 86.4/100 or Grade A on stated scale. Never store a bare number without its scale.",
+        "E58": "86.4/100",
+        "F58": "",
+        "G58": "",
+        "H58": "Yes",
+        "I58": "Yes",
+        "J58": "Yes",
+        "K58": "Yes",
+        "L58": "Yes"
+      }
+    },
+    {
+      "row": 59,
+      "cells": {
+        "A59": "",
+        "B59": "",
+        "C59": "",
+        "D59": "",
+        "E59": "",
+        "F59": "",
+        "G59": "",
+        "H59": "",
+        "I59": "",
+        "J59": "",
+        "K59": "",
+        "L59": ""
+      }
+    },
+    {
+      "row": 60,
+      "cells": {
+        "A60": "PROFESSIONAL CERTIFICATIONS",
+        "B60": "",
+        "C60": "",
+        "D60": "",
+        "E60": "",
+        "F60": "",
+        "G60": "",
+        "H60": "",
+        "I60": "",
+        "J60": "",
+        "K60": "",
+        "L60": ""
+      }
+    },
+    {
+      "row": 61,
+      "cells": {
+        "A61": "Professional Certifications",
+        "B61": "Has Professional Certification?",
+        "C61": "Whether the employee has a relevant professional certification/qualification.",
+        "D61": "Yes / No gate. If No, hide detail fields.",
+        "E61": "Yes",
+        "F61": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G61": "Employee + Manager + BHR + Group HR",
+        "H61": "Optional",
+        "I61": "Optional",
+        "J61": "Optional",
+        "K61": "Optional",
+        "L61": "Optional"
+      }
+    },
+    {
+      "row": 62,
+      "cells": {
+        "A62": "Professional Certifications",
+        "B62": "Certification  Name",
+        "C62": "Name of each relevant certification.",
+        "D62": "Repeatable; short text/search list; newest first.",
+        "E62": "Six Sigma Yellow Belt",
+        "F62": "",
+        "G62": "",
+        "H62": "Optional",
+        "I62": "Optional",
+        "J62": "Optional",
+        "K62": "Optional",
+        "L62": "Optional"
+      }
+    },
+    {
+      "row": 63,
+      "cells": {
+        "A63": "Professional Certifications",
+        "B63": "Issuing Organisation",
+        "C63": "Organisation that issued the certification.",
+        "D63": "Searchable organisation list + Other.",
+        "E63": "ASQ",
+        "F63": "",
+        "G63": "",
+        "H63": "Optional",
+        "I63": "Optional",
+        "J63": "Optional",
+        "K63": "Optional",
+        "L63": "Optional"
+      }
+    },
+    {
+      "row": 64,
+      "cells": {
+        "A64": "Professional Certifications",
+        "B64": "Completion Year",
+        "C64": "Year completed.",
+        "D64": "4-digit year dropdown.",
+        "E64": "2026",
+        "F64": "",
+        "G64": "",
+        "H64": "Optional",
+        "I64": "Optional",
+        "J64": "Optional",
+        "K64": "Optional",
+        "L64": "Optional"
+      }
+    },
+    {
+      "row": 65,
+      "cells": {
+        "A65": "Professional Certifications",
+        "B65": "Valid Until",
+        "C65": "Expiry/validity date where applicable.",
+        "D65": "Date; leave blank for non-expiring certification.",
+        "E65": "31 Dec 2028",
+        "F65": "",
+        "G65": "",
+        "H65": "Optional",
+        "I65": "Optional",
+        "J65": "Optional",
+        "K65": "Optional",
+        "L65": "Optional"
+      }
+    },
+    {
+      "row": 66,
+      "cells": {
+        "A66": "",
+        "B66": "",
+        "C66": "",
+        "D66": "",
+        "E66": "",
+        "F66": "",
+        "G66": "",
+        "H66": "",
+        "I66": "",
+        "J66": "",
+        "K66": "",
+        "L66": ""
+      }
+    },
+    {
+      "row": 67,
+      "cells": {
+        "A67": "PRIOR WORK EXPERIENCE",
+        "B67": "",
+        "C67": "",
+        "D67": "",
+        "E67": "",
+        "F67": "",
+        "G67": "",
+        "H67": "",
+        "I67": "",
+        "J67": "",
+        "K67": "",
+        "L67": ""
+      }
+    },
+    {
+      "row": 68,
+      "cells": {
+        "A68": "Prior Work Experience",
+        "B68": "Has Prior Work Experience?",
+        "C68": "Whether there is full-time work experience before Mahindra.",
+        "D68": "Yes / No gate. If No, hide remaining Prior Work fields.",
+        "E68": "Yes",
+        "F68": "Employee \u2192 BHR \u2192 Group HR",
+        "G68": "Employee + Manager + BHR + Group HR",
+        "H68": "Yes",
+        "I68": "Yes",
+        "J68": "Yes",
+        "K68": "Yes",
+        "L68": "Yes"
+      }
+    },
+    {
+      "row": 69,
+      "cells": {
+        "A69": "Prior Work Experience",
+        "B69": "Total Prior Full-time Experience",
+        "C69": "Total full-time experience before Mahindra.",
+        "D69": "Numeric Years + Months; months 0\u201311.",
+        "E69": "2 years 4 months",
+        "F69": "",
+        "G69": "",
+        "H69": "Yes",
+        "I69": "Yes",
+        "J69": "Yes",
+        "K69": "Yes",
+        "L69": "Yes"
+      }
+    },
+    {
+      "row": 70,
+      "cells": {
+        "A70": "Prior Work Experience",
+        "B70": "Employer Name",
+        "C70": "Name of prior employer.",
+        "D70": "Repeatable employer record; maximum 3 most relevant/recent employers; newest first.",
+        "E70": "ABC Ltd.",
+        "F70": "",
+        "G70": "",
+        "H70": "Yes",
+        "I70": "Yes",
+        "J70": "Yes",
+        "K70": "Yes",
+        "L70": "Yes"
+      }
+    },
+    {
+      "row": 71,
+      "cells": {
+        "A71": "Prior Work Experience",
+        "B71": "Role Title",
+        "C71": "Formal role title held with the employer.",
+        "D71": "Short text within each employer record.",
+        "E71": "Business Analyst",
+        "F71": "",
+        "G71": "",
+        "H71": "Yes",
+        "I71": "Yes",
+        "J71": "Yes",
+        "K71": "Yes",
+        "L71": "Yes"
+      }
+    },
+    {
+      "row": 72,
+      "cells": {
+        "A72": "Prior Work Experience",
+        "B72": "Location",
+        "C72": "Primary work location for the role.",
+        "D72": "Searchable location list + Other.",
+        "E72": "Mumbai",
+        "F72": "",
+        "G72": "",
+        "H72": "Yes",
+        "I72": "Yes",
+        "J72": "Yes",
+        "K72": "Yes",
+        "L72": "Yes"
+      }
+    },
+    {
+      "row": 73,
+      "cells": {
+        "A73": "Prior Work Experience",
+        "B73": "Employment Period",
+        "C73": "Start and end period of the role.",
+        "D73": "Start Month/Year + End Month/Year; validate End \u2265 Start.",
+        "E73": "Jul 2022\u2013Mar 2024",
+        "F73": "",
+        "G73": "",
+        "H73": "Yes",
+        "I73": "Yes",
+        "J73": "Yes",
+        "K73": "Yes",
+        "L73": "Yes"
+      }
+    },
+    {
+      "row": 74,
+      "cells": {
+        "A74": "Prior Work Experience",
+        "B74": "Domain / Business Knowledge Areas",
+        "C74": "Key domain/business knowledge gained in the role.",
+        "D74": "Controlled multi-select tags + Other; maximum 3.",
+        "E74": "Retail Banking; Analytics",
+        "F74": "",
+        "G74": "",
+        "H74": "Yes",
+        "I74": "Yes",
+        "J74": "Yes",
+        "K74": "Yes",
+        "L74": "Yes"
+      }
+    },
+    {
+      "row": 75,
+      "cells": {
+        "A75": "Prior Work Experience",
+        "B75": "Responsibility Area(s)",
+        "C75": "The main responsibility areas owned in the role.",
+        "D75": "Select maximum 3 controlled areas from the function-specific responsibility library + Other. Do not write a job-description paragraph.",
+        "E75": "Business reporting; stakeholder management",
+        "F75": "",
+        "G75": "",
+        "H75": "Yes",
+        "I75": "Yes",
+        "J75": "Yes",
+        "K75": "Yes",
+        "L75": "Yes"
+      }
+    },
+    {
+      "row": 76,
+      "cells": {
+        "A76": "Prior Work Project",
+        "B76": "Project Title",
+        "C76": "Name of a material project/initiative from the employer.",
+        "D76": "Repeatable; maximum 2 per employer. Add STAR fields only when a project is added.",
+        "E76": "Monthly sales reporting automation",
+        "F76": "",
+        "G76": "",
+        "H76": "Yes",
+        "I76": "Yes",
+        "J76": "Yes",
+        "K76": "Yes",
+        "L76": "Yes"
+      }
+    },
+    {
+      "row": 77,
+      "cells": {
+        "A77": "Prior Work Project",
+        "B77": "STAR \u2013 Situation",
+        "C77": "The factual context/problem before the project started.",
+        "D77": "1\u20132 sentences; state baseline/problem only. No action or result here.",
+        "E77": "Monthly reporting took 5 working days and used 12 manual files.",
+        "F77": "",
+        "G77": "",
+        "H77": "Yes",
+        "I77": "Yes",
+        "J77": "Yes",
+        "K77": "Yes",
+        "L77": "Yes"
+      }
+    },
+    {
+      "row": 78,
+      "cells": {
+        "A78": "Prior Work Project",
+        "B78": "STAR \u2013 Task",
+        "C78": "The employee's specific objective/accountability.",
+        "D78": "One concise statement beginning with the objective/ownership.",
+        "E78": "Reduce reporting turnaround without reducing data accuracy.",
+        "F78": "",
+        "G78": "",
+        "H78": "Yes",
+        "I78": "Yes",
+        "J78": "Yes",
+        "K78": "Yes",
+        "L78": "Yes"
+      }
+    },
+    {
+      "row": 79,
+      "cells": {
+        "A79": "Prior Work Project",
+        "B79": "STAR \u2013 Action",
+        "C79": "The employee's own material actions.",
+        "D79": "Maximum 3 actions; use action verbs; separate personal contribution from team activity.",
+        "E79": "Standardised inputs, automated consolidation and built exception checks.",
+        "F79": "",
+        "G79": "",
+        "H79": "Yes",
+        "I79": "Yes",
+        "J79": "Yes",
+        "K79": "Yes",
+        "L79": "Yes"
+      }
+    },
+    {
+      "row": 80,
+      "cells": {
+        "A80": "Prior Work Project",
+        "B80": "STAR \u2013 Result",
+        "C80": "The verified result attributable to the project.",
+        "D80": "State outcome before learning. Quantify where possible and link to metric fields below.",
+        "E80": "Reporting turnaround reduced from 5 days to 2 days.",
+        "F80": "",
+        "G80": "",
+        "H80": "Yes",
+        "I80": "Yes",
+        "J80": "Yes",
+        "K80": "Yes",
+        "L80": "Yes"
+      }
+    },
+    {
+      "row": 81,
+      "cells": {
+        "A81": "",
+        "B81": "",
+        "C81": "",
+        "D81": "",
+        "E81": "",
+        "F81": "",
+        "G81": "",
+        "H81": "",
+        "I81": "",
+        "J81": "",
+        "K81": "",
+        "L81": ""
+      }
+    },
+    {
+      "row": 82,
+      "cells": {
+        "A82": "MAHINDRA SUMMER INTERNSHIP PROJECT",
+        "B82": "",
+        "C82": "",
+        "D82": "",
+        "E82": "",
+        "F82": "",
+        "G82": "",
+        "H82": "",
+        "I82": "",
+        "J82": "",
+        "K82": "",
+        "L82": ""
+      }
+    },
+    {
+      "row": 83,
+      "cells": {
+        "A83": "Mahindra Summer Internship Project",
+        "B83": "SIP Sector",
+        "C83": "Sector of the Summer Internship Project.",
+        "D83": "Dropdown from approved sector list + Other.",
+        "E83": "Automotive",
+        "F83": "Employee \u2192 BHR \u2192 Group HR",
+        "G83": "Employee + Manager + BHR + Group HR",
+        "H83": "Yes",
+        "I83": "Optional",
+        "J83": "No",
+        "K83": "No",
+        "L83": "No"
+      }
+    },
+    {
+      "row": 84,
+      "cells": {
+        "A84": "Mahindra Summer Internship Project",
+        "B84": "SIP Business",
+        "C84": "Business/entity where SIP was completed.",
+        "D84": "Dependent dropdown linked to SIP Sector + Other.",
+        "E84": "Auto Division",
+        "F84": "",
+        "G84": "",
+        "H84": "Yes",
+        "I84": "Optional",
+        "J84": "No",
+        "K84": "No",
+        "L84": "No"
+      }
+    },
+    {
+      "row": 85,
+      "cells": {
+        "A85": "Mahindra Summer Internship Project",
+        "B85": "SIP Function",
+        "C85": "Function of the SIP.",
+        "D85": "Dropdown from approved function list + Other.",
+        "E85": "Strategy",
+        "F85": "",
+        "G85": "",
+        "H85": "Yes",
+        "I85": "Optional",
+        "J85": "No",
+        "K85": "No",
+        "L85": "No"
+      }
+    },
+    {
+      "row": 86,
+      "cells": {
+        "A86": "Mahindra Summer Internship Project",
+        "B86": "SIP Location",
+        "C86": "Primary SIP location.",
+        "D86": "Searchable location + Other.",
+        "E86": "Jaipur",
+        "F86": "",
+        "G86": "",
+        "H86": "Yes",
+        "I86": "Optional",
+        "J86": "No",
+        "K86": "No",
+        "L86": "No"
+      }
+    },
+    {
+      "row": 87,
+      "cells": {
+        "A87": "Mahindra Summer Internship Project",
+        "B87": "SIP Period",
+        "C87": "SIP start and end period.",
+        "D87": "Start Month/Year + End Month/Year; validate End \u2265 Start.",
+        "E87": "Apr 2026\u2013May 2026",
+        "F87": "",
+        "G87": "",
+        "H87": "Yes",
+        "I87": "Optional",
+        "J87": "No",
+        "K87": "No",
+        "L87": "No"
+      }
+    },
+    {
+      "row": 88,
+      "cells": {
+        "A88": "Mahindra Summer Internship Project",
+        "B88": "SIP Manager",
+        "C88": "Day-to-day project/line manager.",
+        "D88": "Searchable person field + manual fallback.",
+        "E88": "Rohan Mehta",
+        "F88": "",
+        "G88": "",
+        "H88": "Yes",
+        "I88": "Optional",
+        "J88": "No",
+        "K88": "No",
+        "L88": "No"
+      }
+    },
+    {
+      "row": 89,
+      "cells": {
+        "A89": "Mahindra Summer Internship Project",
+        "B89": "SIP Mentor",
+        "C89": "Mentor/Future Shaper assigned during SIP, where applicable.",
+        "D89": "Searchable person field; allow Same as SIP Manager where valid.",
+        "E89": "Neha Sharma",
+        "F89": "",
+        "G89": "",
+        "H89": "Yes",
+        "I89": "Optional",
+        "J89": "No",
+        "K89": "No",
+        "L89": "No"
+      }
+    },
+    {
+      "row": 90,
+      "cells": {
+        "A90": "SIP Project Evidence",
+        "B90": "Project Title",
+        "C90": "Approved SIP project title/problem statement.",
+        "D90": "One project record; short text; use approved title where available.",
+        "E90": "Dealer productivity diagnostic",
+        "F90": "",
+        "G90": "",
+        "H90": "Yes",
+        "I90": "Optional",
+        "J90": "No",
+        "K90": "No",
+        "L90": "No"
+      }
+    },
+    {
+      "row": 91,
+      "cells": {
+        "A91": "SIP Project Evidence",
+        "B91": "STARL \u2013 Situation",
+        "C91": "The factual business context/problem addressed by SIP.",
+        "D91": "1\u20132 sentences; baseline/problem only.",
+        "E91": "Dealer funnel conversion was inconsistent across locations.",
+        "F91": "",
+        "G91": "",
+        "H91": "Yes",
+        "I91": "Optional",
+        "J91": "No",
+        "K91": "No",
+        "L91": "No"
+      }
+    },
+    {
+      "row": 92,
+      "cells": {
+        "A92": "SIP Project Evidence",
+        "B92": "STARL \u2013 Task",
+        "C92": "The specific SIP objective/accountability.",
+        "D92": "One concise objective statement.",
+        "E92": "Identify funnel leakages and propose a scalable review mechanism.",
+        "F92": "",
+        "G92": "",
+        "H92": "Yes",
+        "I92": "Optional",
+        "J92": "No",
+        "K92": "No",
+        "L92": "No"
+      }
+    },
+    {
+      "row": 93,
+      "cells": {
+        "A93": "SIP Project Evidence",
+        "B93": "STARL \u2013 Action",
+        "C93": "The employee's own material actions during SIP.",
+        "D93": "Maximum 3 actions; use action verbs and distinguish personal contribution.",
+        "E93": "Analysed funnel data, interviewed dealers and designed review cadence.",
+        "F93": "",
+        "G93": "",
+        "H93": "Yes",
+        "I93": "Optional",
+        "J93": "No",
+        "K93": "No",
+        "L93": "No"
+      }
+    },
+    {
+      "row": 94,
+      "cells": {
+        "A94": "SIP Project Evidence",
+        "B94": "STARL \u2013 Result",
+        "C94": "Verified result/outcome of SIP.",
+        "D94": "State result first; quantify where possible; do not mix generic learning into this row.",
+        "E94": "Identified 3 leakage points and proposed pilot actions for review.",
+        "F94": "",
+        "G94": "",
+        "H94": "Yes",
+        "I94": "Optional",
+        "J94": "No",
+        "K94": "No",
+        "L94": "No"
+      }
+    },
+    {
+      "row": 95,
+      "cells": {
+        "A95": "SIP Project Evidence",
+        "B95": "STARL \u2013  Learning",
+        "C95": "One material learning derived from the SIP.",
+        "D95": "Maximum 1 concise learning statement; must link to the project evidence, not generic self-praise.",
+        "E95": "Learned how dealer funnel decisions vary by local operating context.",
+        "F95": "",
+        "G95": "",
+        "H95": "Yes",
+        "I95": "Optional",
+        "J95": "No",
+        "K95": "No",
+        "L95": "No"
+      }
+    },
+    {
+      "row": 96,
+      "cells": {
+        "A96": "",
+        "B96": "",
+        "C96": "",
+        "D96": "",
+        "E96": "",
+        "F96": "",
+        "G96": "",
+        "H96": "",
+        "I96": "",
+        "J96": "",
+        "K96": "",
+        "L96": ""
+      }
+    },
+    {
+      "row": 97,
+      "cells": {
+        "A97": "MAHINDRA FULL TIME WORK EXPERIENCE",
+        "B97": "",
+        "C97": "",
+        "D97": "",
+        "E97": "",
+        "F97": "",
+        "G97": "",
+        "H97": "",
+        "I97": "",
+        "J97": "",
+        "K97": "",
+        "L97": ""
+      }
+    },
+    {
+      "row": 98,
+      "cells": {
+        "A98": "Mahindra Full Time Work Experience",
+        "B98": "Role Title",
+        "C98": "Official title of each Mahindra role/stint.",
+        "D98": "Repeatable stint record; current stint first; preserve historical records.",
+        "E98": "Area Sales Manager",
+        "F98": "System/API \u2192 Employee \u2192 BHR \u2192 Group HR",
+        "G98": "Employee + Manager + BHR + Group HR",
+        "H98": "No",
+        "I98": "Yes",
+        "J98": "Yes",
+        "K98": "Yes",
+        "L98": "Yes"
+      }
+    },
+    {
+      "row": 99,
+      "cells": {
+        "A99": "Mahindra Full Time Work Experience",
+        "B99": "Role Start Date",
+        "C99": "Official start date of each Mahindra role/stint.",
+        "D99": "Previous role/stint start date; give calendar dropdown; preserve historical records.",
+        "E99": "44832",
+        "F99": "",
+        "G99": "",
+        "H99": "No",
+        "I99": "Yes",
+        "J99": "Yes",
+        "K99": "Yes",
+        "L99": "Yes"
+      }
+    },
+    {
+      "row": 100,
+      "cells": {
+        "A100": "Mahindra Full Time Work Experience",
+        "B100": "Role Movement Type",
+        "C100": "Reason for role/stint Movement Type.",
+        "D100": "1st Role/Stint / Promotion / Lateral Role Change / Rotation / Transfer.",
+        "E100": "1st Role/Stint",
+        "F100": "",
+        "G100": "",
+        "H100": "No",
+        "I100": "Yes",
+        "J100": "Yes",
+        "K100": "Yes",
+        "L100": "Yes"
+      }
+    },
+    {
+      "row": 101,
+      "cells": {
+        "A101": "Mahindra Full Time Work Experience",
+        "B101": "Role End Date",
+        "C101": "Official end date of each Mahindra role/stint.",
+        "D101": "Previous role/stint end date; give calendar dropdown; preserve historical records.",
+        "E101": "45904",
+        "F101": "",
+        "G101": "",
+        "H101": "No",
+        "I101": "Yes",
+        "J101": "Yes",
+        "K101": "Yes",
+        "L101": "Yes"
+      }
+    },
+    {
+      "row": 102,
+      "cells": {
+        "A102": "Mahindra Full Time Work Experience",
+        "B102": "Sector",
+        "C102": "Sector for each stint.",
+        "D102": "Dropdown from sector list.",
+        "E102": "Automotive",
+        "F102": "",
+        "G102": "",
+        "H102": "No",
+        "I102": "Yes",
+        "J102": "Yes",
+        "K102": "Yes",
+        "L102": "Yes"
+      }
+    },
+    {
+      "row": 103,
+      "cells": {
+        "A103": "Mahindra Full Time Work Experience",
+        "B103": "Business",
+        "C103": "Business/entity for each stint.",
+        "D103": "Dependent dropdown linked to Sector.",
+        "E103": "Auto Division",
+        "F103": "",
+        "G103": "",
+        "H103": "No",
+        "I103": "Yes",
+        "J103": "Yes",
+        "K103": "Yes",
+        "L103": "Yes"
+      }
+    },
+    {
+      "row": 104,
+      "cells": {
+        "A104": "Mahindra Full Time Work Experience",
+        "B104": "Grade",
+        "C104": "Grade/level held during each stint.",
+        "D104": "Dropdown from approved grade/level list.",
+        "E104": "Managerial Band",
+        "F104": "",
+        "G104": "",
+        "H104": "No",
+        "I104": "Yes",
+        "J104": "Yes",
+        "K104": "Yes",
+        "L104": "Yes"
+      }
+    },
+    {
+      "row": 105,
+      "cells": {
+        "A105": "Mahindra Full Time Work Experience",
+        "B105": "Function",
+        "C105": "Function held during each stint.",
+        "D105": "Dropdown from approved function list + Other.",
+        "E105": "Sales & Marketing",
+        "F105": "",
+        "G105": "",
+        "H105": "No",
+        "I105": "Yes",
+        "J105": "Yes",
+        "K105": "Yes",
+        "L105": "Yes"
+      }
+    },
+    {
+      "row": 106,
+      "cells": {
+        "A106": "Mahindra Full Time Work Experience",
+        "B106": "Period",
+        "C106": "Start and end period of each stint.",
+        "D106": "Start Month/Year + End Month/Year or Present; only one current stint.",
+        "E106": "Jan 2026\u2013Present",
+        "F106": "",
+        "G106": "",
+        "H106": "No",
+        "I106": "Yes",
+        "J106": "Yes",
+        "K106": "Yes",
+        "L106": "Yes"
+      }
+    },
+    {
+      "row": 107,
+      "cells": {
+        "A107": "Mahindra Full Time Work Experience",
+        "B107": "Location",
+        "C107": "Work location during the stint.",
+        "D107": "Searchable location + Other.",
+        "E107": "Ahmedabad",
+        "F107": "",
+        "G107": "",
+        "H107": "No",
+        "I107": "Yes",
+        "J107": "Yes",
+        "K107": "Yes",
+        "L107": "Yes"
+      }
+    },
+    {
+      "row": 108,
+      "cells": {
+        "A108": "Mahindra Full Time Work Experience",
+        "B108": "Reporting Manager",
+        "C108": "Reporting manager associated with the stint, where known.",
+        "D108": "Searchable person field; manual name allowed for historical stints.",
+        "E108": "Kunal Shah",
+        "F108": "",
+        "G108": "",
+        "H108": "No",
+        "I108": "Yes",
+        "J108": "Yes",
+        "K108": "Yes",
+        "L108": "Yes"
+      }
+    },
+    {
+      "row": 109,
+      "cells": {
+        "A109": "Mahindra Full Time Work Experience",
+        "B109": "Domain / Business Knowledge Areas",
+        "C109": "Key domain/business knowledge gained in the stint.",
+        "D109": "Controlled multi-select tags + Other; maximum 3.",
+        "E109": "Dealer Operations; Sales Distribution",
+        "F109": "",
+        "G109": "",
+        "H109": "No",
+        "I109": "Yes",
+        "J109": "Yes",
+        "K109": "Yes",
+        "L109": "Yes"
+      }
+    },
+    {
+      "row": 110,
+      "cells": {
+        "A110": "Mahindra Full Time Work Experience",
+        "B110": "Responsibility Area(s)",
+        "C110": "Main responsibility areas owned during the stint.",
+        "D110": "Select maximum 3 controlled areas from function-specific responsibility library + Other. No job-description paragraph.",
+        "E110": "Dealer performance; retail target delivery",
+        "F110": "",
+        "G110": "",
+        "H110": "No",
+        "I110": "Yes",
+        "J110": "Yes",
+        "K110": "Yes",
+        "L110": "Yes"
+      }
+    },
+    {
+      "row": 111,
+      "cells": {
+        "A111": "Mahindra Stint Project",
+        "B111": "Project Title",
+        "C111": "A material project/initiative completed in the stint.",
+        "D111": "Repeatable; maximum 2 per stint. STAR fields appear only when a project is added.",
+        "E111": "Dealer funnel improvement pilot",
+        "F111": "",
+        "G111": "",
+        "H111": "No",
+        "I111": "Yes",
+        "J111": "Yes",
+        "K111": "Yes",
+        "L111": "Yes"
+      }
+    },
+    {
+      "row": 112,
+      "cells": {
+        "A112": "Mahindra Stint Project",
+        "B112": "STAR \u2013 Situation",
+        "C112": "The factual business context/problem before action.",
+        "D112": "1\u20132 sentences; baseline/problem only.",
+        "E112": "Lead-to-retail conversion was below target in priority dealerships.",
+        "F112": "",
+        "G112": "",
+        "H112": "No",
+        "I112": "Yes",
+        "J112": "Yes",
+        "K112": "Yes",
+        "L112": "Yes"
+      }
+    },
+    {
+      "row": 113,
+      "cells": {
+        "A113": "Mahindra Stint Project",
+        "B113": "STAR \u2013 Task",
+        "C113": "The employee's specific objective/accountability.",
+        "D113": "One concise objective statement.",
+        "E113": "Improve conversion while keeping acquisition quality stable.",
+        "F113": "",
+        "G113": "",
+        "H113": "No",
+        "I113": "Yes",
+        "J113": "Yes",
+        "K113": "Yes",
+        "L113": "Yes"
+      }
+    },
+    {
+      "row": 114,
+      "cells": {
+        "A114": "Mahindra Stint Project",
+        "B114": "STAR \u2013 Action",
+        "C114": "The employee's own material actions.",
+        "D114": "Maximum 3 actions; use action verbs and separate own contribution.",
+        "E114": "Segmented funnel, changed review cadence and coached dealer teams.",
+        "F114": "",
+        "G114": "",
+        "H114": "No",
+        "I114": "Yes",
+        "J114": "Yes",
+        "K114": "Yes",
+        "L114": "Yes"
+      }
+    },
+    {
+      "row": 115,
+      "cells": {
+        "A115": "Mahindra Stint Project",
+        "B115": "STAR \u2013 Result",
+        "C115": "Verified result attributable to the project.",
+        "D115": "State result first; quantify where possible; link to metric fields.",
+        "E115": "Lead-to-retail conversion improved by 8%.",
+        "F115": "",
+        "G115": "",
+        "H115": "No",
+        "I115": "Yes",
+        "J115": "Yes",
+        "K115": "Yes",
+        "L115": "Yes"
+      }
+    },
+    {
+      "row": 116,
+      "cells": {
+        "A116": "",
+        "B116": "",
+        "C116": "",
+        "D116": "",
+        "E116": "",
+        "F116": "",
+        "G116": "",
+        "H116": "",
+        "I116": "",
+        "J116": "",
+        "K116": "",
+        "L116": ""
+      }
+    },
+    {
+      "row": 117,
+      "cells": {
+        "A117": "LEARNING NEEDS",
+        "B117": "",
+        "C117": "",
+        "D117": "",
+        "E117": "",
+        "F117": "",
+        "G117": "",
+        "H117": "",
+        "I117": "",
+        "J117": "",
+        "K117": "",
+        "L117": ""
+      }
+    },
+    {
+      "row": 118,
+      "cells": {
+        "A118": "Functional Learning Need",
+        "B118": "Capability Area",
+        "C118": "Functional capability requiring development.",
+        "D118": "Select from approved functional capability library + Other; maximum 2.",
+        "E118": "Commercial acumen",
+        "F118": "Manager \u2192 BHR \u2192 Group HR",
+        "G118": "Manager + BHR + Group HR",
+        "H118": "No",
+        "I118": "Optional",
+        "J118": "Yes",
+        "K118": "Yes",
+        "L118": "Yes"
+      }
+    },
+    {
+      "row": 119,
+      "cells": {
+        "A119": "Functional Learning Need",
+        "B119": "Gap Evidence",
+        "C119": "Specific observed evidence showing the functional gap.",
+        "D119": "One factual example: context + observed gap + consequence. Avoid labels such as weak/poor without evidence.",
+        "E119": "Needs support to interpret dealer P&L trade-offs independently.",
+        "F119": "",
+        "G119": "",
+        "H119": "No",
+        "I119": "Optional",
+        "J119": "Yes",
+        "K119": "Yes",
+        "L119": "Yes"
+      }
+    },
+    {
+      "row": 120,
+      "cells": {
+        "A120": "Functional Learning Need",
+        "B120": "Desired Outcome",
+        "C120": "What good performance should look like after development.",
+        "D120": "One observable/measurable outcome; avoid naming a course.",
+        "E120": "Independently assess dealer P&L and recommend commercially viable actions.",
+        "F120": "",
+        "G120": "",
+        "H120": "No",
+        "I120": "Optional",
+        "J120": "Yes",
+        "K120": "Yes",
+        "L120": "Yes"
+      }
+    },
+    {
+      "row": 121,
+      "cells": {
+        "A121": "Behavioural Learning Need (CAB)",
+        "B121": "Capability Area",
+        "C121": "Behavioural capability requiring development.",
+        "D121": "Select from approved CAB/behavioural capability library + Other; maximum 2.",
+        "E121": "Collaboration",
+        "F121": "",
+        "G121": "",
+        "H121": "No",
+        "I121": "Optional",
+        "J121": "Yes",
+        "K121": "Yes",
+        "L121": "Yes"
+      }
+    },
+    {
+      "row": 122,
+      "cells": {
+        "A122": "Behavioural Learning Need (CAB)",
+        "B122": "Gap Evidence",
+        "C122": "Specific observed evidence showing the behavioural gap.",
+        "D122": "One factual example: situation + observed behaviour + consequence.",
+        "E122": "Retains too many decisions personally when team size increases.",
+        "F122": "",
+        "G122": "",
+        "H122": "No",
+        "I122": "Optional",
+        "J122": "Yes",
+        "K122": "Yes",
+        "L122": "Yes"
+      }
+    },
+    {
+      "row": 123,
+      "cells": {
+        "A123": "Behavioural Learning Need (CAB)",
+        "B123": "Desired Outcome",
+        "C123": "What good behavioural performance should look like.",
+        "D123": "One observable outcome linked to work context.",
+        "E123": "Delegates decision ownership with clear checkpoints and accountability.",
+        "F123": "",
+        "G123": "",
+        "H123": "No",
+        "I123": "Optional",
+        "J123": "Yes",
+        "K123": "Yes",
+        "L123": "Yes"
+      }
+    },
+    {
+      "row": 124,
+      "cells": {
+        "A124": "",
+        "B124": "",
+        "C124": "",
+        "D124": "",
+        "E124": "",
+        "F124": "",
+        "G124": "",
+        "H124": "",
+        "I124": "",
+        "J124": "",
+        "K124": "",
+        "L124": ""
+      }
+    },
+    {
+      "row": 125,
+      "cells": {
+        "A125": "LEARNING INTERVENTION & ACTION TRACKING",
+        "B125": "",
+        "C125": "",
+        "D125": "",
+        "E125": "",
+        "F125": "",
+        "G125": "",
+        "H125": "",
+        "I125": "",
+        "J125": "",
+        "K125": "",
+        "L125": ""
+      }
+    },
+    {
+      "row": 126,
+      "cells": {
+        "A126": "Learning Intervention",
+        "B126": "Intervention Type",
+        "C126": "Type of recommended development intervention.",
+        "D126": "Repeatable, Dropdown: Programme / Certification / Coaching / Exposure / Project / Other.",
+        "E126": "Coaching",
+        "F126": "Manager \u2192 BHR \u2192 Group HR",
+        "G126": "Manager + BHR + Group HR",
+        "H126": "No",
+        "I126": "Optional",
+        "J126": "Yes",
+        "K126": "Yes",
+        "L126": "Yes"
+      }
+    },
+    {
+      "row": 127,
+      "cells": {
+        "A127": "Learning Intervention",
+        "B127": "SMART \u2013 S: Specific Action",
+        "C127": "The exact development action to be undertaken.",
+        "D127": "Write one clear action using verb + activity + context. Do not write a vague goal such as improve leadership.",
+        "E127": "Lead 3 monthly dealer P&L reviews with manager coaching.",
+        "F127": "",
+        "G127": "",
+        "H127": "No",
+        "I127": "Optional",
+        "J127": "Yes",
+        "K127": "Yes",
+        "L127": "Yes"
+      }
+    },
+    {
+      "row": 128,
+      "cells": {
+        "A128": "Learning Intervention",
+        "B128": "SMART \u2013 M: Measurable Success Indicator",
+        "C128": "How completion/success will be measured.",
+        "D128": "Specify metric, count, threshold or observable output. Always include unit/denominator where numeric.",
+        "E128": "Complete 3 reviews and independently recommend actions accepted in at least 2 reviews.",
+        "F128": "",
+        "G128": "",
+        "H128": "No",
+        "I128": "Optional",
+        "J128": "Yes",
+        "K128": "Yes",
+        "L128": "Yes"
+      }
+    },
+    {
+      "row": 129,
+      "cells": {
+        "A129": "Learning Intervention",
+        "B129": "SMART \u2013 A: Achievability / Support Required",
+        "C129": "Support/resources needed to make the action realistically achievable.",
+        "D129": "Select/support note: Manager Coaching / Mentor / Course / Access / Project Sponsorship / Other.",
+        "E129": "Monthly coaching from reporting manager + access to dealer P&L data.",
+        "F129": "",
+        "G129": "",
+        "H129": "No",
+        "I129": "Optional",
+        "J129": "Yes",
+        "K129": "Yes",
+        "L129": "Yes"
+      }
+    },
+    {
+      "row": 130,
+      "cells": {
+        "A130": "Learning Intervention",
+        "B130": "SMART \u2013 R: Relevance to Need / Next Role",
+        "C130": "Why the action is relevant.",
+        "D130": "Link to the exact learning need or possible next role; no generic development statement.",
+        "E130": "Builds commercial acumen required for regional sales responsibility.",
+        "F130": "",
+        "G130": "",
+        "H130": "No",
+        "I130": "Optional",
+        "J130": "Yes",
+        "K130": "Yes",
+        "L130": "Yes"
+      }
+    },
+    {
+      "row": 131,
+      "cells": {
+        "A131": "Learning Intervention",
+        "B131": "SMART \u2013 T: Target Date",
+        "C131": "Time-bound date for completion.",
+        "D131": "Date picker; one target date per action.",
+        "E131": "31 Dec 2027",
+        "F131": "",
+        "G131": "",
+        "H131": "No",
+        "I131": "Optional",
+        "J131": "Yes",
+        "K131": "Yes",
+        "L131": "Yes"
+      }
+    },
+    {
+      "row": 132,
+      "cells": {
+        "A132": "Learning Intervention",
+        "B132": "Intervention Status",
+        "C132": "Current status of the development action.",
+        "D132": "Dropdown: Not Started / In Progress / Completed / Postponed / Not Taken.",
+        "E132": "In Progress",
+        "F132": "Learning System/API \u2192 Employee/Manager status update \u2192 BHR \u2192 Group HR",
+        "G132": "",
+        "H132": "No",
+        "I132": "Optional",
+        "J132": "Yes",
+        "K132": "Yes",
+        "L132": "Yes"
+      }
+    },
+    {
+      "row": 133,
+      "cells": {
+        "A133": "Learning Intervention",
+        "B133": "Completion Date",
+        "C133": "Actual completion date.",
+        "D133": "Date; show only when Status = Completed.",
+        "E133": "18 Aug 2027",
+        "F133": "",
+        "G133": "",
+        "H133": "No",
+        "I133": "Optional",
+        "J133": "Yes",
+        "K133": "Yes",
+        "L133": "Yes"
+      }
+    },
+    {
+      "row": 134,
+      "cells": {
+        "A134": "Learning Intervention",
+        "B134": "Next Action",
+        "C134": "What should happen after the intervention.",
+        "D134": "Dropdown: Continue / Repeat / New Intervention / Apply in New Role / Close.",
+        "E134": "Apply in New Role",
+        "F134": "Manager \u2192 BHR \u2192 Group HR",
+        "G134": "",
+        "H134": "No",
+        "I134": "Optional",
+        "J134": "Yes",
+        "K134": "Yes",
+        "L134": "Yes"
+      }
+    },
+    {
+      "row": 135,
+      "cells": {
+        "A135": "",
+        "B135": "",
+        "C135": "",
+        "D135": "",
+        "E135": "",
+        "F135": "",
+        "G135": "",
+        "H135": "",
+        "I135": "",
+        "J135": "",
+        "K135": "",
+        "L135": ""
+      }
+    },
+    {
+      "row": 136,
+      "cells": {
+        "A136": "PERFORMANCE",
+        "B136": "",
+        "C136": "",
+        "D136": "",
+        "E136": "",
+        "F136": "",
+        "G136": "",
+        "H136": "",
+        "I136": "",
+        "J136": "",
+        "K136": "",
+        "L136": ""
+      }
+    },
+    {
+      "row": 137,
+      "cells": {
+        "A137": "Performance",
+        "B137": "Review Cycle",
+        "C137": "Formal performance review cycle/year.",
+        "D137": "Repeatable; latest 3 released cycles; newest first.",
+        "E137": "FY26",
+        "F137": "Performance System/API \u2192 Manager \u2192 BHR \u2192 Group HR",
+        "G137": "Employee after release + Manager + BHR + Group HR",
+        "H137": "No",
+        "I137": "Optional",
+        "J137": "Yes",
+        "K137": "Yes",
+        "L137": "Yes"
+      }
+    },
+    {
+      "row": 138,
+      "cells": {
+        "A138": "Performance",
+        "B138": "Performance Rating Overall",
+        "C138": "Official overall performance rating.",
+        "D138": "Store/display Rating Value + Official Scale/Range. Example: 4/5 only if the official scale is 1\u20135.",
+        "E138": "4/5 -",
+        "F138": "",
+        "G138": "",
+        "H138": "No",
+        "I138": "Optional",
+        "J138": "Yes",
+        "K138": "Yes",
+        "L138": "Yes"
+      }
+    },
+    {
+      "row": 139,
+      "cells": {
+        "A139": "Performance",
+        "B139": "CAB Rating",
+        "C139": "Official CAB outcome/score for the review cycle.",
+        "D139": "Store/display CAB Value + Official Scale/Category. Do not convert one scale into another unless formally approved.",
+        "E139": "4/5 -",
+        "F139": "",
+        "G139": "",
+        "H139": "No",
+        "I139": "Optional",
+        "J139": "Yes",
+        "K139": "Yes",
+        "L139": "Yes"
+      }
+    },
+    {
+      "row": 140,
+      "cells": {
+        "A140": "",
+        "B140": "",
+        "C140": "",
+        "D140": "",
+        "E140": "",
+        "F140": "",
+        "G140": "",
+        "H140": "",
+        "I140": "",
+        "J140": "",
+        "K140": "",
+        "L140": ""
+      }
+    },
+    {
+      "row": 141,
+      "cells": {
+        "A141": "STRENGTHS & AREAS OF OPPORTUNITY",
+        "B141": "",
+        "C141": "",
+        "D141": "",
+        "E141": "",
+        "F141": "",
+        "G141": "",
+        "H141": "",
+        "I141": "",
+        "J141": "",
+        "K141": "",
+        "L141": ""
+      }
+    },
+    {
+      "row": 142,
+      "cells": {
+        "A142": "Strengths",
+        "B142": "Capability / Theme",
+        "C142": "Manager-selected strength area.",
+        "D142": "Select from approved capability/CAB library + Other; maximum 2.",
+        "E142": "Structured problem solving",
+        "F142": "Manager \u2192 BHR \u2192 Group HR",
+        "G142": "Manager + BHR + Group HR",
+        "H142": "No",
+        "I142": "Optional",
+        "J142": "Yes",
+        "K142": "Yes",
+        "L142": "Yes"
+      }
+    },
+    {
+      "row": 143,
+      "cells": {
+        "A143": "Strengths",
+        "B143": "Evidence",
+        "C143": "Specific work evidence supporting the strength.",
+        "D143": "Use concise evidence: Context \u2192 observed behaviour/action \u2192 result. No adjective-only statements.",
+        "E143": "In dealer review, structured 3 root causes and enabled team to close 2 within the month.",
+        "F143": "",
+        "G143": "",
+        "H143": "No",
+        "I143": "Optional",
+        "J143": "Yes",
+        "K143": "Yes",
+        "L143": "Yes"
+      }
+    },
+    {
+      "row": 144,
+      "cells": {
+        "A144": "Area of Opportunity",
+        "B144": "Capability / Theme",
+        "C144": "Manager-selected development area.",
+        "D144": "Select from approved capability/CAB library + Other; maximum 2.",
+        "E144": "Delegation",
+        "F144": "",
+        "G144": "",
+        "H144": "No",
+        "I144": "Optional",
+        "J144": "Yes",
+        "K144": "Yes",
+        "L144": "Yes"
+      }
+    },
+    {
+      "row": 145,
+      "cells": {
+        "A145": "Area of Opportunity",
+        "B145": "Gap Evidence",
+        "C145": "Specific work evidence supporting the development need.",
+        "D145": "Use concise evidence: Context \u2192 observed gap \u2192 consequence. Avoid unsupported labels.",
+        "E145": "In larger team assignments, key decisions remain concentrated with the employee, slowing ownership.",
+        "F145": "",
+        "G145": "",
+        "H145": "No",
+        "I145": "Optional",
+        "J145": "Yes",
+        "K145": "Yes",
+        "L145": "Yes"
+      }
+    },
+    {
+      "row": 146,
+      "cells": {
+        "A146": "",
+        "B146": "",
+        "C146": "",
+        "D146": "",
+        "E146": "",
+        "F146": "",
+        "G146": "",
+        "H146": "",
+        "I146": "",
+        "J146": "",
+        "K146": "",
+        "L146": ""
+      }
+    },
+    {
+      "row": 147,
+      "cells": {
+        "A147": "RECOGNITION",
+        "B147": "",
+        "C147": "",
+        "D147": "",
+        "E147": "",
+        "F147": "",
+        "G147": "",
+        "H147": "",
+        "I147": "",
+        "J147": "",
+        "K147": "",
+        "L147": ""
+      }
+    },
+    {
+      "row": 148,
+      "cells": {
+        "A148": "Recognition",
+        "B148": "Has Recognition?",
+        "C148": "Whether there is relevant recognition from degree level onwards.",
+        "D148": "Yes / No gate. If No, hide recognition detail fields.",
+        "E148": "Yes",
+        "F148": "Employee",
+        "G148": "Employee + Manager + BHR + Group HR",
+        "H148": "Optional",
+        "I148": "Optional",
+        "J148": "Optional",
+        "K148": "Optional",
+        "L148": "Optional"
+      }
+    },
+    {
+      "row": 149,
+      "cells": {
+        "A149": "Recognition",
+        "B149": "Recognition Type",
+        "C149": "Whether recognition is individual or team/project based.",
+        "D149": "Dropdown: Individual / Team or Project.",
+        "E149": "Team / Project",
+        "F149": "",
+        "G149": "",
+        "H149": "Optional",
+        "I149": "Optional",
+        "J149": "Optional",
+        "K149": "Optional",
+        "L149": "Optional"
+      }
+    },
+    {
+      "row": 150,
+      "cells": {
+        "A150": "Recognition",
+        "B150": "Recognition Source",
+        "C150": "Whether recognition is internal or external.",
+        "D150": "Dropdown: Internal / External.",
+        "E150": "External",
+        "F150": "",
+        "G150": "",
+        "H150": "Optional",
+        "I150": "Optional",
+        "J150": "Optional",
+        "K150": "Optional",
+        "L150": "Optional"
+      }
+    },
+    {
+      "row": 151,
+      "cells": {
+        "A151": "Recognition",
+        "B151": "Award / Recognition Name",
+        "C151": "Official name of award/recognition.",
+        "D151": "Repeatable; newest first; exclude Class 10/12 and school-level achievements.",
+        "E151": "Featured CIO Award",
+        "F151": "",
+        "G151": "",
+        "H151": "Optional",
+        "I151": "Optional",
+        "J151": "Optional",
+        "K151": "Optional",
+        "L151": "Optional"
+      }
+    },
+    {
+      "row": 152,
+      "cells": {
+        "A152": "Recognition",
+        "B152": "Awarding Organisation",
+        "C152": "Organisation granting recognition.",
+        "D152": "Searchable organisation list + Other.",
+        "E152": "Industry Forum",
+        "F152": "",
+        "G152": "",
+        "H152": "Optional",
+        "I152": "Optional",
+        "J152": "Optional",
+        "K152": "Optional",
+        "L152": "Optional"
+      }
+    },
+    {
+      "row": 153,
+      "cells": {
+        "A153": "Recognition",
+        "B153": "Recognition Year",
+        "C153": "Year of recognition.",
+        "D153": "4-digit year dropdown.",
+        "E153": "2026",
+        "F153": "",
+        "G153": "",
+        "H153": "Optional",
+        "I153": "Optional",
+        "J153": "Optional",
+        "K153": "Optional",
+        "L153": "Optional"
+      }
+    },
+    {
+      "row": 154,
+      "cells": {
+        "A154": "Recognition",
+        "B154": "Contribution Role",
+        "C154": "Employee's role in the recognised work.",
+        "D154": "Dropdown: Individual / Lead / Co-lead / Core Contributor / Team Member.",
+        "E154": "Lead",
+        "F154": "",
+        "G154": "",
+        "H154": "Optional",
+        "I154": "Optional",
+        "J154": "Optional",
+        "K154": "Optional",
+        "L154": "Optional"
+      }
+    },
+    {
+      "row": 155,
+      "cells": {
+        "A155": "Recognition",
+        "B155": "Evidence",
+        "C155": "Why the recognition was received and, for team awards, what the employee specifically contributed.",
+        "D155": "One concise evidence line: contribution + result + official recognition basis. Avoid self-rating.",
+        "E155": "Led implementation workstream; programme received the external award after enterprise rollout.",
+        "F155": "",
+        "G155": "",
+        "H155": "Optional",
+        "I155": "Optional",
+        "J155": "Optional",
+        "K155": "Optional",
+        "L155": "Optional"
+      }
+    },
+    {
+      "row": 156,
+      "cells": {
+        "A156": "",
+        "B156": "",
+        "C156": "",
+        "D156": "",
+        "E156": "",
+        "F156": "",
+        "G156": "",
+        "H156": "",
+        "I156": "",
+        "J156": "",
+        "K156": "",
+        "L156": ""
+      }
+    },
+    {
+      "row": 157,
+      "cells": {
+        "A157": "CAREER ASPIRATION & PREFERENCES",
+        "B157": "",
+        "C157": "",
+        "D157": "",
+        "E157": "",
+        "F157": "",
+        "G157": "",
+        "H157": "",
+        "I157": "",
+        "J157": "",
+        "K157": "",
+        "L157": ""
+      }
+    },
+    {
+      "row": 158,
+      "cells": {
+        "A158": "Career Aspiration & Preferences",
+        "B158": "Preferred Domain",
+        "C158": "Up to 3 domains the employee would like to work in next.",
+        "D158": "Controlled multi-select; maximum 3 + Other.",
+        "E158": "Automotive; Mobility; Sales",
+        "F158": "Employee",
+        "G158": "Employee + Manager + BHR + Group HR",
+        "H158": "No",
+        "I158": "Optional",
+        "J158": "Yes",
+        "K158": "Yes",
+        "L158": "Yes"
+      }
+    },
+    {
+      "row": 159,
+      "cells": {
+        "A159": "Career Aspiration & Preferences",
+        "B159": "Preferred Function(s)",
+        "C159": "Up to 3 functions the employee would like to explore.",
+        "D159": "Controlled multi-select; maximum 3 + Other.",
+        "E159": "Strategy; Sales; Business Development",
+        "F159": "",
+        "G159": "",
+        "H159": "No",
+        "I159": "Optional",
+        "J159": "Yes",
+        "K159": "Yes",
+        "L159": "Yes"
+      }
+    },
+    {
+      "row": 160,
+      "cells": {
+        "A160": "Career Aspiration & Preferences",
+        "B160": "Cross-sector Openness",
+        "C160": "Willingness to consider opportunities across Mahindra sectors.",
+        "D160": "Dropdown: Open / Conditional / Not Open.",
+        "E160": "Open",
+        "F160": "",
+        "G160": "",
+        "H160": "No",
+        "I160": "Optional",
+        "J160": "Yes",
+        "K160": "Yes",
+        "L160": "Yes"
+      }
+    },
+    {
+      "row": 161,
+      "cells": {
+        "A161": "Career Aspiration & Preferences",
+        "B161": "Mobility Preference",
+        "C161": "Current location-mobility preference.",
+        "D161": "Dropdown: Open / Conditional / Not Open. Preference only; does not override mobility/transfer policy.",
+        "E161": "Conditional",
+        "F161": "",
+        "G161": "",
+        "H161": "No",
+        "I161": "Optional",
+        "J161": "Yes",
+        "K161": "Yes",
+        "L161": "Yes"
+      }
+    },
+    {
+      "row": 162,
+      "cells": {
+        "A162": "Career Aspiration & Preferences",
+        "B162": "Preferred Location(s)",
+        "C162": "Preferred locations when mobility is Open or Conditional.",
+        "D162": "Multi-select location + Other; show only if Open/Conditional.",
+        "E162": "Mumbai; Pune",
+        "F162": "",
+        "G162": "",
+        "H162": "No",
+        "I162": "Optional",
+        "J162": "Yes",
+        "K162": "Yes",
+        "L162": "Yes"
+      }
+    },
+    {
+      "row": 163,
+      "cells": {
+        "A163": "Career Aspiration & Preferences",
+        "B163": "Additional Exposure Interest",
+        "C163": "Development exposure the employee would like to explore.",
+        "D163": "Multi-select: Extra Project / Cross-functional Project / Visit New Facility / New Responsibility / Cross-sector Exposure / Short-term Assignment / Other.",
+        "E163": "Cross-functional Project; Visit New Facility",
+        "F163": "",
+        "G163": "",
+        "H163": "No",
+        "I163": "Optional",
+        "J163": "Yes",
+        "K163": "Yes",
+        "L163": "Yes"
+      }
+    },
+    {
+      "row": 164,
+      "cells": {
+        "A164": "Career Aspiration & Preferences",
+        "B164": "Short-term Preferred Role / Role Family",
+        "C164": "Preferred role/role family over the next 1\u20133 years.",
+        "D164": "Select from approved role family / role catalogue where available + Other. Avoid essay-style aspiration.",
+        "E164": "Regional Sales / Business Development",
+        "F164": "",
+        "G164": "",
+        "H164": "No",
+        "I164": "Optional",
+        "J164": "Yes",
+        "K164": "Yes",
+        "L164": "Yes"
+      }
+    },
+    {
+      "row": 165,
+      "cells": {
+        "A165": "Career Aspiration & Preferences",
+        "B165": "Long-term Preferred Role / Direction",
+        "C165": "Longer-term role/direction the employee would like to build toward.",
+        "D165": "Select from role family / leadership direction list where available + Other; one short qualifier allowed.",
+        "E165": "Business Head / P&L leadership",
+        "F165": "",
+        "G165": "",
+        "H165": "No",
+        "I165": "Optional",
+        "J165": "Yes",
+        "K165": "Yes",
+        "L165": "Yes"
+      }
+    },
+    {
+      "row": 166,
+      "cells": {
+        "A166": "",
+        "B166": "",
+        "C166": "",
+        "D166": "",
+        "E166": "",
+        "F166": "",
+        "G166": "",
+        "H166": "",
+        "I166": "",
+        "J166": "",
+        "K166": "",
+        "L166": ""
+      }
+    },
+    {
+      "row": 167,
+      "cells": {
+        "A167": "CAREER READINESS",
+        "B167": "",
+        "C167": "",
+        "D167": "",
+        "E167": "",
+        "F167": "",
+        "G167": "",
+        "H167": "",
+        "I167": "",
+        "J167": "",
+        "K167": "",
+        "L167": ""
+      }
+    },
+    {
+      "row": 168,
+      "cells": {
+        "A168": "Career Readiness",
+        "B168": "Possible Next Role / Stint",
+        "C168": "Up to 3 realistic next role/stint options considered for the employee.",
+        "D168": "Select from approved role catalogue / role family where available; maximum 3.",
+        "E168": "Regional Sales Manager",
+        "F168": "Manager \u2192 BHR \u2192 Group HR",
+        "G168": "Manager + BHR + Group HR",
+        "H168": "No",
+        "I168": "Yes",
+        "J168": "Yes",
+        "K168": "Yes",
+        "L168": "Yes"
+      }
+    },
+    {
+      "row": 169,
+      "cells": {
+        "A169": "Career Readiness",
+        "B169": "Readiness Horizon",
+        "C169": "Indicative time horizon for each possible role/stint.",
+        "D169": "Dropdown: 0\u20131 year / 1\u20133 years / 3\u20135 years.",
+        "E169": "1\u20133 years",
+        "F169": "",
+        "G169": "",
+        "H169": "No",
+        "I169": "Yes",
+        "J169": "Yes",
+        "K169": "Yes",
+        "L169": "Yes"
+      }
+    },
+    {
+      "row": 170,
+      "cells": {
+        "A170": "Career Readiness",
+        "B170": "Readiness Evidence",
+        "C170": "Evidence supporting the readiness horizon.",
+        "D170": "Maximum 2 evidence points. Use verified role/project/performance/capability evidence; do not use generic 'high potential' wording.",
+        "E170": "Led 2 states independently; delivered 8% conversion improvement; FY26 rating 4/5.",
+        "F170": "",
+        "G170": "",
+        "H170": "No",
+        "I170": "Yes",
+        "J170": "Yes",
+        "K170": "Yes",
+        "L170": "Yes"
+      }
+    },
+    {
+      "row": 171,
+      "cells": {
+        "A171": "",
+        "B171": "",
+        "C171": "",
+        "D171": "",
+        "E171": "",
+        "F171": "",
+        "G171": "",
+        "H171": "",
+        "I171": "",
+        "J171": "",
+        "K171": "",
+        "L171": ""
+      }
+    },
+    {
+      "row": 172,
+      "cells": {
+        "A172": "PROFILE GOVERNANCE",
+        "B172": "",
+        "C172": "",
+        "D172": "",
+        "E172": "",
+        "F172": "",
+        "G172": "",
+        "H172": "",
+        "I172": "",
+        "J172": "",
+        "K172": "",
+        "L172": ""
+      }
+    },
+    {
+      "row": 173,
+      "cells": {
+        "A173": "Profile Refresh",
+        "B173": "Last Updated Date",
+        "C173": "Date of latest BHR-verified Talent Card change.",
+        "D173": "Auto timestamp after verification.",
+        "E173": "19 Sep 2026",
+        "F173": "Portal Workflow",
+        "G173": "Employee + Manager + BHR + Group HR",
+        "H173": "Yes",
+        "I173": "Yes",
+        "J173": "Yes",
+        "K173": "Yes",
+        "L173": "Yes"
+      }
+    },
+    {
+      "row": 174,
+      "cells": {
+        "A174": "Profile Refresh",
+        "B174": "Last Verified By",
+        "C174": "BHR person who completed latest verification.",
+        "D174": "Display verifier name.",
+        "E174": "Megha Patil",
+        "F174": "",
+        "G174": "",
+        "H174": "Yes",
+        "I174": "Yes",
+        "J174": "Yes",
+        "K174": "Yes",
+        "L174": "Yes"
+      }
+    },
+    {
+      "row": 175,
+      "cells": {
+        "A175": "Profile Refresh",
+        "B175": "Next Refresh Trigger Event",
+        "C175": "Event that should trigger a refresh.",
+        "D175": "Dropdown: Role/Stint Change / Annual Talent Review / Programme Milestone / End of Stint / Manual Review.",
+        "E175": "End of current stint",
+        "F175": "BHR \u2192 Group HR",
+        "G175": "",
+        "H175": "Yes",
+        "I175": "Yes",
+        "J175": "Yes",
+        "K175": "Yes",
+        "L175": "Yes"
+      }
+    },
+    {
+      "row": 176,
+      "cells": {
+        "A176": "Profile Refresh",
+        "B176": "Next Refresh Trigger Date",
+        "C176": "Target date for next refresh where known.",
+        "D176": "Date; may be blank for event-only trigger.",
+        "E176": "31 Mar 2027",
+        "F176": "",
+        "G176": "",
+        "H176": "Yes",
+        "I176": "Optional",
+        "J176": "Optional",
+        "K176": "Optional",
+        "L176": "Optional"
+      }
+    },
+    {
+      "row": 177,
+      "cells": {
+        "A177": "Profile Refresh",
+        "B177": "Profile Completeness (Live)",
+        "C177": "Live completion of currently applicable profile.",
+        "D177": "Count visible Yes fields only; Optional fields do not reduce completeness; No fields are hidden; untriggered conditional child fields are excluded.",
+        "E177": "94% \u2022 2 open requests",
+        "F177": "Portal Calculation",
+        "G177": "",
+        "H177": "Yes",
+        "I177": "Yes",
+        "J177": "Yes",
+        "K177": "Yes",
+        "L177": "Yes"
+      }
+    },
+    {
+      "row": 178,
+      "cells": {
+        "A178": "",
+        "B178": "",
+        "C178": "",
+        "D178": "",
+        "E178": "",
+        "F178": "",
+        "G178": "",
+        "H178": "",
+        "I178": "",
+        "J178": "",
+        "K178": "",
+        "L178": ""
+      }
+    },
+    {
+      "row": 179,
+      "cells": {
+        "A179": "Visible fields by persona (Yes + Optional)",
+        "B179": "",
+        "C179": "",
+        "D179": "",
+        "E179": "",
+        "F179": "",
+        "G179": "",
+        "H179": "91",
+        "I179": "142",
+        "J179": "117",
+        "K179": "117",
+        "L179": "117"
+      }
+    },
+    {
+      "row": 180,
+      "cells": {
+        "A180": "Core fields by persona (Yes)",
+        "B180": "",
+        "C180": "",
+        "D180": "",
+        "E180": "",
+        "F180": "",
+        "G180": "",
+        "H180": "70",
+        "I180": "73",
+        "J180": "103",
+        "K180": "94",
+        "L180": "94"
+      }
+    }
+  ]
+}

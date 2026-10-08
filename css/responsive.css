@@ -1,0 +1,191 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN (Desktop, Laptop, Tablet, Mobile)
+   ========================================================================== */
+
+/* Laptop / Small Desktop (<= 1200px) */
+@media (max-width: 1200px) {
+  :root {
+    --sidebar-width: 240px;
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet (<= 992px) */
+@media (max-width: 992px) {
+  :root {
+    --sidebar-width: 0px;
+  }
+
+  .app-sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .app-sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .app-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-backdrop {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 95;
+  }
+
+  .sidebar-backdrop.active {
+    display: block;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex !important;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .page-content {
+    padding: 18px 16px 40px;
+  }
+
+  .header-right .role-switcher-banner {
+    display: none; /* Accessible in drawer/mobile menu */
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .app-header {
+    padding: 0 14px;
+    height: 60px;
+  }
+
+  .header-title-wrap h1 {
+    font-size: 1.15rem;
+  }
+
+  .header-breadcrumbs {
+    display: none;
+  }
+
+  .grid-4, .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .kpi-card {
+    padding: 14px 16px;
+  }
+
+  .persona-switcher-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .persona-pills-group {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    flex-wrap: nowrap;
+  }
+
+  .persona-pill-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Responsive Table Stacking into Mobile Cards */
+  .table-responsive-cards table,
+  .table-responsive-cards thead,
+  .table-responsive-cards tbody,
+  .table-responsive-cards th,
+  .table-responsive-cards td,
+  .table-responsive-cards tr {
+    display: block;
+  }
+
+  .table-responsive-cards thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-responsive-cards tr {
+    background: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: var(--radius-md);
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    box-shadow: var(--shadow-xs);
+  }
+
+  .table-responsive-cards td {
+    border: none;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+  }
+
+  .table-responsive-cards td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--steel-grey);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-right: 12px;
+  }
+
+  .floating-help-btn {
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .modal-box {
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-body, .modal-header, .modal-footer {
+    padding: 14px 16px;
+  }
+}
+
+/* Print / PDF Mode */
+@media print {
+  .app-sidebar, .app-header, .floating-help-btn, .persona-switcher-bar, .no-print {
+    display: none !important;
+  }
+  .app-main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .page-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  body {
+    background: #fff !important;
+  }
+}

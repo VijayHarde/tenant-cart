@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Talent Dashboard • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/dashboard-exact.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR" selected>BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR">Executive Board</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item active" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box -->
+        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue -->
+        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility -->
+        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin -->
+        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="content-area" style="padding: 20px 28px 48px; max-width: 1540px;">
+    <div class="db-container">
+
+      <!-- 1. Header with Floating Label Filter Toolbar (Image 1 Redesign) -->
+      <div class="db-header-card">
+        <div class="db-header-top">
+          <div class="db-header-title-group">
+            <div class="db-eyebrow">Mahindra Group HR Intelligence</div>
+            <h1>Executive Talent Dashboard</h1>
+            <p>Real-time bench velocity, succession horizon readiness, 9-box slating & governance audit queues.</p>
+          </div>
+
+          <div class="db-header-actions">
+            <div class="db-period-pill">
+              <span class="live-dot"></span>
+              <span>FY26 H1 Review · Live Sync</span>
+            </div>
+            <button type="button" class="db-action-btn" id="dbRefreshBtn" onclick="refreshDashboardData()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>Refresh</span>
+            </button>
+            <button type="button" class="db-action-btn primary" onclick="window.print()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Export Executive Brief (PDF)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating Label Filters Grid -->
+        <div class="db-filter-row">
+          <!-- Field 1: Cohort Selector with Floating Label -->
+          <div class="db-floating-group">
+            <select class="db-floating-select" id="cohortFilter" onchange="onCohortChange(this.value)">
+              <option value="All" selected>All Cadres & Programmes (134 Total)</option>
+              <option value="MLP">Mahindra Leadership Programme — MLP (74)</option>
+              <option value="GMC">Group Management Cadre — GMC (38)</option>
+              <option value="MALT">Mahindra Accelerated Leadership — MALT (22)</option>
+            </select>
+            <label class="db-floating-label">Filter Cohort / Track</label>
+          </div>
+
+          <!-- Field 2: Sector Selector with Floating Label -->
+          <div class="db-floating-group">
+            <select class="db-floating-select" id="sectorFilter" onchange="onSectorChange(this.value)">
+              <option value="All" selected>All Business Sectors</option>
+              <option value="Auto">Auto Sector (MEAL / M&M)</option>
+              <option value="Farm">Farm Equipment Sector (FES)</option>
+              <option value="Tech">Tech Mahindra & Digital</option>
+              <option value="Fin">Mahindra Finance (MMFSL)</option>
+            </select>
+            <label class="db-floating-label">Business Sector</label>
+          </div>
+
+          <!-- Field 3: Search Input with Floating Label -->
+          <div class="db-floating-group">
+            <input type="text" id="quickTalentSearch" class="db-floating-input" placeholder=" " onkeyup="onQuickSearchTalent(this.value)">
+            <label class="db-floating-label">Search Leader / Emp ID</label>
+          </div>
+
+          <!-- Integrated Pulse Strip -->
+          <div class="db-pulse-mini">
+            <div class="db-pulse-mini-item highlight">
+              <span>🎯</span>
+              <span><strong>84.0%</strong> Readiness (Target: 80%)</span>
+            </div>
+            <div class="db-pulse-mini-item">
+              <span>⚡</span>
+              <span><strong>31</strong> Ready Now</span>
+            </div>
+            <div class="db-pulse-mini-item">
+              <span>🛡️</span>
+              <span><strong>4</strong> Pending BHR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Compact KPI Cards (Image 2 Redesign: Reduced Height & Sleeker Design) -->
+      <div class="db-kpi-grid">
+        <!-- KPI 1: Total Talent Pool -->
+        <div class="db-kpi-card accent-red">
+          <div>
+            <div class="db-kpi-top">
+              <span class="db-kpi-title">Total Talent Pool</span>
+              <div class="db-kpi-icon-wrap">👥</div>
+            </div>
+            <div class="db-kpi-middle">
+              <span class="db-kpi-value" id="kpiTotalTalent">134</span>
+              <span class="db-kpi-trend positive">↑ +12% YoY</span>
+            </div>
+          </div>
+          <div class="db-kpi-sparkline">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+              <path d="M0,17 Q20,13 40,11 T80,6 L100,2" fill="none" stroke="#e31837" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M0,17 Q20,13 40,11 T80,6 L100,2 L100,20 L0,20 Z" fill="rgba(227, 24, 55, 0.08)"/>
+            </svg>
+          </div>
+          <div class="db-kpi-foot">
+            <span>Cadre Breakdown:</span>
+            <strong>74 MLP · 38 GMC · 22 MALT</strong>
+          </div>
+        </div>
+
+        <!-- KPI 2: High Potential (HiPo) Pipeline -->
+        <div class="db-kpi-card accent-amber">
+          <div>
+            <div class="db-kpi-top">
+              <span class="db-kpi-title">High Potential (HiPo)</span>
+              <div class="db-kpi-icon-wrap">⭐</div>
+            </div>
+            <div class="db-kpi-middle">
+              <span class="db-kpi-value" id="kpiHipo">42</span>
+              <span class="db-kpi-trend positive">↑ 31.3% of Pool</span>
+            </div>
+          </div>
+          <div class="db-kpi-sparkline">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+              <path d="M0,16 Q25,16 50,10 T85,5 L100,2" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M0,16 Q25,16 50,10 T85,5 L100,2 L100,20 L0,20 Z" fill="rgba(245, 158, 11, 0.08)"/>
+            </svg>
+          </div>
+          <div class="db-kpi-foot">
+            <span>Executive Pipeline:</span>
+            <strong>26 Slated to CXO/VP Roles</strong>
+          </div>
+        </div>
+
+        <!-- KPI 3: Ready Now Successors -->
+        <div class="db-kpi-card accent-green">
+          <div>
+            <div class="db-kpi-top">
+              <span class="db-kpi-title">Ready Now (0–1 Year)</span>
+              <div class="db-kpi-icon-wrap">🛡️</div>
+            </div>
+            <div class="db-kpi-middle">
+              <span class="db-kpi-value" id="kpiReadyNow">31</span>
+              <span class="db-kpi-trend positive">↑ 5 Slated</span>
+            </div>
+          </div>
+          <div class="db-kpi-sparkline">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+              <path d="M0,18 Q30,15 60,8 T90,4 L100,2" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M0,18 Q30,15 60,8 T90,4 L100,2 L100,20 L0,20 Z" fill="rgba(16, 185, 129, 0.08)"/>
+            </svg>
+          </div>
+          <div class="db-kpi-foot">
+            <span>Role Coverage:</span>
+            <strong>1.8x Successor Ratio</strong>
+          </div>
+        </div>
+
+        <!-- KPI 4: Profile Data Completeness -->
+        <div class="db-kpi-card accent-indigo">
+          <div>
+            <div class="db-kpi-top">
+              <span class="db-kpi-title">Data Completeness</span>
+              <div class="db-kpi-icon-wrap">⚡</div>
+            </div>
+            <div class="db-kpi-middle">
+              <span class="db-kpi-value" id="kpiCompleteness">94.2%</span>
+              <span class="db-kpi-trend positive">↑ +4.2% vs target</span>
+            </div>
+          </div>
+          <div class="db-kpi-sparkline">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+              <path d="M0,14 Q35,13 65,7 T90,3 L100,1" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M0,14 Q35,13 65,7 T90,3 L100,1 L100,20 L0,20 Z" fill="rgba(99, 102, 241, 0.08)"/>
+            </svg>
+          </div>
+          <div class="db-kpi-foot">
+            <span>Governance Integrity:</span>
+            <strong>128/134 Fully Verified</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Strategic Visualizations Row (7:5 Split) -->
+      <div class="db-grid-row">
+        <!-- Left: Succession Readiness Horizon Progression -->
+        <div class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-title-group">
+              <h2>Succession Readiness Horizon Progression</h2>
+              <p>Quarterly cohort trajectory toward M3/M4 benchmark competency (Target: 80%)</p>
+            </div>
+            <span class="badge badge-verified" style="font-size: 0.7rem;">FY26 Q2 Live</span>
+          </div>
+
+          <div class="db-chart-canvas-wrap">
+            <canvas id="readinessChart"></canvas>
+          </div>
+
+          <!-- Bottom Summary Metrics Strip -->
+          <div class="db-chart-stats-footer">
+            <div class="db-stat-item">
+              <span class="db-stat-label">Current Readiness</span>
+              <span class="db-stat-value" style="color: #e31837;">84.0%</span>
+              <span class="db-stat-sub">↑ +26.0% vs Q1 2025</span>
+            </div>
+            <div class="db-stat-item">
+              <span class="db-stat-label">Succession Velocity</span>
+              <span class="db-stat-value">+5.2% / Qtr</span>
+              <span class="db-stat-sub" style="color: #0284c7;">Consistently Ahead</span>
+            </div>
+            <div class="db-stat-item">
+              <span class="db-stat-label">Projected Q3 Ready</span>
+              <span class="db-stat-value">18 Leaders</span>
+              <span class="db-stat-sub">Slated for Elevation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Talent Mix & Cohort Footprint -->
+        <div class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-title-group">
+              <h3>Talent Mix & Cohort Footprint</h3>
+              <p>Distribution across active leadership tracks</p>
+            </div>
+            <span class="badge badge-active" style="font-size: 0.7rem;">134 Total Cadre</span>
+          </div>
+
+          <div class="db-donut-layout">
+            <div class="db-donut-chart-box">
+              <canvas id="talentMixChart"></canvas>
+              <div class="db-donut-center-stat">
+                <div class="num">134</div>
+                <div class="lbl">Leaders</div>
+              </div>
+            </div>
+
+            <!-- Rich Cohort Legend List -->
+            <div class="db-cohort-list">
+              <div class="db-cohort-row">
+                <div class="db-cohort-left">
+                  <span class="db-cohort-dot" style="background: #e31837;"></span>
+                  <span class="db-cohort-name">GMC (Senior Cadre)</span>
+                </div>
+                <div class="db-cohort-right">
+                  <span class="db-cohort-count">38</span>
+                  <span class="db-cohort-pct">28%</span>
+                </div>
+              </div>
+
+              <div class="db-cohort-row">
+                <div class="db-cohort-left">
+                  <span class="db-cohort-dot" style="background: #0284c7;"></span>
+                  <span class="db-cohort-name">MLP 24–25 (Core)</span>
+                </div>
+                <div class="db-cohort-right">
+                  <span class="db-cohort-count">32</span>
+                  <span class="db-cohort-pct">24%</span>
+                </div>
+              </div>
+
+              <div class="db-cohort-row">
+                <div class="db-cohort-left">
+                  <span class="db-cohort-dot" style="background: #10b981;"></span>
+                  <span class="db-cohort-name">MLP 2026 (Stints)</span>
+                </div>
+                <div class="db-cohort-right">
+                  <span class="db-cohort-count">24</span>
+                  <span class="db-cohort-pct">18%</span>
+                </div>
+              </div>
+
+              <div class="db-cohort-row">
+                <div class="db-cohort-left">
+                  <span class="db-cohort-dot" style="background: #8b5cf6;"></span>
+                  <span class="db-cohort-name">MALT (Accelerated)</span>
+                </div>
+                <div class="db-cohort-right">
+                  <span class="db-cohort-count">22</span>
+                  <span class="db-cohort-pct">16%</span>
+                </div>
+              </div>
+
+              <div class="db-cohort-row">
+                <div class="db-cohort-left">
+                  <span class="db-cohort-dot" style="background: #f59e0b;"></span>
+                  <span class="db-cohort-name">MLP 2027 (Campus)</span>
+                </div>
+                <div class="db-cohort-right">
+                  <span class="db-cohort-count">18</span>
+                  <span class="db-cohort-pct">14%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Deep Governance & Capability Grid (50:50 Split) -->
+      <div class="db-grid-equal">
+        <!-- Left: Interactive 9-Box Talent Matrix -->
+        <div class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-title-group">
+              <h3>Interactive 9-Box Talent Matrix</h3>
+              <p>Performance vs Potential slating (Click cluster to filter directory)</p>
+            </div>
+            <a href="talent-analytics.html" class="btn btn-ghost btn-sm text-red" style="font-weight: 700; font-size: 0.74rem;">
+              Full View ➔
+            </a>
+          </div>
+
+          <div class="db-ninebox-wrapper">
+            <div id="nineBoxMatrixContainer"></div>
+          </div>
+        </div>
+
+        <!-- Right: Core Leadership Capability Radar & Scorecard (Image 3 Redesign) -->
+        <div class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-title-group">
+              <h3>Leadership Competency Radar & CAB Scale</h3>
+              <p>Spider benchmark: Active Pool vs Mahindra Leadership Benchmark (Target: 80%)</p>
+            </div>
+            <span class="badge badge-persona-mlp26" style="font-size: 0.7rem;">CAB Scale (1–5)</span>
+          </div>
+
+          <!-- Radar Chart + Scorecards Split -->
+          <div class="db-radar-split-layout">
+            <!-- Left: Radar Chart Canvas -->
+            <div class="db-radar-chart-wrap">
+              <canvas id="capabilityRadarChart"></canvas>
+            </div>
+
+            <!-- Right: Competency Score Breakdown Chips -->
+            <div class="db-radar-scorecards">
+              <div class="db-score-row">
+                <div class="db-score-left">
+                  <span>⚡</span>
+                  <span>Agile Execution</span>
+                </div>
+                <div class="d-flex align-center gap-xs">
+                  <span class="db-score-badge">4.6 CAB (92%)</span>
+                  <span class="db-score-delta">+12%</span>
+                </div>
+              </div>
+
+              <div class="db-score-row">
+                <div class="db-score-left">
+                  <span>🔄</span>
+                  <span>Cross-Sector Synergies</span>
+                </div>
+                <div class="d-flex align-center gap-xs">
+                  <span class="db-score-badge">4.4 CAB (88%)</span>
+                  <span class="db-score-delta">+8%</span>
+                </div>
+              </div>
+
+              <div class="db-score-row">
+                <div class="db-score-left">
+                  <span>🎯</span>
+                  <span>Customer Centricity</span>
+                </div>
+                <div class="d-flex align-center gap-xs">
+                  <span class="db-score-badge">4.3 CAB (86%)</span>
+                  <span class="db-score-delta">+6%</span>
+                </div>
+              </div>
+
+              <div class="db-score-row">
+                <div class="db-score-left">
+                  <span>🤖</span>
+                  <span>Digital & Applied AI</span>
+                </div>
+                <div class="d-flex align-center gap-xs">
+                  <span class="db-score-badge">4.2 CAB (84%)</span>
+                  <span class="db-score-delta">+4%</span>
+                </div>
+              </div>
+
+              <div class="db-score-row">
+                <div class="db-score-left">
+                  <span>📊</span>
+                  <span>P&L & Capital Discipline</span>
+                </div>
+                <div class="d-flex align-center gap-xs">
+                  <span class="db-score-badge" style="background: #fffbeb; color: #b45309;">4.1 CAB (81%)</span>
+                  <span class="db-score-delta" style="color: #b45309;">+1%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Highlights Row -->
+          <div class="db-cap-highlights-row">
+            <span class="db-cap-badge strength">
+              ✓ Top Core Strength: Agile Execution (+12% vs Target)
+            </span>
+            <span class="db-cap-badge focus">
+              🎯 Development Focus: GMC P&L Mastery Sprint
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Urgent BHR Verification Queue (Image 4 Redesign: Ultra-Clean Executive Table) -->
+      <div class="db-table-card">
+        <div class="db-table-toolbar">
+          <div class="db-card-title-group">
+            <div class="d-flex align-center gap-sm">
+              <h3 style="font-size: 1.05rem; color: #0f172a; margin: 0;">Urgent BHR Verification & Audit Queue</h3>
+              <span class="badge badge-pending" id="dbQueueCountBadge" style="font-size: 0.7rem;">4 Pending Sign-Offs</span>
+            </div>
+            <p style="margin-top: 2px;">Audited multi-step profile diffs awaiting Business HR approval</p>
+          </div>
+
+          <div class="d-flex align-center gap-sm flex-wrap">
+            <div class="db-table-tabs">
+              <button type="button" class="db-table-tab active" onclick="filterDashboardTable('All', this)">All (4)</button>
+              <button type="button" class="db-table-tab" onclick="filterDashboardTable('Pending', this)">Pending (2)</button>
+              <button type="button" class="db-table-tab" onclick="filterDashboardTable('Approved', this)">Approved (2)</button>
+            </div>
+
+            <a href="bhr-approvals.html" class="db-action-btn primary" style="padding: 5px 12px; font-size: 0.75rem;">
+              Manage All Approvals ➔
+            </a>
+          </div>
+        </div>
+
+        <div class="db-clean-table-wrap">
+          <table class="db-clean-table" id="dashboardApprovalsTable">
+            <thead>
+              <tr>
+                <th>Request ID & Date</th>
+                <th>Talent & Persona</th>
+                <th>Section & Field</th>
+                <th>Proposed Modification (Diff)</th>
+                <th>Submitted By</th>
+                <th>Status</th>
+                <th style="text-align: right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="approvalsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="portal-footer" style="margin-top: 4px; padding: 12px 20px;">
+        <div class="d-flex align-center gap-sm">
+          <img src="../images/mahindra-red-logo.svg" alt="Mahindra" style="height: 16px; width: auto;">
+          <span style="font-size: 0.76rem;">• NextGen Talent Card Architecture (Confidential & Proprietary)</span>
+        </div>
+        <div style="font-size: 0.76rem;">Governing MLP, GMC & MALT Executive Leadership Tracks</div>
+      </footer>
+
+    </div>
+  </main>
+</div>
+
+<!-- Floating Action Button -->
+<button type="button" class="floating-help-btn" onclick="App.openHelpModal()" title="Help & Governance Desk">
+  <span>💬</span>
+  <span class="font-bold text-xs">Request / Help</span>
+  <span class="help-badge-counter">2</span>
+</button>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/bhr-approvals.js"></script>
+<script src="../js/talent-analytics.js"></script>
+<script>
+  let readinessChartInstance = null;
+  let talentMixChartInstance = null;
+  let capabilityRadarChartInstance = null;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    TalentAnalytics.init();
+    renderCleanApprovalsTable();
+    initDashboardCharts();
+  });
+
+  function renderCleanApprovalsTable(filter = 'All') {
+    const list = TalentStore.getApprovals();
+    const tbody = document.getElementById('approvalsTableBody');
+    if (!tbody) return;
+
+    let filtered = list;
+    if (filter === 'Pending') {
+      filtered = list.filter(r => r.status.includes('Pending'));
+    } else if (filter === 'Approved') {
+      filtered = list.filter(r => r.status.includes('Approved'));
+    }
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="7" style="text-align: center; padding: 24px;">
+            <div style="font-size: 1.5rem; margin-bottom: 4px;">🎉</div>
+            <div class="font-bold text-xs" style="color: #0f172a;">No Submissions Found</div>
+            <div class="text-xs text-muted">All submissions under this filter have been processed.</div>
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    let html = '';
+    filtered.forEach(req => {
+      const isPending = req.status.includes('Pending');
+      let statusBadge = `<span class="db-status-pill pending">⏳ ${req.status}</span>`;
+      if (req.status.includes('Approved')) {
+        statusBadge = `<span class="db-status-pill approved">✓ Approved</span>`;
+      } else if (req.status.includes('Clarification') || req.status.includes('Returned')) {
+        statusBadge = `<span class="db-status-pill clarification">⚠️ Clarification</span>`;
+      }
+
+      let personaClass = 'badge-persona-mlp26';
+      if (req.persona.includes('2027')) personaClass = 'badge-persona-mlp27';
+      else if (req.persona.includes('GMC')) personaClass = 'badge-persona-gmc';
+      else if (req.persona.includes('MALT')) personaClass = 'badge-persona-malt';
+
+      const avatarImg = req.talentName.includes('Aditi') 
+        ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&auto=format&fit=crop&q=80'
+        : (req.talentName.includes('Rohan') 
+            ? 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80'
+            : 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80');
+
+      html += `
+        <tr>
+          <td>
+            <strong style="color: #0f172a; font-family: monospace; font-size: 0.82rem;">${req.id}</strong>
+            <span class="text-xs text-muted" style="display: block; font-size: 0.68rem; margin-top: 1px;">${req.submissionDate}</span>
+          </td>
+          <td>
+            <div class="db-talent-chip">
+              <img src="${avatarImg}" alt="${req.talentName}" class="db-talent-avatar">
+              <div>
+                <a href="talent-card.html?id=${req.talentId}" class="db-talent-name">${req.talentName}</a>
+                <span class="badge ${personaClass}" style="font-size: 0.65rem; padding: 1px 5px; margin-left: 2px;">${req.persona}</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div style="font-weight: 700; color: #1e293b; font-size: 0.74rem;">${req.section}</div>
+            <div class="text-xs text-muted" style="font-size: 0.68rem;">${req.fieldChanged}</div>
+          </td>
+          <td>
+            <div class="db-diff-box">
+              <span class="db-diff-old"><s>Prev: ${req.oldValue}</s></span>
+              <span class="db-diff-new">✨ New: ${req.newValue}</span>
+            </div>
+          </td>
+          <td>
+            <span style="font-size: 0.72rem; color: #475569; font-weight: 600;">${req.submittedBy}</span>
+          </td>
+          <td>
+            ${statusBadge}
+          </td>
+          <td style="text-align: right;">
+            <div class="d-inline-flex align-center gap-xs">
+              ${isPending ? `
+                <button type="button" class="btn btn-primary btn-sm" style="padding: 3px 8px; font-size: 0.7rem;" onclick="quickApproveFromDashboard('${req.id}')">Approve</button>
+                <button type="button" class="btn btn-outline btn-sm" style="padding: 3px 8px; font-size: 0.7rem;" onclick="quickRejectFromDashboard('${req.id}')">Return</button>
+              ` : `
+                <a href="bhr-approvals.html" class="btn btn-ghost btn-sm" style="padding: 3px 6px; font-size: 0.7rem; color: #64748b;">View Audit ➔</a>
+              `}
+            </div>
+          </td>
+        </tr>
+      `;
+    });
+
+    tbody.innerHTML = html;
+  }
+
+  function quickApproveFromDashboard(reqId) {
+    const list = TalentStore.getApprovals();
+    const item = list.find(r => r.id === reqId);
+    if (item) {
+      item.status = "Approved by BHR";
+      TalentStore.set('bhrApprovals', list);
+      App.showToast(`Request ${reqId} Approved and signed off successfully.`, 'success');
+      renderCleanApprovalsTable();
+    }
+  }
+
+  function quickRejectFromDashboard(reqId) {
+    const list = TalentStore.getApprovals();
+    const item = list.find(r => r.id === reqId);
+    if (item) {
+      item.status = "Clarification Requested";
+      TalentStore.set('bhrApprovals', list);
+      App.showToast(`Clarification requested for ${reqId}.`, 'warning');
+      renderCleanApprovalsTable();
+    }
+  }
+
+  function initDashboardCharts() {
+    if (typeof Chart === 'undefined') return;
+
+    // 1. Succession Readiness Line Chart (Dual Series)
+    const rCtx = document.getElementById('readinessChart');
+    if (rCtx) {
+      if (readinessChartInstance) readinessChartInstance.destroy();
+
+      const ctx = rCtx.getContext('2d');
+      const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+      gradient.addColorStop(0, 'rgba(227, 24, 55, 0.16)');
+      gradient.addColorStop(1, 'rgba(227, 24, 55, 0.00)');
+
+      readinessChartInstance = new Chart(rCtx, {
+        type: 'line',
+        data: {
+          labels: ['Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025', 'Q1 2026', 'Q2 2026'],
+          datasets: [
+            {
+              label: 'Actual Readiness Index',
+              data: [58, 63, 67, 71, 78, 84],
+              borderColor: '#e31837',
+              backgroundColor: gradient,
+              fill: true,
+              tension: 0.38,
+              borderWidth: 2.8,
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              pointBackgroundColor: '#e31837',
+              pointBorderColor: '#ffffff',
+              pointBorderWidth: 2
+            },
+            {
+              label: 'Benchmark Target (80%)',
+              data: [60, 64, 68, 72, 76, 80],
+              borderColor: '#94a3b8',
+              borderDash: [4, 4],
+              borderWidth: 1.8,
+              fill: false,
+              pointRadius: 0,
+              tension: 0.2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top',
+              align: 'end',
+              labels: { boxWidth: 10, font: { family: 'Plus Jakarta Sans', size: 10.5, weight: '600' }, color: '#64748b' }
+            },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              titleFont: { family: 'Plus Jakarta Sans', size: 11, weight: '700' },
+              bodyFont: { family: 'Plus Jakarta Sans', size: 11 },
+              padding: 8,
+              cornerRadius: 6,
+              callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw}%` }
+            }
+          },
+          scales: {
+            y: {
+              min: 40,
+              max: 100,
+              ticks: { callback: v => v + '%', font: { family: 'Plus Jakarta Sans', size: 10 }, color: '#94a3b8' },
+              grid: { color: '#f1f5f9' }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { font: { family: 'Plus Jakarta Sans', size: 10.5, weight: '600' }, color: '#64748b' }
+            }
+          }
+        }
+      });
+    }
+
+    // 2. Talent Mix Doughnut Chart
+    const tmCtx = document.getElementById('talentMixChart');
+    if (tmCtx) {
+      if (talentMixChartInstance) talentMixChartInstance.destroy();
+
+      talentMixChartInstance = new Chart(tmCtx, {
+        type: 'doughnut',
+        data: {
+          labels: ['GMC (Senior)', 'MLP 24–25 (Core)', 'MLP 2026 (Stints)', 'MALT (Accel)', 'MLP 2027 (Campus)'],
+          datasets: [{
+            data: [38, 32, 24, 22, 18],
+            backgroundColor: ['#e31837', '#0284c7', '#10b981', '#8b5cf6', '#f59e0b'],
+            borderWidth: 2,
+            borderColor: '#ffffff',
+            hoverOffset: 3
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              titleFont: { family: 'Plus Jakarta Sans', size: 11, weight: '700' },
+              bodyFont: { family: 'Plus Jakarta Sans', size: 11 },
+              padding: 8,
+              cornerRadius: 6,
+              callbacks: {
+                label: ctx => ` ${ctx.label}: ${ctx.raw} Leaders (${Math.round(ctx.raw / 134 * 100)}%)`
+              }
+            }
+          },
+          cutout: '72%'
+        }
+      });
+    }
+
+    // 3. Leadership Competency Radar Chart (Spider Chart - Image 3 Redesign)
+    const capCtx = document.getElementById('capabilityRadarChart');
+    if (capCtx) {
+      if (capabilityRadarChartInstance) capabilityRadarChartInstance.destroy();
+
+      capabilityRadarChartInstance = new Chart(capCtx, {
+        type: 'radar',
+        data: {
+          labels: ['Agile Execution', 'Synergies', 'Customer', 'Digital & AI', 'P&L Discipline'],
+          datasets: [
+            {
+              label: 'Active Cadre Pool',
+              data: [92, 88, 86, 84, 81],
+              fill: true,
+              backgroundColor: 'rgba(227, 24, 55, 0.20)',
+              borderColor: '#e31837',
+              pointBackgroundColor: '#e31837',
+              pointBorderColor: '#fff',
+              pointHoverBackgroundColor: '#fff',
+              pointHoverBorderColor: '#e31837',
+              borderWidth: 2,
+              pointRadius: 3
+            },
+            {
+              label: 'Mahindra Target (80%)',
+              data: [80, 80, 80, 80, 80],
+              fill: true,
+              backgroundColor: 'rgba(2, 132, 199, 0.08)',
+              borderColor: '#0284c7',
+              borderDash: [3, 3],
+              pointBackgroundColor: '#0284c7',
+              pointBorderColor: '#fff',
+              borderWidth: 1.5,
+              pointRadius: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top',
+              labels: { boxWidth: 8, font: { family: 'Plus Jakarta Sans', size: 9.5, weight: '700' }, color: '#64748b' }
+            },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              titleFont: { family: 'Plus Jakarta Sans', size: 11, weight: '700' },
+              bodyFont: { family: 'Plus Jakarta Sans', size: 10.5 },
+              padding: 8,
+              cornerRadius: 6
+            }
+          },
+          scales: {
+            r: {
+              min: 50,
+              max: 100,
+              ticks: { stepSize: 20, display: false },
+              grid: { color: '#e2e8f0' },
+              angleLines: { color: '#f1f5f9' },
+              pointLabels: {
+                font: { family: 'Plus Jakarta Sans', size: 9, weight: '700' },
+                color: '#334155'
+              }
+            }
+          }
+        }
+      });
+    }
+  }
+
+  function filterDashboardTable(status, btn) {
+    document.querySelectorAll('.db-table-tab').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    renderCleanApprovalsTable(status);
+  }
+
+  function onQuickSearchTalent(query) {
+    const term = query.toLowerCase();
+    const rows = document.querySelectorAll('#approvalsTableBody tr');
+    rows.forEach(r => {
+      const text = r.textContent.toLowerCase();
+      r.style.display = text.includes(term) ? '' : 'none';
+    });
+  }
+
+  function onCohortChange(val) {
+    App.showToast(`Dashboard filtered for Cohort: ${val === 'All' ? 'All Cadres' : val}`, 'info');
+    if (val === 'MLP') {
+      document.getElementById('kpiTotalTalent').textContent = '74';
+      document.getElementById('kpiHipo').textContent = '26';
+      document.getElementById('kpiReadyNow').textContent = '18';
+    } else if (val === 'GMC') {
+      document.getElementById('kpiTotalTalent').textContent = '38';
+      document.getElementById('kpiHipo').textContent = '12';
+      document.getElementById('kpiReadyNow').textContent = '9';
+    } else if (val === 'MALT') {
+      document.getElementById('kpiTotalTalent').textContent = '22';
+      document.getElementById('kpiHipo').textContent = '8';
+      document.getElementById('kpiReadyNow').textContent = '4';
+    } else {
+      document.getElementById('kpiTotalTalent').textContent = '134';
+      document.getElementById('kpiHipo').textContent = '42';
+      document.getElementById('kpiReadyNow').textContent = '31';
+    }
+  }
+
+  function onSectorChange(val) {
+    App.showToast(`Sector Benchmark updated: ${val === 'All' ? 'Cross-Group' : val}`, 'info');
+  }
+
+  function refreshDashboardData() {
+    const btn = document.getElementById('dbRefreshBtn');
+    if (btn) {
+      btn.style.transform = 'rotate(180deg)';
+      setTimeout(() => { btn.style.transform = 'none'; }, 400);
+    }
+    App.showToast('Executive Talent Intelligence data refreshed with latest HRMS sync.', 'success');
+  }
+</script>
+</body>
+</html>

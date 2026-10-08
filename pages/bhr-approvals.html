@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHR Verification Queue • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/bhr-approvals-exact.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR" selected>BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR">Executive Board (GEB)</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box -->
+        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue (Active) -->
+        <a href="bhr-approvals.html" class="sig-nav-item active" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility -->
+        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin -->
+        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area (Screen-Efficient Layout) -->
+  <main class="content-area">
+    <div class="bhr-dashboard-container">
+
+      <!-- 1. Header Card -->
+      <div class="bhr-header-card">
+        <div>
+          <div class="bhr-eyebrow">
+            <span>🛡️</span>
+            <span>Governance &amp; Data Fidelity Protocol</span>
+          </div>
+          <h1 class="bhr-title">BHR Verification &amp; Audit Center</h1>
+          <p class="bhr-subtitle">Rule 01_Logic: Every changed attribute is BHR-verified before publishing to live NextGen Talent Cards</p>
+        </div>
+
+        <button type="button" class="bhr-btn-batch" onclick="batchApproveAll()">
+          <span>⚡</span>
+          <span>Batch Verify All Pending</span>
+        </button>
+      </div>
+
+      <!-- 2. 4-Card Hero KPI Ribbon -->
+      <div class="bhr-kpi-ribbon">
+        <!-- KPI 1 -->
+        <div class="bhr-kpi-card">
+          <div class="bhr-kpi-top">
+            <span class="bhr-kpi-label">Pending Verification</span>
+            <div class="bhr-kpi-icon-wrap red">⏳</div>
+          </div>
+          <div class="bhr-kpi-main">
+            <span class="bhr-kpi-value" id="kpiPendingCount">4</span>
+          </div>
+          <div class="bhr-kpi-sub">Requires BHR Sign-Off</div>
+          <div class="bhr-kpi-bar">
+            <div class="bhr-kpi-bar-fill" style="width: 100%; background: var(--bhr-red);"></div>
+          </div>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="bhr-kpi-card">
+          <div class="bhr-kpi-top">
+            <span class="bhr-kpi-label">Verified This Cycle</span>
+            <div class="bhr-kpi-icon-wrap emerald">✅</div>
+          </div>
+          <div class="bhr-kpi-main">
+            <span class="bhr-kpi-value" id="kpiApprovedCount">42</span>
+          </div>
+          <div class="bhr-kpi-sub">100% Provenance Recorded</div>
+          <div class="bhr-kpi-bar">
+            <div class="bhr-kpi-bar-fill" style="width: 92%; background: #10b981;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="bhr-kpi-card">
+          <div class="bhr-kpi-top">
+            <span class="bhr-kpi-label">Clarifications Active</span>
+            <div class="bhr-kpi-icon-wrap amber">⚠️</div>
+          </div>
+          <div class="bhr-kpi-main">
+            <span class="bhr-kpi-value">1</span>
+          </div>
+          <div class="bhr-kpi-sub">Returned for STAR Evidence</div>
+          <div class="bhr-kpi-bar">
+            <div class="bhr-kpi-bar-fill" style="width: 25%; background: #f59e0b;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="bhr-kpi-card">
+          <div class="bhr-kpi-top">
+            <span class="bhr-kpi-label">Average SLA Turnaround</span>
+            <div class="bhr-kpi-icon-wrap blue">⚡</div>
+          </div>
+          <div class="bhr-kpi-main">
+            <span class="bhr-kpi-value">18 hrs</span>
+          </div>
+          <div class="bhr-kpi-sub">Well within 48-hour SLA</div>
+          <div class="bhr-kpi-bar">
+            <div class="bhr-kpi-bar-fill" style="width: 75%; background: #3b82f6;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Approvals Center Table Card -->
+      <div class="bhr-table-card">
+        <!-- Filter Toolbar -->
+        <div class="bhr-filter-toolbar">
+          <div class="bhr-filter-pills">
+            <button type="button" class="bhr-pill-btn active" data-filter="All">
+              All Requests <span class="bhr-pill-count" id="countAll">47</span>
+            </button>
+            <button type="button" class="bhr-pill-btn" data-filter="Pending">
+              Pending Review <span class="bhr-pill-count" id="countPending">4</span>
+            </button>
+            <button type="button" class="bhr-pill-btn" data-filter="Approved">
+              Approved <span class="bhr-pill-count" id="countApproved">42</span>
+            </button>
+            <button type="button" class="bhr-pill-btn" data-filter="Clarification">
+              Clarifications <span class="bhr-pill-count" id="countClarification">1</span>
+            </button>
+          </div>
+
+          <div class="bhr-rule-note">
+            <span>🔒 Strict Audit: Verified updates sync to ERP &amp; Talent Intelligence within 60 seconds</span>
+          </div>
+        </div>
+
+        <!-- Side-by-Side Diff Table -->
+        <div class="bhr-table-container">
+          <table class="bhr-table">
+            <thead>
+              <tr>
+                <th>Request ID &amp; Date</th>
+                <th>Talent &amp; Persona</th>
+                <th>Section &amp; Field</th>
+                <th>Old Value ➔ Proposed Value (Diff)</th>
+                <th>Submitted By</th>
+                <th>Current Status</th>
+                <th>Verification Actions</th>
+              </tr>
+            </thead>
+            <tbody id="approvalsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="portal-footer" style="margin-top: 16px;">
+      <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential &amp; Proprietary)</div>
+      <div>Governing MLP, GMC &amp; MALT Leadership Tracks</div>
+    </footer>
+  </main>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/bhr-approvals.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    BhrWorkflow.init();
+  });
+
+  function batchApproveAll() {
+    const list = TalentStore.getApprovals();
+    list.forEach(r => {
+      if (r.status.includes('Pending')) {
+        r.status = "Approved by BHR";
+        r.verifiedAt = new Date().toISOString().replace('T', ' ').substring(0, 16);
+        r.reviewerNotes = "Batch approved by BHR Lead during audit cycle.";
+      }
+    });
+    TalentStore.set('bhrApprovals', list);
+    BhrWorkflow.renderApprovalsTable();
+    BhrWorkflow.updateCounters();
+    App.showToast("All pending submissions successfully batch verified!", "success");
+  }
+</script>
+</body>
+</html>

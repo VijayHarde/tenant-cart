@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talent Directory • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/talent-directory-exact.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="talent-directory-page">
+
+  <!-- Top Navigation Bar (Exact Light Theme) -->
+  <header class="tc-navbar">
+    <div class="tc-navbar-left">
+      <a href="dashboard.html" class="d-flex align-center">
+        <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+      </a>
+
+      <div class="tc-search-wrapper">
+        <span class="tc-search-icon">🔍</span>
+        <input type="text" class="tc-search-input" id="navbarSearchInput"
+          placeholder="Search talent, skills, roles, programmes...">
+        <span class="tc-search-shortcut">⌘ K</span>
+      </div>
+    </div>
+
+    <div class="tc-navbar-right">
+      <!-- Notification Bell with Red Badge -->
+      <button type="button" class="tc-nav-bell-btn" title="Notifications">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        <span class="tc-nav-bell-badge">4</span>
+      </button>
+
+      <!-- Role Switcher -->
+      <div class="tc-role-pill">
+        <span class="tc-role-label">ROLE:</span>
+        <select id="demoRoleSelector" class="tc-role-select">
+          <option value="Employee">Employee View</option>
+          <option value="BHR" selected>BHR Lead</option>
+          <option value="Manager">Manager View</option>
+          <option value="GroupHR">Executive Board</option>
+        </select>
+      </div>
+
+      <!-- User Profile Dropdown -->
+      <div class="tc-user-profile-btn">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80"
+          alt="Megha Patil" class="tc-user-avatar">
+        <div class="tc-user-info-text">
+          <span class="tc-user-name">Megha Patil</span>
+          <span class="tc-user-role">BHR Lead</span>
+        </div>
+        <span class="tc-dropdown-chevron">⌵</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="td-layout-body">
+    <!-- Signature Floating Capsule Sidebar -->
+    <aside class="sig-sidebar" id="sigSidebar">
+      <!-- Left Accent Edge Glow -->
+      <div class="sig-sidebar-edge-glow"></div>
+
+      <!-- Protruding Tab Toggle Button -->
+      <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+        <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="sig-sidebar-scroll">
+        <!-- 1. Header 3-Bar Icon Block -->
+        <div class="sig-header-block">
+          <div class="sig-logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="6" y1="12" x2="18" y2="12"></line>
+              <line x1="8" y1="18" x2="16" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 2. User Profile Card -->
+        <div class="sig-profile-block">
+          <div class="sig-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80"
+              alt="Megha Patil" class="sig-avatar-img">
+            <span class="sig-status-dot" title="Online / Active"></span>
+          </div>
+          <div class="sig-profile-details">
+            <div class="sig-profile-name">Megha Patil</div>
+            <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+          </div>
+        </div>
+
+        <div class="sig-divider"></div>
+
+        <!-- 3. Sidebar Search -->
+        <div class="sig-search-block">
+          <div class="sig-search-inner">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+            <span class="sig-search-badge">⌘K</span>
+          </div>
+        </div>
+
+        <!-- 4. Navigation Items Stack -->
+        <nav class="sig-nav-stack">
+          <!-- Dashboard -->
+          <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+              </svg>
+            </span>
+            <span class="sig-nav-label">Dashboard</span>
+          </a>
+
+          <!-- NextGen Talent Card -->
+          <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <span class="sig-nav-label">NextGen Talent Card</span>
+          </a>
+
+          <!-- Talent Directory -->
+          <a href="talent-directory.html" class="sig-nav-item active" title="Talent Directory">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                <line x1="12" y1="11" x2="12" y2="17"></line>
+                <line x1="9" y1="14" x2="15" y2="14"></line>
+              </svg>
+            </span>
+            <span class="sig-nav-label">Talent Directory</span>
+          </a>
+
+          <!-- Analytics & 9-Box -->
+          <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </span>
+            <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+          </a>
+
+          <!-- BHR Queue -->
+          <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </span>
+            <span class="sig-nav-label">BHR Queue</span>
+            <span class="sig-nav-badge">4</span>
+          </a>
+
+          <!-- Team & Mobility -->
+          <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </span>
+            <span class="sig-nav-label">Team &amp; Mobility</span>
+          </a>
+
+          <!-- Settings / Masters Admin -->
+          <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+            <span class="sig-nav-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+            </span>
+            <span class="sig-nav-label">Settings</span>
+          </a>
+        </nav>
+
+        <!-- 5. Bottom Mahindra Brand Logo -->
+        <div class="sig-bottom-brand">
+          <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="td-content-area">
+      <!-- Header Banner -->
+      <div class="td-header-row">
+        <div>
+          <div class="td-eyebrow">CADRE &amp; PROGRAMME DIRECTORY</div>
+          <h1 class="td-title">High-Potential Leadership Talent Directory</h1>
+          <div class="td-subtitle">Unified index across MLP, GMC, and MALT rotational leadership cohorts.</div>
+        </div>
+        <div class="td-header-actions">
+          <a href="talent-edit.html" class="td-btn-add">
+            <span>+ Add Talent Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------------
+         DISTINCT FILTER SECTION (2-COLUMN LUXURY INSET INPUT CARDS)
+         ---------------------------------------------------------------------- -->
+      <div class="td-filter-section">
+        <div class="td-filter-header">
+          <div class="td-filter-title-wrap">
+            <div class="td-filter-icon-box">⚡</div>
+            <div>
+              <span class="td-filter-heading">Search &amp; Multi-Parametric Filters</span>
+              <span class="td-filter-sub">Filter talent across 15 governed leadership dimensions</span>
+            </div>
+          </div>
+          <button type="button" class="td-btn-reset" onclick="DirectoryEngine.resetFilters()">
+            <span>↺ Reset Filters</span>
+          </button>
+        </div>
+
+        <!-- 2-Column Inputs Grid (Row 1: Search & Sector | Row 2: Programme & Persona) -->
+        <div class="td-inputs-grid-2">
+          <!-- Row 1 / Input 1: Search Talent -->
+          <div class="td-field-card">
+            <div class="td-field-icon">🔍</div>
+            <div class="td-field-body">
+              <label for="dirSearchInput" class="td-field-label">Search Talent Profile</label>
+              <input type="text" id="dirSearchInput" class="td-field-input"
+                placeholder="Type candidate name, token ID, role, or business..." oninput="DirectoryEngine.filterTalents()">
+            </div>
+          </div>
+
+          <!-- Row 1 / Input 2: Operating Sector (Autocomplete Searchable Dropdown) -->
+          <div class="td-field-card td-searchable-dropdown" id="comboSector">
+            <div class="td-field-icon">🏢</div>
+            <div class="td-field-body">
+              <label class="td-field-label">Operating Sector</label>
+              <div class="td-combo-display-wrap">
+                <input type="text" class="td-combo-input" id="sectorInput" placeholder="All Operating Sectors" autocomplete="off">
+                <div class="td-combo-actions">
+                  <button type="button" class="td-combo-clear-btn" id="sectorClearBtn" style="display: none;" title="Clear">✕</button>
+                  <span class="td-combo-chevron">⌵</span>
+                </div>
+              </div>
+            </div>
+            <!-- Menu Dropdown -->
+            <div class="td-combo-menu" id="sectorMenu">
+              <div class="td-combo-item selected" data-value="All">
+                <span>All Operating Sectors (AFS, MMFSL, TechM, Susten)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="Automotive & Farm">
+                <span>Automotive &amp; Farm (AFS)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="Financial Services">
+                <span>Financial Services (MMFSL)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="IT & Services">
+                <span>IT &amp; Services (Tech Mahindra)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="Aerospace & Defence">
+                <span>Aerospace &amp; Defence</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="Real Estate & Hospitality">
+                <span>Real Estate &amp; Hospitality</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 / Input 3: Leadership Programme (Autocomplete Searchable Dropdown) -->
+          <div class="td-field-card td-searchable-dropdown" id="comboProg">
+            <div class="td-field-icon">🎓</div>
+            <div class="td-field-body">
+              <label class="td-field-label">Leadership Programme</label>
+              <div class="td-combo-display-wrap">
+                <input type="text" class="td-combo-input" id="progInput" placeholder="All Programmes (MLP, GMC, MALT)" autocomplete="off">
+                <div class="td-combo-actions">
+                  <button type="button" class="td-combo-clear-btn" id="progClearBtn" style="display: none;" title="Clear">✕</button>
+                  <span class="td-combo-chevron">⌵</span>
+                </div>
+              </div>
+            </div>
+            <!-- Menu Dropdown -->
+            <div class="td-combo-menu" id="progMenu">
+              <div class="td-combo-item selected" data-value="All">
+                <span>All Programmes (MLP, GMC, MALT)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MLP">
+                <span>Mahindra Leadership Programme (MLP)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="GMC">
+                <span>Group Management Cadre (GMC)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MALT">
+                <span>Mahindra Accelerated Track (MALT)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 / Input 4: Cohort Persona Stage (Autocomplete Searchable Dropdown) -->
+          <div class="td-field-card td-searchable-dropdown" id="comboPersona">
+            <div class="td-field-icon">👥</div>
+            <div class="td-field-body">
+              <label class="td-field-label">Cohort Persona Stage</label>
+              <div class="td-combo-display-wrap">
+                <input type="text" class="td-combo-input" id="personaInput" placeholder="All Cohort Persona Stages" autocomplete="off">
+                <div class="td-combo-actions">
+                  <button type="button" class="td-combo-clear-btn" id="personaClearBtn" style="display: none;" title="Clear">✕</button>
+                  <span class="td-combo-chevron">⌵</span>
+                </div>
+              </div>
+            </div>
+            <!-- Menu Dropdown -->
+            <div class="td-combo-menu" id="personaMenu">
+              <div class="td-combo-item selected" data-value="All">
+                <span>All Cohort Persona Stages</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MLP 2027">
+                <span>MLP 2027 (Pre-Join / Campus)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MLP 2026">
+                <span>MLP 2026 (Rotations / Stints)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MLP 2024–25">
+                <span>MLP 2024–25 (Full-Time Role)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="GMC 2019–23">
+                <span>GMC 2019–23 (Cadre / Multi-Year)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+              <div class="td-combo-item" data-value="MALT">
+                <span>MALT (Lateral / Senior)</span>
+                <span class="td-combo-check">✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Luxury Quick Filters Presets Bar -->
+        <div class="td-quick-filters-card">
+          <div class="td-quick-filter-title">
+            <span>⚡</span>
+            <span>Quick Cadre Presets:</span>
+          </div>
+          <div class="td-quick-pills-row">
+            <button type="button" class="td-quick-pill active" onclick="DirectoryEngine.applyQuickFilter('all', this)">
+              All Talents <span class="td-quick-pill-count">5</span>
+            </button>
+            <button type="button" class="td-quick-pill" onclick="DirectoryEngine.applyQuickFilter('mlp26', this)">
+              MLP 2026 Stints <span class="td-quick-pill-count">1</span>
+            </button>
+            <button type="button" class="td-quick-pill" onclick="DirectoryEngine.applyQuickFilter('mlp27', this)">
+              MLP 2027 Pre-Join <span class="td-quick-pill-count">1</span>
+            </button>
+            <button type="button" class="td-quick-pill" onclick="DirectoryEngine.applyQuickFilter('gmc', this)">
+              GMC Cadre <span class="td-quick-pill-count">1</span>
+            </button>
+            <button type="button" class="td-quick-pill" onclick="DirectoryEngine.applyQuickFilter('afs', this)">
+              AFS / Automotive <span class="td-quick-pill-count">2</span>
+            </button>
+            <button type="button" class="td-quick-pill" onclick="DirectoryEngine.applyQuickFilter('ready', this)">
+              Ready in 0–1 Year <span class="td-quick-pill-count">4</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom Bar: Results Counter & View Switch -->
+        <div class="td-filter-bottom-bar">
+          <div id="dirResultStats" class="td-results-count">
+            <span>📊</span>
+            <span>Showing <strong>5 of 5</strong> matching high-potential profiles</span>
+          </div>
+          <div class="td-view-switch-wrap">
+            <button type="button" class="td-view-btn active" id="btnTableView"
+              onclick="DirectoryEngine.setView('table')">
+              📋 Table View
+            </button>
+            <button type="button" class="td-view-btn" id="btnCardView" onclick="DirectoryEngine.setView('cards')">
+              🎴 Executive Grid View
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table View -->
+      <div class="td-table-container" id="dirTableContainer">
+        <table class="td-table">
+          <thead>
+            <tr>
+              <th>Talent Profile &amp; Token</th>
+              <th>Cohort Persona</th>
+              <th>Current Business &amp; Sector</th>
+              <th>Role &amp; Function</th>
+              <th>Reporting Manager</th>
+              <th>Readiness Horizon</th>
+              <th>Completeness</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="directoryTableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- Card View (Initially Hidden) -->
+      <div id="dirCardContainer" class="td-cards-grid" style="display: none;"></div>
+
+      <footer class="td-portal-footer">
+        <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential &amp; Proprietary)</div>
+        <div>Governing MLP, GMC &amp; MALT Leadership Tracks across Group Sectors</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="../js/mock-data.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    const DirectoryEngine = {
+      viewMode: 'table',
+      
+      // Selected filter state
+      filters: {
+        sector: 'All',
+        prog: 'All',
+        persona: 'All'
+      },
+
+      init() {
+        this.setupSearchableDropdowns();
+        this.render();
+      },
+
+      setupSearchableDropdowns() {
+        this.setupDropdown('comboSector', 'sectorInput', 'sectorMenu', 'sectorClearBtn', 'sector', 'All Operating Sectors');
+        this.setupDropdown('comboProg', 'progInput', 'progMenu', 'progClearBtn', 'prog', 'All Programmes (MLP, GMC, MALT)');
+        this.setupDropdown('comboPersona', 'personaInput', 'personaMenu', 'personaClearBtn', 'persona', 'All Cohort Persona Stages');
+
+        // Global click-outside listener
+        document.addEventListener('click', (e) => {
+          if (!e.target.closest('.td-searchable-dropdown')) {
+            document.querySelectorAll('.td-searchable-dropdown').forEach(d => d.classList.remove('open'));
+            document.querySelectorAll('.td-combo-menu').forEach(m => m.classList.remove('open'));
+          }
+        });
+      },
+
+      setupDropdown(comboId, inputId, menuId, clearBtnId, filterKey, defaultPlaceholder) {
+        const combo = document.getElementById(comboId);
+        const input = document.getElementById(inputId);
+        const menu = document.getElementById(menuId);
+        const clearBtn = document.getElementById(clearBtnId);
+
+        if (!combo || !input || !menu) return;
+
+        // Toggle menu on click
+        combo.addEventListener('click', (e) => {
+          if (e.target === clearBtn || e.target.closest('.td-combo-clear-btn')) return;
+          const isOpen = menu.classList.contains('open');
+          // Close all menus first
+          document.querySelectorAll('.td-searchable-dropdown').forEach(d => d.classList.remove('open'));
+          document.querySelectorAll('.td-combo-menu').forEach(m => m.classList.remove('open'));
+          
+          if (!isOpen) {
+            combo.classList.add('open');
+            menu.classList.add('open');
+            input.focus();
+            input.select();
+          }
+        });
+
+        // Filter options in real-time as user types
+        input.addEventListener('input', () => {
+          if (!menu.classList.contains('open')) {
+            combo.classList.add('open');
+            menu.classList.add('open');
+          }
+          const query = input.value.toLowerCase().trim();
+          let hasMatches = false;
+
+          menu.querySelectorAll('.td-combo-item').forEach(item => {
+            const text = item.textContent.toLowerCase();
+            if (text.includes(query)) {
+              item.style.display = 'flex';
+              hasMatches = true;
+            } else {
+              item.style.display = 'none';
+            }
+          });
+
+          // Show/hide empty state
+          let emptyEl = menu.querySelector('.td-combo-empty');
+          if (!hasMatches) {
+            if (!emptyEl) {
+              emptyEl = document.createElement('div');
+              emptyEl.className = 'td-combo-empty';
+              emptyEl.textContent = 'No matching options found';
+              menu.appendChild(emptyEl);
+            }
+          } else if (emptyEl) {
+            emptyEl.remove();
+          }
+        });
+
+        // Select an item on click
+        menu.addEventListener('click', (e) => {
+          const item = e.target.closest('.td-combo-item');
+          if (!item) return;
+
+          const val = item.getAttribute('data-value');
+          const label = item.querySelector('span:first-child').textContent;
+          this.setDropdownValue(filterKey, val, val === 'All' ? '' : label);
+          
+          combo.classList.remove('open');
+          menu.classList.remove('open');
+          this.filterTalents();
+        });
+
+        // Clear button
+        if (clearBtn) {
+          clearBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.setDropdownValue(filterKey, 'All', '');
+            combo.classList.remove('open');
+            menu.classList.remove('open');
+            this.filterTalents();
+          });
+        }
+      },
+
+      setDropdownValue(filterKey, value, displayLabel) {
+        this.filters[filterKey] = value;
+        
+        let comboId, inputId, menuId, clearBtnId, defaultText;
+        if (filterKey === 'sector') {
+          comboId = 'comboSector'; inputId = 'sectorInput'; menuId = 'sectorMenu'; clearBtnId = 'sectorClearBtn'; defaultText = 'All Operating Sectors';
+        } else if (filterKey === 'prog') {
+          comboId = 'comboProg'; inputId = 'progInput'; menuId = 'progMenu'; clearBtnId = 'progClearBtn'; defaultText = 'All Programmes (MLP, GMC, MALT)';
+        } else if (filterKey === 'persona') {
+          comboId = 'comboPersona'; inputId = 'personaInput'; menuId = 'personaMenu'; clearBtnId = 'personaClearBtn'; defaultText = 'All Cohort Persona Stages';
+        }
+
+        const input = document.getElementById(inputId);
+        const clearBtn = document.getElementById(clearBtnId);
+        const menu = document.getElementById(menuId);
+
+        if (input) {
+          input.value = displayLabel;
+          input.placeholder = defaultText;
+        }
+
+        if (clearBtn) {
+          clearBtn.style.display = (value !== 'All' && value) ? 'flex' : 'none';
+        }
+
+        if (menu) {
+          menu.querySelectorAll('.td-combo-item').forEach(item => {
+            item.style.display = 'flex';
+            if (item.getAttribute('data-value') === value) {
+              item.classList.add('selected');
+            } else {
+              item.classList.remove('selected');
+            }
+          });
+          const emptyEl = menu.querySelector('.td-combo-empty');
+          if (emptyEl) emptyEl.remove();
+        }
+      },
+
+      setView(mode) {
+        this.viewMode = mode;
+        const tViewBtn = document.getElementById('btnTableView');
+        const cViewBtn = document.getElementById('btnCardView');
+        const tContainer = document.getElementById('dirTableContainer');
+        const cContainer = document.getElementById('dirCardContainer');
+
+        if (mode === 'table') {
+          tViewBtn.className = 'td-view-btn active';
+          cViewBtn.className = 'td-view-btn';
+          tContainer.style.display = 'block';
+          cContainer.style.display = 'none';
+        } else {
+          tViewBtn.className = 'td-view-btn';
+          cViewBtn.className = 'td-view-btn active';
+          tContainer.style.display = 'none';
+          cContainer.style.display = 'grid';
+        }
+        this.render();
+      },
+
+      resetFilters() {
+        document.getElementById('dirSearchInput').value = '';
+        this.setDropdownValue('sector', 'All', '');
+        this.setDropdownValue('prog', 'All', '');
+        this.setDropdownValue('persona', 'All', '');
+
+        document.querySelectorAll('.td-quick-pill').forEach(p => p.classList.remove('active'));
+        const firstPill = document.querySelector('.td-quick-pill');
+        if (firstPill) firstPill.classList.add('active');
+
+        this.render();
+      },
+
+      applyQuickFilter(type, btn) {
+        document.querySelectorAll('.td-quick-pill').forEach(p => p.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+
+        const searchInput = document.getElementById('dirSearchInput');
+        searchInput.value = '';
+
+        this.setDropdownValue('sector', 'All', '');
+        this.setDropdownValue('prog', 'All', '');
+        this.setDropdownValue('persona', 'All', '');
+
+        if (type === 'mlp26') {
+          this.setDropdownValue('persona', 'MLP 2026', 'MLP 2026 (Rotations / Stints)');
+        } else if (type === 'mlp27') {
+          this.setDropdownValue('persona', 'MLP 2027', 'MLP 2027 (Pre-Join / Campus)');
+        } else if (type === 'gmc') {
+          this.setDropdownValue('prog', 'GMC', 'Group Management Cadre (GMC)');
+        } else if (type === 'afs') {
+          this.setDropdownValue('sector', 'Automotive & Farm', 'Automotive & Farm (AFS)');
+        } else if (type === 'ready') {
+          searchInput.value = '0–1 year';
+        }
+
+        this.render();
+      },
+
+      filterTalents() {
+        this.render();
+      },
+
+      getFilteredData() {
+        const search = (document.getElementById('dirSearchInput')?.value || '').toLowerCase().trim();
+        const prog = this.filters.prog || 'All';
+        const persona = this.filters.persona || 'All';
+        const sector = this.filters.sector || 'All';
+
+        const talents = TalentStore.getTalents();
+        return talents.filter(t => {
+          const matchesSearch = !search ||
+            t.personal.fullName.toLowerCase().includes(search) ||
+            t.personal.empId.toLowerCase().includes(search) ||
+            t.programme.currentRole.toLowerCase().includes(search) ||
+            t.programme.currentBusiness.toLowerCase().includes(search) ||
+            (t.readiness && t.readiness.possibleNextRoles && t.readiness.possibleNextRoles.some(r => r.horizon.toLowerCase().includes(search)));
+
+          const matchesProg = (prog === 'All') || (t.programme.name === prog);
+          const matchesPersona = (persona === 'All') || (t.persona === persona);
+          const matchesSector = (sector === 'All') || (t.programme.currentSector.includes(sector));
+
+          return matchesSearch && matchesProg && matchesPersona && matchesSector;
+        });
+      },
+
+      render() {
+        const filtered = this.getFilteredData();
+        const statsElem = document.getElementById('dirResultStats');
+        if (statsElem) {
+          statsElem.innerHTML = `<span>📊</span><span>Showing <strong>${filtered.length} of 5</strong> matching high-potential profiles</span>`;
+        }
+
+        // Render Table
+        const tbody = document.getElementById('directoryTableBody');
+        if (tbody) {
+          if (filtered.length === 0) {
+            tbody.innerHTML = `
+            <tr>
+              <td colspan="8" style="text-align: center; padding: 48px 20px; color: #64748b;">
+                <div style="font-size: 24px; margin-bottom: 8px;">🔍</div>
+                <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">No matching talents found</div>
+                <div style="font-size: 12px;">Try adjusting your keyword search or resetting active filters.</div>
+                <button type="button" class="td-btn-reset" style="margin-top: 12px;" onclick="DirectoryEngine.resetFilters()">Reset All Filters</button>
+              </td>
+            </tr>
+          `;
+          } else {
+            tbody.innerHTML = filtered.map(t => {
+              const nextRole = (t.readiness.possibleNextRoles && t.readiness.possibleNextRoles[0])
+                ? t.readiness.possibleNextRoles[0]
+                : { role: 'Stint 2 in Progress', horizon: '0–1 year' };
+
+              let personaBadgeCls = 'td-badge-mlp26';
+              if (t.persona.includes('2027')) personaBadgeCls = 'td-badge-mlp27';
+              else if (t.persona.includes('GMC')) personaBadgeCls = 'td-badge-gmc';
+              else if (t.persona.includes('MALT')) personaBadgeCls = 'td-badge-malt';
+
+              const isReadyNow = nextRole.horizon.includes('0–1');
+
+              return `
+              <tr>
+                <td>
+                  <div class="td-profile-cell">
+                    <img src="${t.personal.photo}" alt="${t.personal.fullName}" class="td-profile-avatar">
+                    <div>
+                      <a href="talent-card.html?id=${t.id}" class="td-profile-name">${t.personal.fullName}</a>
+                      <span class="td-token-badge">ID: ${t.personal.empId}</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="td-persona-badge ${personaBadgeCls}">● ${t.persona}</span>
+                </td>
+                <td>
+                  <div class="td-biz-title">${t.programme.currentBusiness}</div>
+                  <div class="td-biz-sector">${t.programme.currentSector}</div>
+                </td>
+                <td>
+                  <div class="td-role-title">${t.programme.currentRole}</div>
+                  <div class="td-role-function">Function: ${t.programme.currentFunction}</div>
+                </td>
+                <td>
+                  <div class="td-manager-name">👤 ${t.programme.reportingManager}</div>
+                </td>
+                <td>
+                  <div class="td-readiness-box">
+                    <span class="td-readiness-pill ${isReadyNow ? 'green' : 'amber'}">${nextRole.horizon}</span>
+                    <span class="td-readiness-target">${nextRole.role}</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="td-completeness-wrap">
+                    <div class="td-mini-progress">
+                      <div class="td-mini-progress-fill" style="width: ${t.governance.completenessScore}%;"></div>
+                    </div>
+                    <span class="td-completeness-pct">${t.governance.completenessScore}%</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="td-actions-wrap">
+                    <a href="talent-card.html?id=${t.id}" class="td-btn-view-card">View Profile →</a>
+                    <a href="talent-onepager.html?id=${t.id}" target="_blank" class="td-btn-onepager" title="Print Executive One-Pager">📄</a>
+                  </div>
+                </td>
+              </tr>
+            `;
+            }).join('');
+          }
+        }
+
+        // Render Executive Grid Cards
+        const cardContainer = document.getElementById('dirCardContainer');
+        if (cardContainer) {
+          if (filtered.length === 0) {
+            cardContainer.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 48px; color: #64748b;">No matching talents found.</div>`;
+          } else {
+            cardContainer.innerHTML = filtered.map(t => {
+              let personaBadgeCls = 'td-badge-mlp26';
+              if (t.persona.includes('2027')) personaBadgeCls = 'td-badge-mlp27';
+              else if (t.persona.includes('GMC')) personaBadgeCls = 'td-badge-gmc';
+              else if (t.persona.includes('MALT')) personaBadgeCls = 'td-badge-malt';
+
+              const nextRole = (t.readiness.possibleNextRoles && t.readiness.possibleNextRoles[0])
+                ? t.readiness.possibleNextRoles[0]
+                : { role: 'Stint in Progress', horizon: '0–1 year' };
+
+              return `
+              <div class="td-exec-card">
+                <div class="td-exec-card-top">
+                  <div class="td-exec-card-photo-info">
+                    <img src="${t.personal.photo}" alt="${t.personal.fullName}" class="td-exec-card-photo">
+                    <div>
+                      <h4 class="td-exec-card-name">${t.personal.fullName}</h4>
+                      <span class="td-persona-badge ${personaBadgeCls}">● ${t.persona}</span>
+                    </div>
+                  </div>
+                  <span class="td-token-badge">ID: ${t.personal.empId}</span>
+                </div>
+
+                <div class="td-exec-card-meta">
+                  <div>🏢 <strong>Business:</strong> ${t.programme.currentBusiness}</div>
+                  <div style="margin-top: 3px;">💼 <strong>Role:</strong> ${t.programme.currentRole}</div>
+                  <div style="margin-top: 3px;">👤 <strong>Manager:</strong> ${t.programme.reportingManager}</div>
+                  <div style="margin-top: 3px;">⏱️ <strong>Succession Readiness:</strong> <span style="color: #047857; font-weight: 700;">${nextRole.horizon}</span></div>
+                </div>
+
+                <div class="td-exec-card-footer">
+                  <div class="td-completeness-wrap">
+                    <span style="font-size: 11px; color: #64748b;">Completeness:</span>
+                    <strong style="color: #e31837; font-size: 12px;">${t.governance.completenessScore}%</strong>
+                  </div>
+                  <a href="talent-card.html?id=${t.id}" class="td-btn-add" style="padding: 5px 12px; font-size: 11.5px;">
+                    Open Card ➔
+                  </a>
+                </div>
+              </div>
+            `;
+            }).join('');
+          }
+        }
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      DirectoryEngine.init();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+
+
+--- PARAGRAPHS ---
+
+Talent Intelligence Project - Data Fields-20260929_153426-Meeting Recording
+29 September 2026, 10:04am
+41m 54s
+PUROHIT KAMALKISHORE started transcription
+PUROHIT KAMALKISHORE   0:04Now, I'll tell you what I thought he how I can give a notification to manager.
+. Urvashi   0:06Oh.Nice, nice.
+PUROHIT KAMALKISHORE   0:11How frankly, I was thinking loudly, okay, yeah, how we can notify to that manager.
+. Urvashi   0:15Huh.Very good idea, very good idea. So, wait, so, basically, can you go to that logic thing, types, and there was this one, she or she just the categories, just open that one.
+PUROHIT KAMALKISHORE   0:21Yeah, go ahead.
+. Urvashi   0:39That is deleted. No worries. So MLP category Kamal Johumara join Hua. Let's say April 2026 may join Hua and so MLP 2027 campus second year of MBA.
+PUROHIT KAMALKISHORE   0:49Okay.Okay.
+. Urvashi   1:00And they will start in April, April, may I get to my talent cards, college details largely captured, campus, academics, 10th, 12th, bachelors, work experience, because mahindra exposure beyond internship, they of course have summer internship.This thing experience, and then their campus experience, so my first category of person here, MLP 2027, yeah, Jobi next year, then I have MAPL 2026 Jo already system who is doing stints with me, so they joined me in April 2026, they are doing different stints across the business.And next year, in April 2027, they will get their full-time roles. So this second category here, third category is MLPs, previous batch kit, 2024 and 2025. They have completed their stints and now they are working in a full-time role in the company.OK, last category is GMC's. Second last category is GMC's, but of course, income model hiring, not just internship, final placement, internship mahindra.
+PUROHIT KAMALKISHORE   2:00Okay.
+. Urvashi   2:19But role changes, because system, so the role change, and then I think clear, and all of that, so category they match different types of categories.Just got a new talent called banana abhi kya kya Varun. Varun can you explain him that how you have arrived at these fields?
+PUROHIT KAMALKISHORE   2:42Yeah.
+. Urvashi   2:49Yes, so.So, basically, Varun ni kya kya kamal usni hi duch panch persona bola panch personas ke le usni detail out kya ke kya kya fields dal ne te ke kuch fields common ne sare categories me kuch fields alag alag.
+PUROHIT KAMALKISHORE   3:10Okay.
+. Urvashi   3:11So.So, we are identifying the four categories. Like first, we are trying to find out what details are we capturing. Like here, the personal details. So, we'll take that personal details and after that, all the data related to program.
+PUROHIT KAMALKISHORE   3:26Okay.
+. Urvashi   3:34and other stuff for future referencing to manage their performance or what is their past data, what can we do with it, those kind of stuff. So there will be different buckets. So first bucket is around, we are asking about personal details, which will be name, e-mail ID, date of birth, etc.After that, it will be related to the program detail. What is their current talent program and things around it? Talent program at GMC, MLP, malt, exactly, and all the data related to it, like who is the BHOR? Sector HR, BHOR.
+PUROHIT KAMALKISHORE   4:12Yes.
+. Urvashi   4:14Reporting manager, basically employee details, system say capture more or less comment mentioned either. VIJAY wanted to say something. Ah, VIJAY, sorry, I think.
+PUROHIT KAMALKISHORE   4:22Okay.
+HARDE VIJAY   4:26The first information, the personal information, the student is filling, or are we entering that information?
+. Urvashi   4:27Yeah.No, no, go there.No, we can.This we should get ideally from the system, because except photograph, maybe because yeah, I'm not sure captured system pay, but Kamal, I think name, employee ID, date of birth, reporting manager, HR, I think system say, I think, yeah, all these are basic details.
+PUROHIT KAMALKISHORE   4:54Yes.
+HARDE VIJAY   4:56The afternoon.
+. Urvashi   4:56So they can change it, but with the help of BHAVSAR approval.
+HARDE VIJAY   5:01Aapne Bolatan Ki Kuchku Student Hai Wo already placed Hotte, but unka education complete.
+. Urvashi   5:09Onboarding 2027 batch key to onboarding system because in the profile create basic details like for example.
+PUROHIT KAMALKISHORE   5:22So, Vijay, Vijay, yeah, Vijay, yeah, okay, years on year when we'll hire the new person, a new candidate. So, you know, you know, let's say if I'm hiring a fresher, so for that we may not have a complete detail. Okay, we'll have a basic data, so that data will be there in the system.
+. Urvashi   5:32The details will get updated, huh?
+HARDE VIJAY   5:37Mm.
+. Urvashi   5:40But we'll have at least basic details.
+PUROHIT KAMALKISHORE   5:45So, that experience data might be the work experience within a mahindra experience in the outside of the mahindra experience for that, what Urvashi is saying, let's say let us say 2027 key batch, less information information understood.
+. Urvashi   5:45Cutting.Correct.
+HARDE VIJAY   6:05OK.
+PUROHIT KAMALKISHORE   6:06Okay. Yeah. Got it.
+. Urvashi   6:08Okay, go ahead, Varun. Exactly. So after personal details, we will capture program details. After program details, we will capture the education details. Yeah.
+PUROHIT KAMALKISHORE   6:14Wait, wait, wait, on program details. OK, on program details, you are saying that will be entered manually by BHOR. OK, which program they are part of for journey?
+. Urvashi   6:26Correct, because apne pa system petu kamal quit tagging hai nina Filhal GMC hai ki MLP hai a malt hai, so that's something that the BHOR will have to fill, because woh Filhal ke le captured.
+PUROHIT KAMALKISHORE   6:35Okay.Got it. THAKUR.
+. Urvashi   6:41Share Excel backend me, Jiska Jiska mapping already, have to say Excel backend.
+PUROHIT KAMALKISHORE   6:55Got it. So Vijay, what we have to do is create the APIs for this and pass out. So we will create the APIs. So we will ask the get data from the different sources rather than, you know, we pull the data and update in our system.
+. Urvashi   7:05But.Yeah.Which is?
+PUROHIT KAMALKISHORE   7:16Got it, Vijendar?
+. Urvashi   7:21Hello, and I think.
+PUROHIT KAMALKISHORE   7:21VIJAY, you are aligned with me.
+HARDE VIJAY   7:26Sorry, I think.
+PUROHIT KAMALKISHORE   7:26I think.We will create this APIs, graph APIs.
+. Urvashi   7:29I think.Bye.
+HARDE VIJAY   7:34Okay.
+PUROHIT KAMALKISHORE   7:35Not on the rest API, we will create a graph APIs and this APIs we will get that on this API, we will create and we will provide this API to ACP, known ACP system, and we will ask them to provide the data in this format.
+HARDE VIJAY   7:39Team.
+. Urvashi   7:46Hi.
+HARDE VIJAY   7:51Okay, understood.
+PUROHIT KAMALKISHORE   7:52OK, rather than we pull the data and we face, you know, we will have a control of the uh source that is.
+. Urvashi   7:54But.Cool.Ohh.
+PUROHIT KAMALKISHORE   8:02and we can manage that part and we will distribute API in a different way. So let's say we will not get incomplete data.
+HARDE VIJAY   8:12Okay.
+PUROHIT KAMALKISHORE   8:13OK, chicken, I don't go, let's move ahead.
+. Urvashi   8:18He can go ahead. OK, so after that, we capture the education details, like what is that P.G.U.G.Yeah, this was about education details. So, here, Kamal, basically, system ideally onboarding the time on education documents, mostly rahe ka logo ka. A base me issue mujalak meju dekh pari mujalak there could sectors level detailing me onboarding.Clarity, but assume sectors may have uploaded systems capture, let's say system pay offline onboarding, I'm not sure, manually manually.
+PUROHIT KAMALKISHORE   9:07Okay, so if this data is not there in HR, HSM, HR system, any SAP PeopleStrong or any other system in that case, this one relies with the BHAVSAR to get updated from employee. And again, you're looking as a workflow.
+. Urvashi   9:17GET.Correct, to update.
+PUROHIT KAMALKISHORE   9:26He employed in a dollar and BHAVSAR will confirm and then will be updated in our system.
+. Urvashi   9:27Yes.Got it, got it, got it.Go ahead.Now, they're asking their prior work experience before mahindra. If it is yes or no, they have to select that, and the dropdown will appear. So, basically, because they will all have prior work, unless mahindra may grow.
+PUROHIT KAMALKISHORE   9:37Right.
+. Urvashi   9:58Unka mahindra ka work X rahega, but Maltese Bahar se aindu se companies se un sabka prior rahega to voto aajayega lateral hires ka jo hamare MLPs hai usmi kuch kuch lo kyao ne MBA ke pele kuch work X lia nahe wo see the engineering kya uske but MBA Karliya also Mahindra Age.By that logic, so blank, blank, blank, since before mahindra.
+PUROHIT KAMALKISHORE   10:26BCONE.Chicken.A scenario where a person can have a multiple experiences, so you need to add that.
+. Urvashi   10:35Multiple, yes, they would have changed 3-4 companies and all of that.
+PUROHIT KAMALKISHORE   10:41Moral, Kelly.Okay, got it.
+. Urvashi   10:51So after that, mahindra SIB summer internship program.
+PUROHIT KAMALKISHORE   10:51So, what you see, your question is what kind of data you want to capture it? Like you mentioned the drop down from sector master and example you have given, correct? So, like here in the work prior experience, one visible field with a minimum two kind of thing. So, this is the logic what we are looking from the system.
+. Urvashi   10:56Ohh.Yeah, thank you.Cortana.
+PUROHIT KAMALKISHORE   11:13That's fine, but actually subjective. Let's say you want to share the some experience where experience started month and all this data is coming, but can you quantify subjective so you won't have a limit for that? Yeah, descriptive.
+. Urvashi   11:22Okay.Yep.Uh, for maximum.
+PUROHIT KAMALKISHORE   11:35Walk.If the projects part, let's say prior to our experience, if somebody has work on the critical projects, let's say you want to highlight it.Okay.
+. Urvashi   11:49Of course, of course, specify, so, yeah, last three work, last three companies, so we will keep that as the thing for work experience.
+PUROHIT KAMALKISHORE   11:50What is the?So, that, that I think...
+. Urvashi   12:06Project, maybe we will keep critical.But we will keep top two, three, two, three only, yeah, so most of the things.
+PUROHIT KAMALKISHORE   12:28What's up? Benefit at least, let's say prior experience. Let's say I, let's say I have a three prior experience, three different companies. Each company I have spent stringent time might be my experience on the each company I want to highlight one or two projects.
+. Urvashi   12:31Oh.Oh.Oh.Ohh.Who, who?
+PUROHIT KAMALKISHORE   12:51Which can have a, which can be a...
+. Urvashi   12:52Who?Yeah, I scared you.
+PUROHIT KAMALKISHORE   12:56Impacted part as a so you can have a VIJAY, you know, we can we can build one platform here which we will say that what kind of project, what was the project window and what was the impact of that project to the organization. So this will give you though some kind of.
+. Urvashi   12:59And if that's.Ohh, ohh.
+PUROHIT KAMALKISHORE   13:17If he has worked on that experience and what of outcome has come up.
+. Urvashi   13:22So, key impact of work EXT under me, and that is a good idea, huh?
+PUROHIT KAMALKISHORE   13:25Park, so.Now, now let's say somebody put a fake also, I'll tell you how it can be tracked all that part.
+. Urvashi   13:33Ohh.
+PUROHIT KAMALKISHORE   13:34I'll give you my experience, let's say two years of experience.And I write, I with the help of ChatGPT.
+. Urvashi   13:42Oh, oh, oh.
+PUROHIT KAMALKISHORE   13:44And then again I go to the four years of experience. Again, I am writing the then that my language will be the same.
+. Urvashi   13:47Food.Yeah.Ohh, ohh.
+PUROHIT KAMALKISHORE   13:52So, so friendly, it can be readable or it can be, you know, projected that this is the some kind of integrity kind of data on that front, so that we can also identify with that, so it will come out as a learning from that.
+. Urvashi   14:01Got it, got it, got it.Take care, okay, take care.
+PUROHIT KAMALKISHORE   14:11Yeah, Cortana, ask you in my text, all the analysis, chat DIPTI, prompt you.
+. Urvashi   14:18Hey, Kamal, so, level of approval, data employee, like, for example, employee.
+PUROHIT KAMALKISHORE   14:21Okay, let me go basically.What limit here was there? I got it. Filter should be there, approval, but apart from that.
+. Urvashi   14:36Saying, GUPTA, huh?
+PUROHIT KAMALKISHORE   14:45If I am as a, let's say I'm not saying anything wrong about anybody, but let's say Varun is, you know, new way. He's learning the process. Okay. But whatever today is writing and whatever he's going to write right after five years, there will be different.
+. Urvashi   14:54Yeah.
+PUROHIT KAMALKISHORE   15:05Learning may be the difference, so there will be learning curve for him. So, in that case, ask experience according to that is fine, but tomorrow you have a more experience, so that should be come out from that experience and that will understand he is what he has written.
+. Urvashi   15:05Different.Good.Ohh, ohh, ohh.Got it, got it, got it, got it. So, maybe MAPL learning the time, role one, role two, instruction to capture, let's say, so just think a little bit about that also.
+PUROHIT KAMALKISHORE   15:21OK, yeah, but.
+. Urvashi   15:40Imagine that you are currently in your rotation, learning in the 1st and 2nd year, you will still start delivering, and in the 3rd and 4th year, you would have mastered it by that maturity of the.Content you are putting as your impact difference, so we'll think a little bit, that's a very good point, because I don't think, but GMC MLP is right, they can write anything they want.
+PUROHIT KAMALKISHORE   16:05Yes.
+. Urvashi   16:16The hygiene check, yes, it will take care, take care.
+PUROHIT KAMALKISHORE   16:19Yes.Okay, yes.
+. Urvashi   16:23Go to instructions, I think. I got to make option key instruction tab, clarity, think of things like those models that we have, star, star, and all.
+PUROHIT KAMALKISHORE   16:39Hey, what we can do today, like, now example, so what should it contain? I can smart goal, yes, yes, so that we can we can give it.
+. Urvashi   16:47SMART goal DESAI SMART goal noted so SMART goal framework. Okay, go next.
+PUROHIT KAMALKISHORE   16:58Okay.
+. Urvashi   17:04So, this is about the summer intensive program.
+PUROHIT KAMALKISHORE   17:07Okay.
+. Urvashi   17:08All the details, like which sector they have worked in function, period, mentor.So, amara concept yo te summer internship ka Kamal, we have a mentor future shaper level ka mentor assign o te. MLP is ko GMC vagera kele wa applicable nahi yoga, which you would have kept as no, no malt ko be ek mentor mil te MLP ko ek mentor mil te. To woh hape wo mention kardinga isko mention kardinga only five days agar system.Track, as mentor, is best and people in the system, whoever is seeing the card, they know mentor is to support right capture.
+PUROHIT KAMALKISHORE   17:50Okay.Got it.
+. Urvashi   17:54OK, or internship project details highlight all that will get captured. So, internship details from currently format, just make a sorry internship project details final deliverables capture what we will do is Excel translate.Excel for use, then we can fill all these details, so last scene matches in 24, 25, 26 for data up Excel.
+PUROHIT KAMALKISHORE   18:25OK, Mujib, systemic engineering, correct, correct.
+. Urvashi   18:26Because his system, for sure.Really, for full-time work experience that you have done in mahindra, say whole sector, business, grade, function, location, top highlights, etc.
+PUROHIT KAMALKISHORE   18:34THAKUR.
+. Urvashi   18:45Hey, ideally come on system, but reality is mojini like the Koi BHR is for update karte jabande a role change or a to skin a details upload karo ya, so I think it's may be Excel mess of Dalke capture K Dena Padega.Call Systems Easily, educational details, basic details, because more document submit, okay, those writing performance ratings, manager, but work experience plus summer internship.Yeah, I think so, offline, Excel, so backend specific data, Excel, but yeah, yeah, all sections.
+PUROHIT KAMALKISHORE   19:35Okay.
+. Urvashi   19:37Tell me to turn off.Please, you can explain. Yeah, so learning needs or learning interventions. So this will be filled by the manager and BHOR itself. Open field. Yeah, based on whatever work they have done. So these are needs, these are functional learning needs, and 2nd is behavioral learning needs.
+PUROHIT KAMALKISHORE   19:52Okay.
+. Urvashi   20:00So, this, we don't have to give any options to them, text box, performance, IDP concept, learning programme.Manager already a possibilities here, so we can use these data points to analyze and recommend talent for those programs, etc. BHOR can take inputs from there.
+PUROHIT KAMALKISHORE   20:34Yeah, one one side you capturing the data. Second, can you can you take to right side because here journey you noted the first point he I need a let's say example I need a training on the let's say intervention or I need a training you nominated.
+. Urvashi   20:41Huh.Oh.Yes.
+PUROHIT KAMALKISHORE   20:54But are you going to track also what happened to that?
+. Urvashi   20:56We have to track, we have to track, so, so, Iska Kamal Part Two, there will be some reports, Varun, that we should get from these data that we as HR and sector HR can track, right, because that is the biggest, this is for the user and for leadership.
+PUROHIT KAMALKISHORE   20:58We have to black.
+. Urvashi   21:16To review the talent, right, right, but for HR to track the progress for talent, there are a few things we should get from here: rotations, we should get the trainings, just imagine how will this data look like, and that also we will tell Kamal what kind of reports we need.Base is the talent cards, that is a very because talent analytics, so part 2 is talent analytics of it. Kamal, we'll work on that, but I think, and we will come back to you with the reports also that we think, and of course, same suggestions, because already demos inspiration.
+PUROHIT KAMALKISHORE   21:38Yeah.Yes.
+. Urvashi   21:59Exactly, and we will share that also with you.
+PUROHIT KAMALKISHORE   22:03Sure, so I'm looking all the cycle if let's say something actionable.Align to the direction, let's say whether you define as the action.Action taken, not taken. If taken, then what is the impact of that? So that should be converted to either in your some form of report or talent card itself.
+. Urvashi   22:18Not taken, correct?Correct, correct, correct. Ha. So, talent card pay that is also a good idea that if actions have been taken or not, when he failed me, that is another way of doing it. Yes, Varun, or we can have an Excel report where we are tracking and then telling, but option is of course better.
+PUROHIT KAMALKISHORE   22:29So, that...Yes.
+. Urvashi   22:47So, click and Kamal job up to view Nikhana is get do views only a few me coach fields hidden rang for leaders, because a talent card ke auga up to up to rotate, change promotion, discussion, talent card leaders ke pass JHA, to highlight.
+PUROHIT KAMALKISHORE   23:02Team.Talent, talent card, know what we can show as a, let's say, learnings and needs. Let's say example you're showing as a one kind of tab for or let's say one kind of within a card small section.
+. Urvashi   23:08Ohh.Oh, oh, oh.Who, who?Who?
+PUROHIT KAMALKISHORE   23:22And in that case, let's say what he is showing, you can't show that he that he needed training, he need a learning kind of curve for that. But then you can see, okay, that what he has learned from there on this window. And if someone want as a history, then I can click on the history, it will show.
+. Urvashi   23:29Oh, oh, oh.Learned.And download.
+PUROHIT KAMALKISHORE   23:42It it will show the what when it is something is went and kind of journey it when it can show OK.
+. Urvashi   23:44Pura Learning Journey.THAKUR.Take it, noted, understood any questions you have.
+PUROHIT KAMALKISHORE   23:55Anyway, I think tomorrow I'm in Mumbai only today.
+. Urvashi   24:00Perfect, Kamal, aap fit for you, Kalbi tomlug mil sakte to aapko more, just explain karting.
+PUROHIT KAMALKISHORE   24:00Ankit.I, today, today I am at uh, tomorrow, I had.
+. Urvashi   24:08Shivryacha.Okay, take care.
+PUROHIT KAMALKISHORE   24:12Okay, if time permits on Thursday, I may travel to Gandhi.
+. Urvashi   24:18And we will then meet you, I think.
+PUROHIT KAMALKISHORE   24:20But what time you guys come to office?
+. Urvashi   24:23Tell the A.
+PUROHIT KAMALKISHORE   24:27Because my, my guest, my guest house is at only, that is the reason I ask, I was asking anyway, we can, we can try out, huh, I learned before 9.
+. Urvashi   24:31TK Kamal to aap.So, Thursday, then we can sit, I think, for us to explain also, and so that we can do, I think, not a problem, yes, sir.
+PUROHIT KAMALKISHORE   24:40Yes, yes.OK, yes.Okay, KHAN, yeah.
+. Urvashi   24:50Continue, continue. Yeah. So next is about learning intervention.Same, after capturing the learning needs, we need to capture also the interventions that they have did in the past and what are we currently working on with them. So this may be program certification, coaching or any other type that we are following with them.
+PUROHIT KAMALKISHORE   25:03Mm.
+. Urvashi   25:10And the information regarding it.
+PUROHIT KAMALKISHORE   25:12Okay.
+. Urvashi   25:13Yeah.
+PUROHIT KAMALKISHORE   25:14The only thing I can give him.
+. Urvashi   25:15Next is about performance, like, what performance the like overall rating that that person has got, and also around the cab ratings, yeah, the system, CAB to capture scores, right, so ideally, or L1 to L5.What's the rating cycle per person? What's the rating? I think system se ajana che OPHPB hai but Filhal ke OPHP MLP first year. So for example MLP 2026 batch.
+PUROHIT KAMALKISHORE   25:52Okay.
+. Urvashi   25:58But 2028 means they are eligible for OPHP, HP, but OPK they will be eligible, so that can get captured from here.System.
+PUROHIT KAMALKISHORE   26:10Okay.
+. Urvashi   26:12So.
+PUROHIT KAMALKISHORE   26:12At any point of time, employee card, this talent card will be visible to employee.
+. Urvashi   26:19Few things will be visible. Performance should not be visible, for sure, because, ideally, let's say performance cycle as an employee, if I want to download, reveal rating system may be captured, actually, if they are viewing, they don't even know, right?Talent card, I know my performance, it is L1, L2, and I know my rating, and I should be okay with that, so should not be a problem. Only thing that probably we will have to think about is strengths and opportunity, next section, Varun, this is something probably the employee should not see.
+PUROHIT KAMALKISHORE   26:51Mhm.
+. Urvashi   27:03Because, like, like, let's say, my manager, and maybe role change discussion, maybe modify, or maybe versus, so personally, maybe this is something we should not.Give access to the employee to see, but leadership, because this is a very important data point for leadership.
+PUROHIT KAMALKISHORE   27:26No.So Varun, Varun here, when you're saying strength and opportunity, so SWOT, you might be knowing, strength, opportunity, weakness, and threat of individuals. This is some kind of mechanism available in the HR fraternity. They identify about the individual SOWT. OK, in that.
+. Urvashi   27:39Correct.
+PUROHIT KAMALKISHORE   27:51Individual.Himself can curve it where I stand. Let's say what are the sort analysis. So sort analysis where he himself can say, okay, out of, so do you suggest anything key when manager do the sort analysis for his PR team or self?
+. Urvashi   27:56SWOT analysis. Hmm.I love the product.I play.
+PUROHIT KAMALKISHORE   28:12sort and this is been done so that can be captured it here. Can I create a some kind of window for that? Like here we have a 9 box kind of thing within a mahindra. Are you thinking that?
+. Urvashi   28:14Happy Birthday to me.They brought it.
+PUROHIT KAMALKISHORE   28:34Sorry, I understood. So this sort, I understood. So, but I am alone in rule. So when you're talking about the sort analysis of individuals, it can be filled by manager, number one. It can be done by the self-analysis, and then output can be output.
+. Urvashi   28:35Tom, sorry.Off.Yes.Ohh.I will.
+PUROHIT KAMALKISHORE   28:52can be captured in the system. Okay, this is your strength, your weakness, your opportunity, and that is a risk for you. So that in the four areas, it can be considered. Because if I'm putting another talent card, means you have already in one bucket. Your bracket is, you know, one kind of thing where, you know, potential.
+. Urvashi   28:56Okay.
+PUROHIT KAMALKISHORE   29:13Okay, so in that case, how we are going to manage that part? So I was thinking below 2, you know, before jumping to the, let's say, number 8.What can be the scientific way to bring on that? Do I have some kind of psychometric test questions? I can create that also parallel to this.and it will determine and then it will come as a result to you. Otherwise, it should be, it will be manual.
+. Urvashi   29:47SWAT.Yes.
+PUROHIT KAMALKISHORE   30:05Some kind of framework, if we have in within a mahindra, so that will help to, you know, unified in unified the process for us.
+. Urvashi   30:09****.OK, OK, got.
+PUROHIT KAMALKISHORE   30:14So then that will be the benchmark talent card benchmark.
+. Urvashi   30:16Huh.Understood, understood. Take care, OK. Last one is...So, next is about recognition.
+PUROHIT KAMALKISHORE   30:27Thank you.Okay.
+. Urvashi   30:30So, whatever, anyway, portal, direct capture, no, these are only awards, internally, external text field, external employee, for example.I'm sure certifications all that they can put if they have any.
+PUROHIT KAMALKISHORE   30:55But again, again, we have to put here some practice. Let's say I'm giving my example. I received 2 award, one as an individual. I got a future CIO award. Let's say that is my individual contribution. Second, I got SAP S award.
+. Urvashi   31:02You.Ohh.Okay.Oh, oh.
+PUROHIT KAMALKISHORE   31:13It's an SNTS award is altogether is a big global renowned award. But that award is not only the individuals, that is a project award. I represented the organization, that is the reason organization got that award.
+. Urvashi   31:16Ohh, ohh.Ohh.Ohh.Okay.Ohh.
+PUROHIT KAMALKISHORE   31:27How should I put it in that? Whether that will be as a my recognition or that will be the organization. So how we are going to present that will be KUMAR.
+. Urvashi   31:35Individual and group, so we can give two fields there, individual award, very good point, individual award, team award, whichever we have got that we can put in this, this thing.
+PUROHIT KAMALKISHORE   31:45Yeah.
+. Urvashi   31:49Okay.Scroll, so next is career aspiration and preferences. Like, we'll ask the candidate, like, where do they see themselves? Like, what is their preferred domain? Are they mobile enough to change their location or sector, whatever they like?And, based on that, we will find out their interest and the long-term aspiration based on the persona. So, for SIP people, we cannot ask this, but for the later who have work experience, we can definitely ask about this. So, Kamal, MLP 2027, we bought too early to ask career aspiration and all, but the categories MLP, JMC, malt.Yes, no applicable applicable.
+PUROHIT KAMALKISHORE   32:32Okay.THAKUR.
+. Urvashi   32:43Career readiness manager fill the next role are they ready or not? So, in zero to one years or one to three years, three to five years, suggestion the way we should capture readiness role readiness for next, let's say, zero to five years, zero to one may, where does the manager see the talent? Three to five, one to three, three to five.So, we will have as a three drop option if a manager to put next stint role and throw us a detail about it. Let's say they can at least write that I see, for example, Varun working in the compensation team.Maybe not the sector, et cetera, but across mahindra compensation team may can, yeah, take up a role in next four years or something like that. Yeah, the example is also given, like these are sales manager that can person move in one to three years, but he needs larger team, yeah, and then person can reach there, mentioned, so make line instruction.
+PUROHIT KAMALKISHORE   33:32Ankit.If.
+. Urvashi   33:46So, that manager is very clear, is it?Next is about the governance part profile refresh. Like when did we update this last, that thing? What is the next refresh trigger for us? Like what is the event that we should fill the talent card again? Like is it at the end of the stint? Is it during role change?Or, annual talent review, so that thing also will be visible for BHOR for the employee, so they themselves will be filling it again and again, so that it is it is not getting burdensome for anyone. Profile refresh status basically, yes, or he has a profile complete bucket live status.It's just easier, just from that standpoint.
+PUROHIT KAMALKISHORE   34:45Got it, got it.
+. Urvashi   34:47Yeah, so yeah, what basic mapping here? Abhi, I think step 2 reports, what kind of reports are we looking at from this portal?
+PUROHIT KAMALKISHORE   34:49Thank you.Before that, Varun, with help of Urvashi, just see that any data which is, you know, conflicting to our policy, just see that, that that should be the first part. I'll give you example, like, can you go to preference of the, you know, relocation?
+. Urvashi   35:05Okay.You can now.Take it, take it.Ohh.Ohh, ohh.
+PUROHIT KAMALKISHORE   35:20A preferred preferred location, yeah, fair, because in when when I giving a issuing letter to employee, we say, since you are part of organization, you are, you know, we can relocate to any within one. So, does does this contradictory to our question itself? So, just validate those questions.
+. Urvashi   35:32Pan India.Ohh. Take a take a.
+PUROHIT KAMALKISHORE   35:39Anything is going beyond our policy. Number 2, of course, a report will come out from this. So this is the data entry screen. Let's say what I consider it. Either it comes from the system or sometime it comes from the manual data entry by the BHOR employer.
+. Urvashi   35:42Pick.Ohh.Cool, cool.
+PUROHIT KAMALKISHORE   35:58RM reporting manager or the let's say head of department, sometimes head of departments also do the some kind of role. So based on that, this can be done it. But then follow on, yes, that completion of that stage, whether he has you opted, you completed and then impact of that, whether it's done or again, we need to give opportunity.
+. Urvashi   35:59Who?Ohh.Correct.Correct.GET it.
+PUROHIT KAMALKISHORE   36:18And.And one Varun which I feel it's missed about in case of, let's say, identified that person for the mall, then what happened next to that? How it has to be, you know, whether it will be continue the journey, whether it will be remain repeat or postpone or...
+. Urvashi   36:32Who?I do.
+PUROHIT KAMALKISHORE   36:39Move out of the mall to how it has been transit journey.
+. Urvashi   36:42So, one year journey, what impact will that have on the talent card? Basically, like, for example, MLP more or less, we'll have to create one more section on mall development journey, I think, even for MLPs also. Thank you.
+PUROHIT KAMALKISHORE   36:48Yes.Yes, yes.Yes.
+. Urvashi   37:02And, so that one section, because understood comment.
+PUROHIT KAMALKISHORE   37:10Correct.So this you can edit, this you can edit. And I have asked VIJAY also to, VIJAY, I think you worked for a source of the data. Can you share your screen once again?
+HARDE VIJAY   37:25Shortly.
+. Urvashi   37:27But...
+PUROHIT KAMALKISHORE   37:31So I think you bucketed this data in around 18, 15, 17 areas where more or less what I see is that data can capture from SAP in case of mahindra landscape if if there's no data from mahindra side.
+HARDE VIJAY   37:39Or just me text.You have to speak.Yes, we have, yes.
+PUROHIT KAMALKISHORE   37:52Then data has to be entered manually. That can be a scenario. I'm not sure whether it is applicable for that. Let's say you identified MIBS person. We don't integrate it with that system, then how will it capture? Okay, so that kind of view. And let's say one international employee, you want to capture that.
+HARDE VIJAY   37:54Yeah.
+PUROHIT KAMALKISHORE   38:10We don't have integration, so in that case, so more or less there, then manual data entry can be another option in case of, let's say, mahindra summer internship that will be purely employee and BHOR, definitely we understood that, who has to fill that? So, like this, we have tried to capture it.
+HARDE VIJAY   38:25Okay.
+PUROHIT KAMALKISHORE   38:31So, core M&M KAJAL mahindra.com employees, which are part of our 1001 company, where AFZAL and all other companies comes under that.
+. Urvashi   38:39MMFSL, etc. Haan Ye Sa Bajai Gausme.
+PUROHIT KAMALKISHORE   38:42So, but the mahindra finance and other group companies again, integration with them, we need to read for that stage. What I am saying, we will build our programs, we will tell them, can you share the data in this program?
+. Urvashi   38:53Ohh.Huh, THAKUR.
+PUROHIT KAMALKISHORE   38:57So, we don't need to, we don't need to capture, so we don't need to, you know, bring everybody again and again, and saying that, "No, this is my program. I'm just giving you, you just send the data in this way. I'm asking the mahindra this SML, do this. Let's...
+HARDE VIJAY   39:02GET.Yes.
+. Urvashi   39:06Ohh.Got it.THAKUR.
+PUROHIT KAMALKISHORE   39:16Do these things, mahindra finance, give it to the editor, so my source will be intact.
+. Urvashi   39:17THAKUR.Got it.Got it, got it, take it, take it, take it, come on, so, yeah, well, a sheet now, Vijaya, Iqbal, share kar sakte kya, above Varun or made a sat me to hum log be up and say, huh, huh?
+PUROHIT KAMALKISHORE   39:22Okay.Yeah, yeah, he is feeling that I asked him to complete this. We were debating on this part, so we'll let him complete and he will share with you.
+. Urvashi   39:34Take care, not a problem. Take care.Ticket, which I have to could help like again is may just got just in case good context, so please a pinker then I'm done. We will explain.
+HARDE VIJAY   39:47Okay, okay.
+PUROHIT KAMALKISHORE   39:49Okay, so what is the next action item? I think we have taken overtime, but still I need to check.
+HARDE VIJAY   39:57Thank you.It.They.
+PUROHIT KAMALKISHORE   40:06First word, based on this, you know, samples what you have provided, I'll create a bucket. I will try to show you the dummy data.
+. Urvashi   40:09Ohh, ohh.THAKUR, OK, done.
+PUROHIT KAMALKISHORE   40:15That can be the one, and then we will talk about the integrations part.
+. Urvashi   40:16THAKUR.Okay.
+PUROHIT KAMALKISHORE   40:21Okay, and I assume that we have to work on this project and we will provide you the efforts. Yes.
+. Urvashi   40:22THAKUR.Yes, 100%, yes, yes, 100%, Kamal. This is 100% on Delnaz, K.R.A.M. me hai, and Sakshi, she is very interested. In fact, and if the output is good, then we will also ask cascade this for the larger organization, but her employee, that's like...
+PUROHIT KAMALKISHORE   40:33Yeah.Very good.Okay.
+. Urvashi   40:52phase two of this. So this is where it is. Correct.
+PUROHIT KAMALKISHORE   40:53Of course, of course, that is the reason now that is I say converted in the PDF if needed as a latency one page can be opened up from that front also.
+. Urvashi   40:59Brother.Got it, got it, got it, take care.
+PUROHIT KAMALKISHORE   41:03Speaker, did you got a chance to show that also, John?
+. Urvashi   41:08Actually, Varun, unfortunately, Kamal, because today schedule, but I think Thursday, so then we will meet and plan out, then we can meet that time, but I will show it to him.
+PUROHIT KAMALKISHORE   41:11Nobody, nobody.Sure, sure. And I was thinking about SAKSHI also. Did you show that to her also?
+. Urvashi   41:28Take.Kamal, because Delnaz perspective to first cut basis, that we will show to her. Okay, thank you, Kamal. Thank you, VIJAY. Thank you. Thank you.
+PUROHIT KAMALKISHORE   41:39Tick, tick, tick, tick, OK.7.Thank you.
+HARDE VIJAY   41:49Thank you.
+. Urvashi   41:50I thank you.
+PUROHIT KAMALKISHORE stopped transcription
+
+--- TABLES ---
+

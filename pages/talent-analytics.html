@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Succession & 9-Box Analytics • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/talent-analytics-exact.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR">BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR" selected>Executive Board (GEB)</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box (Active) -->
+        <a href="talent-analytics.html" class="sig-nav-item active" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue -->
+        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility -->
+        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin -->
+        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area (Screen-Optimized Layout) -->
+  <main class="content-area">
+    <div class="ta-dashboard-container">
+
+      <!-- 1. Header & Controls Bar -->
+      <div class="ta-header-card">
+        <div class="ta-header-title-wrap">
+          <div class="ta-eyebrow">
+            <span>⚡</span>
+            <span>Mahindra Group HR • Talent Architecture</span>
+          </div>
+          <h1 class="ta-title">Succession Pipelines &amp; 9-Box Matrix Intelligence</h1>
+          <p class="ta-subtitle">Live GEB calibration, cadre depth, cross-pollination flows &amp; successor readiness slates</p>
+        </div>
+
+        <div class="ta-header-controls">
+          <!-- Calibration Cycle -->
+          <div class="ta-control-pill">
+            <span>🗓️</span>
+            <span>Cycle:</span>
+            <select class="ta-select-clean">
+              <option>FY26 Mid-Year Calibration</option>
+              <option>FY25 Annual Review</option>
+              <option>H1 FY26 Pulse</option>
+            </select>
+          </div>
+
+          <!-- Cadre Filter -->
+          <div class="ta-control-pill">
+            <span>🎓</span>
+            <span>Cadre:</span>
+            <select id="cadreFilterSelect" class="ta-select-clean">
+              <option value="all">All Leadership Tracks</option>
+              <option value="mlp">MLP (2024–2027)</option>
+              <option value="gmc">GMC Cadre</option>
+              <option value="malt">MALT Accelerated</option>
+            </select>
+          </div>
+
+          <!-- Export Report Button -->
+          <button type="button" class="ta-btn-export" onclick="exportAnalyticsReport()">
+            <span>📥</span>
+            <span>Export Report (Excel)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Compact 4-Card KPI Stat Ribbon -->
+      <div class="ta-kpi-ribbon">
+        <!-- KPI 1 -->
+        <div class="ta-kpi-card">
+          <div class="ta-kpi-top">
+            <span class="ta-kpi-label">Cadre Retention Rate</span>
+            <div class="ta-kpi-icon-wrap emerald">🔒</div>
+          </div>
+          <div class="ta-kpi-main">
+            <span class="ta-kpi-value">96.8%</span>
+            <span class="ta-kpi-delta positive">↑ 2.4%</span>
+          </div>
+          <div class="ta-kpi-sub">
+            <span>vs Group benchmark</span>
+            <span style="font-weight: 700; color: #166534;">Top Tier</span>
+          </div>
+          <div class="ta-kpi-bar">
+            <div class="ta-kpi-bar-fill" style="width: 96.8%; background: #10b981;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="ta-kpi-card">
+          <div class="ta-kpi-top">
+            <span class="ta-kpi-label">Cross-Sector Moves</span>
+            <div class="ta-kpi-icon-wrap red">🔄</div>
+          </div>
+          <div class="ta-kpi-main">
+            <span class="ta-kpi-value">31 Moves</span>
+            <span class="ta-kpi-delta positive">Across 6 Sectors</span>
+          </div>
+          <div class="ta-kpi-sub">
+            <span>FY26 rotational journeys</span>
+            <span style="font-weight: 700; color: var(--ta-red);">14 Leadership Tracks</span>
+          </div>
+          <div class="ta-kpi-bar">
+            <div class="ta-kpi-bar-fill" style="width: 84%; background: var(--ta-red);"></div>
+          </div>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="ta-kpi-card">
+          <div class="ta-kpi-top">
+            <span class="ta-kpi-label">Succession Bench Ratio</span>
+            <div class="ta-kpi-icon-wrap blue">🎯</div>
+          </div>
+          <div class="ta-kpi-main">
+            <span class="ta-kpi-value">3.2 : 1</span>
+            <span class="ta-kpi-delta neutral">Top 50 Roles</span>
+          </div>
+          <div class="ta-kpi-sub">
+            <span>Ready-now depth coverage</span>
+            <span style="font-weight: 700; color: #1d4ed8;">42% Ready-Now</span>
+          </div>
+          <div class="ta-kpi-bar">
+            <div class="ta-kpi-bar-fill" style="width: 78%; background: #3b82f6;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="ta-kpi-card">
+          <div class="ta-kpi-top">
+            <span class="ta-kpi-label">IDP Execution &amp; Impact</span>
+            <div class="ta-kpi-icon-wrap amber">💡</div>
+          </div>
+          <div class="ta-kpi-main">
+            <span class="ta-kpi-value">91.4%</span>
+            <span class="ta-kpi-delta positive">88% Assessed</span>
+          </div>
+          <div class="ta-kpi-sub">
+            <span>Tracked by BHR Leads</span>
+            <span style="font-weight: 700; color: #b45309;">Calibrated</span>
+          </div>
+          <div class="ta-kpi-bar">
+            <div class="ta-kpi-bar-fill" style="width: 91.4%; background: #f59e0b;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Dual-Column Intelligence Grid (Screen-Optimized) -->
+      <div class="ta-dual-grid">
+
+        <!-- Left: Interactive 9-Box Grid -->
+        <div class="ta-card">
+          <div class="ta-card-header">
+            <div class="ta-card-title-group">
+              <h3>
+                <span>⚡</span>
+                <span>Interactive 9-Box Talent Calibration Matrix</span>
+              </h3>
+              <p>Click any matrix cell to inspect corresponding high-potential cadre talents</p>
+            </div>
+            <span class="ta-chip-badge red">GEB Calibrated • 105 Talents</span>
+          </div>
+
+          <!-- Dynamic 9-Box Render Container -->
+          <div id="nineBoxMatrixContainer"></div>
+
+          <!-- Selected Cluster Info & Quick Drilldown -->
+          <div class="ta-ninebox-selection-info" id="nineBoxSelectedInfo">
+            <div class="ta-selection-label">
+              Selected: <strong>Star Talent / Cadre Driver</strong> (38 Talents • 36.2% of calibrated cohort)
+            </div>
+            <button type="button" class="ta-btn-inspect-cluster" onclick="TalentAnalytics.openClusterModal()">
+              👥 View Talents Slate (38) ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Analytics Intelligence Stack -->
+        <div class="ta-analytics-stack">
+
+          <!-- Card 1: Review Completion by Sector -->
+          <div class="ta-subcard">
+            <div class="ta-card-header" style="margin-bottom: 8px; padding-bottom: 8px;">
+              <div class="ta-card-title-group">
+                <h3 style="font-size: 0.95rem;">
+                  <span>📊</span>
+                  <span>Calibration &amp; Audit Status by Sector</span>
+                </h3>
+                <p>Completion percentage across operating businesses</p>
+              </div>
+              <span class="ta-chip-badge emerald">FY26 Active</span>
+            </div>
+
+            <div class="ta-sector-bars" id="sectorBarsContainer">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Card 2: Succession Readiness Horizons -->
+          <div class="ta-subcard">
+            <div class="ta-card-header" style="margin-bottom: 6px; padding-bottom: 8px;">
+              <div class="ta-card-title-group">
+                <h3 style="font-size: 0.95rem;">
+                  <span>🎯</span>
+                  <span>Critical Succession Readiness Horizons</span>
+                </h3>
+                <p>Successor pool maturity for Top 50 Critical Positions</p>
+              </div>
+            </div>
+
+            <div class="ta-readiness-horizon-grid">
+              <div class="ta-horizon-box" style="border-top: 3px solid #10b981;">
+                <div class="ta-horizon-tag" style="color: #10b981;">Ready Now</div>
+                <div class="ta-horizon-val">42%</div>
+                <div class="ta-horizon-sub">21 Candidates</div>
+              </div>
+
+              <div class="ta-horizon-box" style="border-top: 3px solid #f59e0b;">
+                <div class="ta-horizon-tag" style="color: #f59e0b;">1–3 Years</div>
+                <div class="ta-horizon-val">38%</div>
+                <div class="ta-horizon-sub">19 Candidates</div>
+              </div>
+
+              <div class="ta-horizon-box" style="border-top: 3px solid #3b82f6;">
+                <div class="ta-horizon-tag" style="color: #3b82f6;">3+ Years</div>
+                <div class="ta-horizon-val">15%</div>
+                <div class="ta-horizon-sub">8 Candidates</div>
+              </div>
+
+              <div class="ta-horizon-box" style="border-top: 3px solid #e31837;">
+                <div class="ta-horizon-tag" style="color: #e31837;">Gap / Risk</div>
+                <div class="ta-horizon-val">5%</div>
+                <div class="ta-horizon-sub">2 Roles</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4. Cross-Sector Mobility Flows (Compact Strip) -->
+      <div class="ta-mobility-card">
+        <div class="ta-card-header" style="margin-bottom: 12px;">
+          <div class="ta-card-title-group">
+            <h3>
+              <span>🔄</span>
+              <span>Cross-Sector Mobility &amp; Cross-Pollination Flows</span>
+            </h3>
+            <p>Inter-business talent transfers across Mahindra group companies driving multi-domain leadership</p>
+          </div>
+          <span class="ta-chip-badge emerald">31 Active Group Transfers</span>
+        </div>
+
+        <div class="ta-mobility-grid">
+          <!-- Flow 1 -->
+          <div class="ta-mobility-box red">
+            <div>
+              <div class="ta-mobility-route">Automotive ➔ Tech Mahindra</div>
+              <span class="ta-mobility-count-chip">12 Transfers</span>
+            </div>
+            <p class="ta-mobility-desc">Software Defined Vehicles (SDV) &amp; Telematics platform cloud engineering.</p>
+          </div>
+
+          <!-- Flow 2 -->
+          <div class="ta-mobility-box amber">
+            <div>
+              <div class="ta-mobility-route">Farm Eq ➔ Financial Services</div>
+              <span class="ta-mobility-count-chip">9 Transfers</span>
+            </div>
+            <p class="ta-mobility-desc">Rural dealer financing, tractor credit risk models &amp; agritech loan products.</p>
+          </div>
+
+          <!-- Flow 3 -->
+          <div class="ta-mobility-box blue">
+            <div>
+              <div class="ta-mobility-route">Aerospace ➔ Auto Electric (MEAL)</div>
+              <span class="ta-mobility-count-chip">6 Transfers</span>
+            </div>
+            <p class="ta-mobility-desc">Carbon composite manufacturing &amp; high-precision electric powertrain lines.</p>
+          </div>
+
+          <!-- Flow 4 -->
+          <div class="ta-mobility-box emerald">
+            <div>
+              <div class="ta-mobility-route">Lifespaces ➔ Club Mahindra</div>
+              <span class="ta-mobility-count-chip">4 Transfers</span>
+            </div>
+            <p class="ta-mobility-desc">Real estate development structuring &amp; sustainable hospitality resort assets.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Critical Role Succession Bench Table -->
+      <div class="ta-table-card">
+        <div class="ta-card-header" style="margin-bottom: 4px;">
+          <div class="ta-card-title-group">
+            <h3>
+              <span>📋</span>
+              <span>Critical Role Succession Bench &amp; Readiness Slates</span>
+            </h3>
+            <p>Successor slating with 0–1 year (Ready Now) and 1–3 year horizons</p>
+          </div>
+          <a href="talent-directory.html" class="btn btn-secondary btn-sm" style="font-size: 11.5px; padding: 5px 12px;">
+            Inspect Full Talent Directory ➔
+          </a>
+        </div>
+
+        <div class="ta-table-container">
+          <table class="ta-table">
+            <thead>
+              <tr>
+                <th>Target Critical Position</th>
+                <th>Sector &amp; Business</th>
+                <th>Ready-Now Successor (0–1 Year)</th>
+                <th>Ready in 1–3 Years</th>
+                <th>Bench Depth</th>
+                <th>BHR Governance Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="ta-role-cell">
+                    <span class="ta-role-title">Regional Sales Manager - Auto</span>
+                    <span class="ta-role-grade">Band: Executive • Grade: M4/M5</span>
+                  </div>
+                </td>
+                <td>
+                  <strong>Automotive &amp; Farm (AFS)</strong><br>
+                  <span style="font-size: 11px; color: #64748b;">Auto Division • BEV Channels</span>
+                </td>
+                <td>
+                  <a href="talent-card.html?id=EMP-109281" class="ta-successor-chip">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Aditi" class="ta-avatar-micro">
+                    <span>Aditi Deshmukh</span>
+                    <span class="ta-badge-horizon ready-now">MLP 2026</span>
+                  </a>
+                </td>
+                <td>
+                  <span style="font-weight: 600; color: #334155;">Vikram Singhania</span>
+                  <span class="ta-badge-horizon ready-future">GMC 2023</span>
+                </td>
+                <td>
+                  <span class="ta-badge-bench">👥 3 Successors</span>
+                </td>
+                <td>
+                  <span class="ta-badge-status verified">✓ Verified Ready</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="ta-role-cell">
+                    <span class="ta-role-title">CBO - Rural Retail Lending</span>
+                    <span class="ta-role-grade">Band: Executive • Grade: M6</span>
+                  </div>
+                </td>
+                <td>
+                  <strong>Financial Services (MMFSL)</strong><br>
+                  <span style="font-size: 11px; color: #64748b;">Rural &amp; Semi-Urban Lending</span>
+                </td>
+                <td>
+                  <a href="talent-card.html?id=EMP-107721" class="ta-successor-chip">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80" alt="Sneha" class="ta-avatar-micro">
+                    <span>Sneha Rao</span>
+                    <span class="ta-badge-horizon ready-now">GMC 2021</span>
+                  </a>
+                </td>
+                <td>
+                  <span style="font-weight: 600; color: #334155;">Karan Varma</span>
+                  <span class="ta-badge-horizon ready-future">MALT</span>
+                </td>
+                <td>
+                  <span class="ta-badge-bench">👥 2 Successors</span>
+                </td>
+                <td>
+                  <span class="ta-badge-status verified">✓ Verified Ready</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="ta-role-cell">
+                    <span class="ta-role-title">CEO - Mahindra Aerostructures</span>
+                    <span class="ta-role-grade">Band: Business Head • Grade: M7</span>
+                  </div>
+                </td>
+                <td>
+                  <strong>Aerospace &amp; Defence</strong><br>
+                  <span style="font-size: 11px; color: #64748b;">Global Tier-1 Aerostructures</span>
+                </td>
+                <td>
+                  <a href="talent-card.html?id=EMP-106519" class="ta-successor-chip">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80" alt="Rajesh" class="ta-avatar-micro">
+                    <span>Rajesh Nair</span>
+                    <span class="ta-badge-horizon ready-now">MALT</span>
+                  </a>
+                </td>
+                <td>
+                  <span style="font-weight: 600; color: #334155;">Arun Venkat</span>
+                  <span class="ta-badge-horizon ready-future">GMC 2019</span>
+                </td>
+                <td>
+                  <span class="ta-badge-bench">👥 2 Successors</span>
+                </td>
+                <td>
+                  <span class="ta-badge-status verified">✓ Verified Ready</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="ta-role-cell">
+                    <span class="ta-role-title">Head of Connected Vehicle Cloud</span>
+                    <span class="ta-role-grade">Band: Tech Principal • Grade: M5</span>
+                  </div>
+                </td>
+                <td>
+                  <strong>Tech Mahindra / Mobility Cloud</strong><br>
+                  <span style="font-size: 11px; color: #64748b;">Telematics &amp; Connected Fleet</span>
+                </td>
+                <td>
+                  <a href="talent-card.html?id=EMP-108842" class="ta-successor-chip">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80" alt="Ananya" class="ta-avatar-micro">
+                    <span>Ananya Sen</span>
+                    <span class="ta-badge-horizon ready-now">MLP 2024–25</span>
+                  </a>
+                </td>
+                <td>
+                  <span style="font-weight: 600; color: #334155;">Rohan Joshi</span>
+                  <span class="ta-badge-horizon ready-future">MLP 2025</span>
+                </td>
+                <td>
+                  <span class="ta-badge-bench">👥 4 Successors</span>
+                </td>
+                <td>
+                  <span class="ta-badge-status verified">✓ Verified Ready</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="portal-footer" style="margin-top: 16px;">
+      <div>Mahindra Rise • NextGen Talent Architecture &amp; Intelligence (Confidential &amp; Proprietary)</div>
+      <div>Governing MLP, GMC &amp; MALT Leadership Cadres</div>
+    </footer>
+  </main>
+</div>
+
+<!-- 6. Interactive 9-Box Talent Drilldown Modal -->
+<div class="ta-modal-backdrop" id="taTalentModal">
+  <div class="ta-modal-card">
+    <div class="ta-modal-header">
+      <h3 class="ta-modal-title" id="taModalTitle">
+        <span>⭐</span>
+        <span>Star Talent / Cadre Driver (38 Talents)</span>
+      </h3>
+      <button type="button" class="ta-modal-close" onclick="TalentAnalytics.closeModal()" title="Close">✕</button>
+    </div>
+    <div class="ta-modal-body" id="taModalBody">
+      <!-- Injected by TalentAnalytics.openClusterModal() -->
+    </div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/talent-analytics.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    TalentAnalytics.init();
+  });
+
+  function exportAnalyticsReport() {
+    App.showToast("Exporting comprehensive Mahindra Group Talent Intelligence report (Excel / CSV)...", "success");
+  }
+</script>
+</body>
+</html>

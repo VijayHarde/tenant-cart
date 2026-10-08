@@ -1,0 +1,989 @@
+/* ==========================================================================
+   MAHINDRA RISE - TALENT ANALYTICS & 9-BOX INTELLIGENCE (EXACT LIGHT THEME)
+   ========================================================================== */
+
+:root {
+  --ta-bg-canvas: #f8fafc;
+  --ta-surface: #ffffff;
+  --ta-border: #e2e8f0;
+  --ta-border-focus: #cbd5e1;
+  --ta-red: #e31837;
+  --ta-red-soft: #fff1f2;
+  --ta-text-primary: #0f172a;
+  --ta-text-secondary: #475569;
+  --ta-text-muted: #64748b;
+  --ta-emerald: #10b981;
+  --ta-emerald-soft: #ecfdf5;
+  --ta-amber: #f59e0b;
+  --ta-amber-soft: #fffbeb;
+  --ta-blue: #3b82f6;
+  --ta-blue-soft: #eff6ff;
+  --ta-purple: #8b5cf6;
+  --ta-purple-soft: #f5f3ff;
+  --ta-radius: 12px;
+  --ta-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --ta-shadow-hover: 0 8px 24px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+/* Page Layout & Container */
+.ta-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   1. HERO HEADER & CONTROLS BAR (COMPACT SINGLE VIEWPORT FOCUS)
+   -------------------------------------------------------------------------- */
+.ta-header-card {
+  background: var(--ta-surface);
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: var(--ta-shadow);
+}
+
+.ta-header-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ta-red);
+}
+
+.ta-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ta-subtitle {
+  font-size: 12px;
+  color: var(--ta-text-muted);
+  margin: 0;
+}
+
+.ta-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ta-control-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--ta-border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ta-text-secondary);
+}
+
+.ta-select-clean {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ta-text-primary);
+  cursor: pointer;
+  outline: none;
+  padding-right: 4px;
+}
+
+.ta-btn-export {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ta-red);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(227, 24, 55, 0.25);
+  transition: all 0.15s ease;
+}
+
+.ta-btn-export:hover {
+  background: #b9132b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(227, 24, 55, 0.35);
+}
+
+/* --------------------------------------------------------------------------
+   2. COMPACT KPI RIBBON (4-CARD HERO METRICS)
+   -------------------------------------------------------------------------- */
+.ta-kpi-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .ta-kpi-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ta-kpi-ribbon {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ta-kpi-card {
+  background: var(--ta-surface);
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--ta-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.ta-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ta-shadow-hover);
+  border-color: var(--ta-border-focus);
+}
+
+.ta-kpi-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.ta-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ta-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ta-kpi-icon-wrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.ta-kpi-icon-wrap.red { background: var(--ta-red-soft); color: var(--ta-red); }
+.ta-kpi-icon-wrap.emerald { background: var(--ta-emerald-soft); color: var(--ta-emerald); }
+.ta-kpi-icon-wrap.blue { background: var(--ta-blue-soft); color: var(--ta-blue); }
+.ta-kpi-icon-wrap.amber { background: var(--ta-amber-soft); color: var(--ta-amber); }
+
+.ta-kpi-main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ta-kpi-value {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.ta-kpi-delta {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.ta-kpi-delta.positive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.ta-kpi-delta.neutral {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.ta-kpi-sub {
+  font-size: 11.5px;
+  color: var(--ta-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ta-kpi-bar {
+  width: 100%;
+  height: 4px;
+  background: #f1f5f9;
+  border-radius: 2px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.ta-kpi-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   3. DUAL COLUMN INTELLIGENCE GRID (9-BOX + METRICS)
+   -------------------------------------------------------------------------- */
+.ta-dual-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 16px;
+}
+
+@media (max-width: 1180px) {
+  .ta-dual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ta-card {
+  background: var(--ta-surface);
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 18px 20px;
+  box-shadow: var(--ta-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.ta-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ta-card-title-group h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ta-card-title-group p {
+  font-size: 11.5px;
+  color: var(--ta-text-muted);
+  margin: 2px 0 0 0;
+}
+
+.ta-chip-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ta-chip-badge.red { background: var(--ta-red-soft); color: var(--ta-red); }
+.ta-chip-badge.emerald { background: var(--ta-emerald-soft); color: var(--ta-emerald); }
+
+/* 9-BOX COMPONENT */
+.ta-ninebox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.ta-ninebox-body {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+}
+
+.ta-ninebox-y-axis {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  border-radius: 6px;
+  border: 1px dashed #cbd5e1;
+}
+
+.ta-ninebox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.ta-cell {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.ta-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+  z-index: 2;
+}
+
+.ta-cell.active {
+  box-shadow: 0 0 0 2.5px var(--ta-red), 0 8px 20px rgba(227, 24, 55, 0.18);
+  border-color: var(--ta-red) !important;
+}
+
+/* 9-Box Color Tiers */
+.ta-cell.star {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: #86efac;
+}
+.ta-cell.star .ta-cell-title { color: #166534; }
+
+.ta-cell.high-pot {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  border-color: #fecdd3;
+}
+.ta-cell.high-pot .ta-cell-title { color: #9f1239; }
+
+.ta-cell.enigma {
+  background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+  border-color: #fef08a;
+}
+.ta-cell.enigma .ta-cell-title { color: #854d0e; }
+
+.ta-cell.high-perf {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  border-color: #99f6e4;
+}
+.ta-cell.high-perf .ta-cell-title { color: #115e59; }
+
+.ta-cell.core {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-color: #cbd5e1;
+}
+.ta-cell.core .ta-cell-title { color: #334155; }
+
+.ta-cell.dilemma {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-color: #fed7aa;
+}
+.ta-cell.dilemma .ta-cell-title { color: #9a3412; }
+
+.ta-cell.solid {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-color: #e2e8f0;
+}
+.ta-cell.solid .ta-cell-title { color: #475569; }
+
+.ta-cell.effective {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-color: #cbd5e1;
+}
+.ta-cell.effective .ta-cell-title { color: #475569; }
+
+.ta-cell.underperf {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  opacity: 0.75;
+}
+.ta-cell.underperf .ta-cell-title { color: #64748b; }
+
+.ta-cell-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.ta-cell-title {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.ta-cell-badge {
+  font-size: 10px;
+}
+
+.ta-cell-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.ta-cell-count {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  line-height: 1;
+}
+
+.ta-cell-share {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ta-text-muted);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.ta-ninebox-x-axis {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: 38px;
+  padding: 4px 0;
+  background: #f8fafc;
+  border-radius: 6px;
+  border: 1px dashed #cbd5e1;
+}
+
+/* 9-Box Selected Slate Inline Bar */
+.ta-ninebox-selection-info {
+  background: #f8fafc;
+  border: 1px solid var(--ta-border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
+  margin-top: 8px;
+}
+
+.ta-selection-label {
+  color: var(--ta-text-secondary);
+  font-weight: 600;
+}
+
+.ta-btn-inspect-cluster {
+  background: #ffffff;
+  border: 1px solid var(--ta-border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ta-red);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ta-btn-inspect-cluster:hover {
+  border-color: var(--ta-red);
+  background: var(--ta-red-soft);
+}
+
+/* RIGHT ANALYTICS STACK */
+.ta-analytics-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ta-subcard {
+  background: #ffffff;
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 16px;
+  box-shadow: var(--ta-shadow);
+}
+
+/* Sector Completion Progress Bars */
+.ta-sector-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ta-sector-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ta-sector-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
+}
+
+.ta-sector-name {
+  font-weight: 700;
+  color: var(--ta-text-secondary);
+}
+
+.ta-sector-pct {
+  font-weight: 800;
+  color: var(--ta-text-primary);
+}
+
+.ta-progress-track {
+  width: 100%;
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ta-progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+/* Succession Readiness Horizon Grid */
+.ta-readiness-horizon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .ta-readiness-horizon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ta-horizon-box {
+  background: #f8fafc;
+  border: 1px solid var(--ta-border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.ta-horizon-tag {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--ta-text-muted);
+}
+
+.ta-horizon-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  margin: 2px 0;
+}
+
+.ta-horizon-sub {
+  font-size: 10px;
+  color: var(--ta-text-muted);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   4. CROSS-SECTOR MOBILITY FLOWS (COMPACT STRIP)
+   -------------------------------------------------------------------------- */
+.ta-mobility-card {
+  background: var(--ta-surface);
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 16px 20px;
+  box-shadow: var(--ta-shadow);
+}
+
+.ta-mobility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .ta-mobility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ta-mobility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ta-mobility-box {
+  background: #ffffff;
+  border: 1px solid var(--ta-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left-width: 3.5px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.ta-mobility-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+.ta-mobility-box.red { border-left-color: var(--ta-red); }
+.ta-mobility-box.amber { border-left-color: var(--ta-amber); }
+.ta-mobility-box.blue { border-left-color: var(--ta-blue); }
+.ta-mobility-box.emerald { border-left-color: var(--ta-emerald); }
+
+.ta-mobility-route {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ta-mobility-count-chip {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #334155;
+  margin-top: 4px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.ta-mobility-desc {
+  font-size: 11px;
+  color: var(--ta-text-muted);
+  line-height: 1.35;
+  margin: 6px 0 0 0;
+}
+
+/* --------------------------------------------------------------------------
+   5. CRITICAL ROLE SUCCESSION BENCH TABLE (EXECUTIVE TABLE)
+   -------------------------------------------------------------------------- */
+.ta-table-card {
+  background: var(--ta-surface);
+  border: 1px solid var(--ta-border);
+  border-radius: var(--ta-radius);
+  padding: 16px 20px;
+  box-shadow: var(--ta-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.ta-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 8px;
+}
+
+.ta-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.ta-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border-bottom: 1.5px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.ta-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.ta-table tr:hover td {
+  background: #fcfcfd;
+}
+
+.ta-role-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ta-role-title {
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  font-size: 12.5px;
+}
+
+.ta-role-grade {
+  font-size: 10.5px;
+  color: var(--ta-text-muted);
+  font-weight: 600;
+}
+
+.ta-successor-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ta-text-primary);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.ta-successor-chip:hover {
+  border-color: var(--ta-red);
+  color: var(--ta-red);
+  background: var(--ta-red-soft);
+  transform: translateY(-1px);
+}
+
+.ta-avatar-micro {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ta-badge-horizon {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ta-badge-horizon.ready-now {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.ta-badge-horizon.ready-future {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.ta-badge-bench {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  color: #334155;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ta-badge-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.ta-badge-status.verified {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.ta-badge-status.review {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+/* --------------------------------------------------------------------------
+   6. INTERACTIVE 9-BOX TALENTS POPUP DRAWER
+   -------------------------------------------------------------------------- */
+.ta-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ta-modal-backdrop.active {
+  display: flex;
+}
+
+.ta-modal-card {
+  background: #ffffff;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: taModalIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes taModalIn {
+  from { opacity: 0; transform: scale(0.96) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.ta-modal-header {
+  padding: 16px 20px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ta-modal-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ta-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.ta-modal-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ta-modal-talent-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.ta-modal-talent-item:hover {
+  border-color: var(--ta-red);
+  background: #fffbfa;
+}
+
+.ta-modal-talent-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ta-modal-talent-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e2e8f0;
+}
+
+.ta-modal-talent-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ta-modal-talent-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ta-text-primary);
+}
+
+.ta-modal-talent-role {
+  font-size: 11px;
+  color: var(--ta-text-muted);
+}

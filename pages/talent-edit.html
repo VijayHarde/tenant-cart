@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create / Edit Talent Profile • Mahindra Rise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar (Exact Light Theme) -->
+<header class="tc-navbar">
+  <div class="tc-navbar-left">
+    <a href="dashboard.html" class="d-flex align-center">
+      <img src="../assets/images/mahindra-dual-logo.svg" alt="Mahindra Rise" class="tc-brand-logo">
+    </a>
+
+    <div class="tc-search-wrapper">
+      <span class="tc-search-icon">🔍</span>
+      <input type="text" class="tc-search-input" placeholder="Search talent, skills, roles, programmes...">
+      <span class="tc-search-shortcut">⌘ K</span>
+    </div>
+  </div>
+
+  <div class="tc-navbar-right">
+    <!-- Notification Bell with Red Badge -->
+    <button type="button" class="tc-nav-bell-btn" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="tc-nav-bell-badge">4</span>
+    </button>
+
+    <!-- Role Switcher -->
+    <div class="tc-role-pill">
+      <span class="tc-role-label">ROLE:</span>
+      <select id="demoRoleSelector" class="tc-role-select">
+        <option value="Employee">Employee View</option>
+        <option value="BHR" selected>BHR Lead</option>
+        <option value="Manager">Manager View</option>
+        <option value="GroupHR">Executive Board</option>
+      </select>
+    </div>
+
+    <!-- User Profile Dropdown -->
+    <div class="tc-user-profile-btn">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Megha Patil" class="tc-user-avatar">
+      <div class="tc-user-info-text">
+        <span class="tc-user-name">Megha Patil</span>
+        <span class="tc-user-role">BHR Lead</span>
+      </div>
+      <span class="tc-dropdown-chevron">⌵</span>
+    </div>
+  </div>
+</header>
+
+<div class="tc-layout-body">
+  <!-- Signature Floating Capsule Sidebar -->
+  <aside class="sig-sidebar" id="sigSidebar">
+    <!-- Left Accent Edge Glow -->
+    <div class="sig-sidebar-edge-glow"></div>
+
+    <!-- Protruding Tab Toggle Button -->
+    <button type="button" class="sig-toggle-tab" id="sigSidebarToggleBtn" title="Toggle Sidebar">
+      <svg class="sig-toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="sig-sidebar-scroll">
+      <!-- 1. Header 3-Bar Icon Block -->
+      <div class="sig-header-block">
+        <div class="sig-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="8" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 2. User Profile Card -->
+      <div class="sig-profile-block">
+        <div class="sig-avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Megha Patil" class="sig-avatar-img">
+          <span class="sig-status-dot" title="Online / Active"></span>
+        </div>
+        <div class="sig-profile-details">
+          <div class="sig-profile-name">Megha Patil</div>
+          <div class="sig-profile-sub">BHR Lead · Talent Architecture</div>
+        </div>
+      </div>
+
+      <div class="sig-divider"></div>
+
+      <!-- 3. Sidebar Search -->
+      <div class="sig-search-block">
+        <div class="sig-search-inner">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sig-search-ico">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="sig-search-input" placeholder="Search..." aria-label="Search">
+          <span class="sig-search-badge">⌘K</span>
+        </div>
+      </div>
+
+      <!-- 4. Navigation Items Stack -->
+      <nav class="sig-nav-stack">
+        <!-- Dashboard -->
+        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Dashboard</span>
+        </a>
+
+        <!-- NextGen Talent Card -->
+        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="sig-nav-label">NextGen Talent Card</span>
+        </a>
+
+        <!-- Talent Directory -->
+        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Talent Directory</span>
+        </a>
+
+        <!-- Analytics & 9-Box -->
+        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
+        </a>
+
+        <!-- BHR Queue -->
+        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </span>
+          <span class="sig-nav-label">BHR Queue</span>
+          <span class="sig-nav-badge">4</span>
+        </a>
+
+        <!-- Team & Mobility -->
+        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Team &amp; Mobility</span>
+        </a>
+
+        <!-- Settings / Masters Admin -->
+        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
+          <span class="sig-nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </span>
+          <span class="sig-nav-label">Settings</span>
+        </a>
+      </nav>
+
+      <!-- 5. Bottom Mahindra Brand Logo -->
+      <div class="sig-bottom-brand">
+        <img src="../images/mahindra-red-logo.svg" alt="Mahindra" class="sig-bottom-logo-img">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="content-area">
+    <div class="header-actions">
+      <div>
+        <span class="eyebrow">PROFILE BUILDER & GOVERNANCE</span>
+        <h1>Create / Update Talent Profile</h1>
+      </div>
+      <div class="d-flex gap-sm">
+        <button type="button" class="btn btn-outline" onclick="saveDraftOnly()">
+          💾 Save Staged Draft
+        </button>
+        <a href="talent-card.html" class="btn btn-ghost">Cancel</a>
+      </div>
+    </div>
+
+    <!-- Stepper Navigation -->
+    <div class="portal-card" style="padding: 14px 20px; margin-bottom: 24px;">
+      <div class="talent-tabs" style="border-bottom: none; margin-bottom: 0;">
+        <button type="button" class="talent-tab-btn active" id="tabStep1" onclick="switchStep(1)">
+          1. Personal & Programme
+        </button>
+        <button type="button" class="talent-tab-btn" id="tabStep2" onclick="switchStep(2)">
+          2. Education & Prior Work
+        </button>
+        <button type="button" class="talent-tab-btn" id="tabStep3" onclick="switchStep(3)">
+          3. Stints & SIP Journey
+        </button>
+        <button type="button" class="talent-tab-btn" id="tabStep4" onclick="switchStep(4)">
+          4. Capability & IDP
+        </button>
+        <button type="button" class="talent-tab-btn" id="tabStep5" onclick="switchStep(5)">
+          5. Aspirations & Readiness
+        </button>
+      </div>
+    </div>
+
+    <!-- Form Container -->
+    <form id="talentForm" onsubmit="event.preventDefault(); submitTalentForm();">
+      <!-- STEP 1: Personal & Programme -->
+      <div class="talent-tab-pane active" id="stepPane1">
+        <div class="portal-card card-accent-red" style="padding: 24px 28px;">
+          <div class="d-flex align-center justify-between" style="margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px;">
+            <h3 style="font-size: 1.15rem; color: var(--ink);">Personal & Current Mahindra Details</h3>
+            <span class="src-indicator src-green">● Auto-synced from HR System</span>
+          </div>
+
+          <div class="grid-3">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Official Full Name</label>
+              <input type="text" class="form-control" id="formFullName" value="Aditi Deshmukh" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Mahindra Employee ID</label>
+              <input type="text" class="form-control" id="formEmpId" value="10928145" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Official Email Address</label>
+              <input type="email" class="form-control" id="formEmail" value="aditi.deshmukh@mahindra.com" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Date of Birth</label>
+              <input type="date" class="form-control" id="formDob" value="1999-07-15" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Programme Name</label>
+              <select class="form-control" id="formProgName" required>
+                <option value="MLP" selected>Mahindra Leadership Programme (MLP)</option>
+                <option value="GMC">Group Management Cadre (GMC)</option>
+                <option value="MALT">Mahindra Accelerated Leadership Track (MALT)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Cohort Persona</label>
+              <select class="form-control" id="formPersona" required>
+                <option value="MLP 2026" selected>MLP 2026 (Rotational Stints)</option>
+                <option value="MLP 2027">MLP 2027 (Pre-Join / Campus)</option>
+                <option value="MLP 2024–25">MLP 2024–25 (Full-Time Role)</option>
+                <option value="GMC 2019–23">GMC 2019–23 (Cadre)</option>
+                <option value="MALT">MALT (Experienced Lateral)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Current Business Unit</label>
+              <input type="text" class="form-control" id="formBusiness" value="Mahindra Electric Auto Ltd (MEAL)" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Current Sector</label>
+              <select class="form-control" id="formSector" required>
+                <option value="Automotive & Farm" selected>Automotive & Farm (AFS)</option>
+                <option value="Financial Services">Financial Services (MMFSL)</option>
+                <option value="IT & Services">IT & Services (Tech Mahindra)</option>
+                <option value="Aerospace & Defence">Aerospace & Defence</option>
+                <option value="Real Estate & Hospitality">Real Estate & Hospitality</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Current Executive Grade</label>
+              <input type="text" class="form-control" id="formGrade" value="M4" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Reporting Manager Name</label>
+              <input type="text" class="form-control" id="formManager" value="Suresh Raman (VP - EV Strategy)" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Current Location Base</label>
+              <input type="text" class="form-control" id="formLocation" value="Mumbai (Mahindra Towers, Worli)" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Status</label>
+              <select class="form-control" id="formStatus">
+                <option value="Active" selected>Active</option>
+                <option value="Resigned">Resigned</option>
+                <option value="Exited">Exited</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="d-flex justify-end gap-sm" style="margin-top: 20px;">
+            <button type="button" class="btn btn-primary" onclick="switchStep(2)">Next: Education & Prior Work ➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Education & Prior Work -->
+      <div class="talent-tab-pane" id="stepPane2">
+        <div class="portal-card card-accent-red" style="padding: 24px 28px;">
+          <div class="d-flex align-center justify-between" style="margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px;">
+            <h3 style="font-size: 1.15rem; color: var(--ink);">Education History & Prior External Experience</h3>
+            <span class="src-indicator src-red">■ Human Input / Verified</span>
+          </div>
+
+          <!-- PG -->
+          <div style="background: #fafbfc; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line); margin-bottom: 18px;">
+            <div class="font-bold text-sm" style="color: var(--ink); margin-bottom: 12px;">🎓 Postgraduation (PG)</div>
+            <div class="grid-3">
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">PG Degree & Specialization</label>
+                <input type="text" class="form-control" value="MBA - Marketing & Strategy" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">Institute Name</label>
+                <input type="text" class="form-control" value="IIM Kozhikode" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">Score (CGPA / %)</label>
+                <input type="text" class="form-control" value="3.72 / 4.0" required>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label class="form-label font-bold text-xs">Key Academic / Case Highlight</label>
+              <input type="text" class="form-control" value="Led National Case Competition on EV Grid Integration; Published whitepaper on Battery Swapping">
+            </div>
+          </div>
+
+          <!-- UG -->
+          <div style="background: #fafbfc; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line); margin-bottom: 18px;">
+            <div class="font-bold text-sm" style="color: var(--ink); margin-bottom: 12px;">🎓 Undergraduation (UG)</div>
+            <div class="grid-3">
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">UG Degree & Branch</label>
+                <input type="text" class="form-control" value="B.Tech - Electrical & Electronics" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">Institute Name</label>
+                <input type="text" class="form-control" value="VJTI Mumbai" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs required">Score (Percentage / CGPA)</label>
+                <input type="text" class="form-control" value="88.4%" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prior Work with STAR impact -->
+          <div style="background: #fff7ed; padding: 16px; border-radius: var(--radius-sm); border: 1px solid #fed7aa; margin-bottom: 18px;">
+            <div class="d-flex align-center justify-between" style="margin-bottom: 8px;">
+              <div class="font-bold text-sm" style="color: #9a3412;">🏢 Prior External Work Experience (STAR Evidence)</div>
+              <span class="badge badge-persona-mlp26">Max 3 Prior Companies</span>
+            </div>
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Company & Designation</label>
+                <input type="text" class="form-control" value="Tata Motors Ltd - Senior Engineer (24 Months)">
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Critical Project Name</label>
+                <input type="text" class="form-control" value="DC-Fast Charger Interoperability Validation">
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label class="form-label font-bold text-xs">Quantifiable Impact (STAR Evidence: Context → Action → Result)</label>
+              <textarea class="form-control" rows="2">Led firmware validation across 14 third-party CPO networks, reducing charge error disconnections by 34% across 8,000 public chargers nationwide.</textarea>
+            </div>
+          </div>
+
+          <div class="d-flex justify-between" style="margin-top: 20px;">
+            <button type="button" class="btn btn-secondary" onclick="switchStep(1)">➔ Previous Step</button>
+            <button type="button" class="btn btn-primary" onclick="switchStep(3)">Next: Stints & SIP Journey ➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: Stints & SIP Journey -->
+      <div class="talent-tab-pane" id="stepPane3">
+        <div class="portal-card card-accent-red" style="padding: 24px 28px;">
+          <div class="d-flex align-center justify-between" style="margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px;">
+            <h3 style="font-size: 1.15rem; color: var(--ink);">Mahindra Summer Internship (SIP) & Rotational Stints</h3>
+            <span class="badge badge-verified">Stint Journey Tracker</span>
+          </div>
+
+          <!-- SIP -->
+          <div style="background: #fafbfc; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line); margin-bottom: 18px;">
+            <div class="font-bold text-sm" style="color: var(--ink); margin-bottom: 12px;">🌟 Summer Internship (SIP) Details</div>
+            <div class="grid-3">
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">SIP Business & Sector</label>
+                <input type="text" class="form-control" value="Mahindra Farm Equipment (FES)">
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Future Shaper Mentor</label>
+                <input type="text" class="form-control" value="Anand Sundaresan (CTO - FES)">
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Project Title</label>
+                <input type="text" class="form-control" value="Krish-e Smart Farm Implements Monetization">
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label class="form-label font-bold text-xs">SIP Quantifiable Impact</label>
+              <textarea class="form-control" rows="2">Achieved 18% trial-to-paid conversion in 60 days, validating ₹4.2 Cr annual recurring revenue stream model.</textarea>
+            </div>
+          </div>
+
+          <!-- Stints -->
+          <div style="background: #fafbfc; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line); margin-bottom: 18px;">
+            <div class="font-bold text-sm" style="color: var(--ink); margin-bottom: 12px;">🔄 Current & Completed Mahindra Stints</div>
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label class="form-label font-bold text-xs">Stint 1 (Completed): Role & Verified Impact</label>
+              <textarea class="form-control" rows="2">Thar Roxx Launch Readiness (Operations Strategy) — Improved assembly line cycle time by 4.2 seconds, unlocking 450 additional units/month output without capex.</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label font-bold text-xs">Stint 2 (Current): Role & Milestones</label>
+              <textarea class="form-control" rows="2">Lead - EV Charging Infra & Channel Expansion (MEAL) — Rollout of 200 flagship EV destination fast hubs across top 10 metros in partnership with Jio-BP.</textarea>
+            </div>
+          </div>
+
+          <div class="d-flex justify-between" style="margin-top: 20px;">
+            <button type="button" class="btn btn-secondary" onclick="switchStep(2)">➔ Previous Step</button>
+            <button type="button" class="btn btn-primary" onclick="switchStep(4)">Next: Capability & IDP ➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 4: Capability & IDP -->
+      <div class="talent-tab-pane" id="stepPane4">
+        <div class="portal-card card-accent-red" style="padding: 24px 28px;">
+          <div class="d-flex align-center justify-between" style="margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px;">
+            <h3 style="font-size: 1.15rem; color: var(--ink);">Learning Needs, Interventions & Performance</h3>
+            <span class="badge badge-persona-mlp26">IDP Governance</span>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Functional Learning Need (IDP)</label>
+              <textarea class="form-control" rows="3">Strategic P&L Management & Pricing in High Volatility Commodity Cycles; Advanced Commercial Deal Structuring</textarea>
+            </div>
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Behavioural CAB Need</label>
+              <textarea class="form-control" rows="3">Influencing without Authority in Matrix Governance; Executive Boardroom Storytelling with Data</textarea>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 14px;">
+            <div class="form-group">
+              <label class="form-label font-bold text-xs">Active Learning Intervention</label>
+              <input type="text" class="form-control" value="Mahindra Emerging Leader Catalyst (MELC) + Wharton Deal Structuring">
+            </div>
+            <div class="form-group">
+              <label class="form-label font-bold text-xs">Latest Appraisal Rating</label>
+              <input type="text" class="form-control" value="4.5 / 5.0 (Role Model CAB Scale)">
+            </div>
+          </div>
+
+          <div class="d-flex justify-between" style="margin-top: 20px;">
+            <button type="button" class="btn btn-secondary" onclick="switchStep(3)">➔ Previous Step</button>
+            <button type="button" class="btn btn-primary" onclick="switchStep(5)">Next: Aspirations & Readiness ➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5: Aspirations & Readiness -->
+      <div class="talent-tab-pane" id="stepPane5">
+        <div class="portal-card card-accent-red" style="padding: 24px 28px;">
+          <div class="d-flex align-center justify-between" style="margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px;">
+            <h3 style="font-size: 1.15rem; color: var(--ink);">Career Aspirations, Mobility & Career Readiness</h3>
+            <span class="src-indicator src-red">■ BHR Verified Horizon</span>
+          </div>
+
+          <div class="grid-3">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Mobility Preference</label>
+              <select class="form-control">
+                <option value="Open">Open (Pan-India / International)</option>
+                <option value="Conditional" selected>Conditional (Preferred Hubs)</option>
+                <option value="Not Open">Not Open</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Cross-Sector Openness</label>
+              <select class="form-control">
+                <option value="Open" selected>Open to Any Mahindra Sector</option>
+                <option value="Conditional">Conditional (AFS / TechM only)</option>
+                <option value="Not Open">Not Open</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Preferred Locations</label>
+              <input type="text" class="form-control" value="Mumbai, Pune, Bengaluru">
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 14px;">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Short-Term Preferred Role (1–3 Years)</label>
+              <input type="text" class="form-control" value="Regional Sales Manager / EV Brand Product Head">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label class="form-label font-bold text-xs required">Long-Term Leadership Direction</label>
+              <input type="text" class="form-control" value="Business Head / Sector P&L Leadership">
+            </div>
+          </div>
+
+          <div style="background: #ecfdf3; padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid #a6f4c5; margin-top: 16px;">
+            <div class="font-bold text-sm" style="color: #027a48; margin-bottom: 6px;">🎯 Career Readiness (Manager & BHR Endorsed)</div>
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Possible Next Role 1 & Horizon</label>
+                <input type="text" class="form-control" value="Regional Sales Manager - Auto (West) [1–3 Years]">
+              </div>
+              <div class="form-group">
+                <label class="form-label font-bold text-xs">Possible Next Role 2 & Horizon</label>
+                <input type="text" class="form-control" value="Product Strategy Manager - Electric SUV [0–1 Year]">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-between" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line);">
+            <button type="button" class="btn btn-secondary" onclick="switchStep(4)">➔ Previous Step</button>
+            <button type="submit" class="btn btn-primary btn-lg">🚀 Submit Profile to BHR Verification Queue</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="portal-footer">
+    <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential & Proprietary)</div>
+    <div>Governing MLP, GMC & MALT Leadership Tracks</div>
+  </footer>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/app.js"></script>
+<script>
+  function switchStep(stepNum) {
+    for (let i = 1; i <= 5; i++) {
+      const pane = document.getElementById('stepPane' + i);
+      const tab = document.getElementById('tabStep' + i);
+      if (pane && tab) {
+        if (i === stepNum) {
+          pane.classList.add('active');
+          tab.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+          tab.classList.remove('active');
+        }
+      }
+    }
+  }
+
+  function saveDraftOnly() {
+    App.showToast("Profile drafted locally. Data preserved across tabs.", "info");
+  }
+
+  function submitTalentForm() {
+    const fullName = document.getElementById('formFullName').value;
+    const persona = document.getElementById('formPersona').value;
+
+    const approvals = TalentStore.getApprovals();
+    approvals.unshift({
+      id: "REQ-" + (89050 + approvals.length),
+      talentId: "EMP-109281",
+      talentName: fullName,
+      persona: persona,
+      fieldChanged: "Full Talent Profile Multi-Step Update",
+      section: "All 15 Governed Buckets",
+      oldValue: "Previous Version",
+      newValue: "New Staged Profile (" + new Date().toLocaleDateString() + ")",
+      submittedBy: "Employee Self-Update / Manager",
+      submissionDate: new Date().toISOString().replace('T', ' ').substring(0, 16),
+      status: "Pending BHR Verification",
+      priority: "High",
+      reasonProvided: "Completed annual profile refresh & Stint 2 milestone update."
+    });
+    TalentStore.set('bhrApprovals', approvals);
+
+    App.showToast("Talent Profile submitted for BHR verification! Audit trail created.", "success");
+    setTimeout(() => {
+      window.location.href = "bhr-approvals.html";
+    }, 1200);
+  }
+</script>
+</body>
+</html>
