@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/signature-sidebar.css">
+  <link rel="stylesheet" href="../css/help-requests-exact.css">
 </head>
 <body>
 
@@ -46,7 +48,7 @@
         <option value="Employee">Employee View</option>
         <option value="BHR" selected>BHR Lead</option>
         <option value="Manager">Manager View</option>
-        <option value="GroupHR">Executive Board</option>
+        <option value="GroupHR">Executive Board (GEB)</option>
       </select>
     </div>
 
@@ -115,96 +117,7 @@
 
       <!-- 4. Navigation Items Stack -->
       <nav class="sig-nav-stack">
-        <!-- Dashboard -->
-        <a href="dashboard.html" class="sig-nav-item" title="Dashboard">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
-              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
-              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
-              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
-            </svg>
-          </span>
-          <span class="sig-nav-label">Dashboard</span>
-        </a>
-
-        <!-- NextGen Talent Card -->
-        <a href="talent-card.html" class="sig-nav-item" title="NextGen Talent Card">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </span>
-          <span class="sig-nav-label">NextGen Talent Card</span>
-        </a>
-
-        <!-- Talent Directory -->
-        <a href="talent-directory.html" class="sig-nav-item" title="Talent Directory">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              <line x1="12" y1="11" x2="12" y2="17"></line>
-              <line x1="9" y1="14" x2="15" y2="14"></line>
-            </svg>
-          </span>
-          <span class="sig-nav-label">Talent Directory</span>
-        </a>
-
-        <!-- Analytics & 9-Box -->
-        <a href="talent-analytics.html" class="sig-nav-item" title="Analytics & 9-Box">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-          </span>
-          <span class="sig-nav-label">Analytics &amp; 9-Box</span>
-        </a>
-
-        <!-- BHR Queue -->
-        <a href="bhr-approvals.html" class="sig-nav-item" title="BHR Queue">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              <polyline points="9 12 11 14 15 10"></polyline>
-            </svg>
-          </span>
-          <span class="sig-nav-label">BHR Queue</span>
-          <span class="sig-nav-badge">4</span>
-        </a>
-
-        <!-- Team & Mobility -->
-        <a href="team-mobility.html" class="sig-nav-item" title="Team & Mobility">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </span>
-          <span class="sig-nav-label">Team &amp; Mobility</span>
-        </a>
-
-        <!-- Settings / Masters Admin -->
-        <a href="masters-admin.html" class="sig-nav-item" title="Masters Admin">
-          <span class="sig-nav-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="21" x2="4" y2="14"></line>
-              <line x1="4" y1="10" x2="4" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="12"></line>
-              <line x1="12" y1="8" x2="12" y2="3"></line>
-              <line x1="20" y1="21" x2="20" y2="16"></line>
-              <line x1="20" y1="12" x2="20" y2="3"></line>
-              <line x1="1" y1="14" x2="7" y2="14"></line>
-              <line x1="9" y1="8" x2="15" y2="8"></line>
-              <line x1="17" y1="16" x2="23" y2="16"></line>
-            </svg>
-          </span>
-          <span class="sig-nav-label">Settings</span>
-        </a>
+        <!-- Rendered dynamically by App.renderRoleBasedNavigation() -->
       </nav>
 
       <!-- 5. Bottom Mahindra Brand Logo -->
@@ -216,116 +129,271 @@
 
   <!-- Main Content Area -->
   <main class="content-area">
-    <div class="header-actions">
-      <div>
-        <span class="eyebrow">TALENT GOVERNANCE & QUERY DESK</span>
-        <h1>Persistent Help & Correction Desk</h1>
-      </div>
-      <div class="d-flex gap-sm">
-        <button type="button" class="btn btn-primary" onclick="App.openHelpModal()">
-          + Raise New Ticket
-        </button>
-      </div>
-    </div>
+    <div class="hlp-dashboard-container">
 
-    <!-- KPI Grid -->
-    <div class="dashboard-grid">
-      <div class="kpi-card">
-        <div class="kpi-top"><span class="kpi-label">OPEN CORRECTION TICKETS</span><span class="kpi-icon">💬</span></div>
-        <div class="kpi-value" id="kpiOpenTickets">2</div>
-        <div class="kpi-change">Assigned to BHR Lead</div>
-        <div class="kpi-accent"></div>
-      </div>
-
-      <div class="kpi-card">
-        <div class="kpi-top"><span class="kpi-label">IN REVIEW (IT / DESK)</span><span class="kpi-icon">⚙️</span></div>
-        <div class="kpi-value">1</div>
-        <div class="kpi-change">Certificate validation</div>
-        <div class="kpi-accent"></div>
-      </div>
-
-      <div class="kpi-card">
-        <div class="kpi-top"><span class="kpi-label">RESOLVED THIS CYCLE</span><span class="kpi-icon">✅</span></div>
-        <div class="kpi-value">18</div>
-        <div class="kpi-change">100% SLA Compliant</div>
-        <div class="kpi-accent"></div>
-      </div>
-
-      <div class="kpi-card">
-        <div class="kpi-top"><span class="kpi-label">AVERAGE RESOLUTION TIME</span><span class="kpi-icon">⚡</span></div>
-        <div class="kpi-value">6.4 hrs</div>
-        <div class="kpi-change">Live BHR routing</div>
-        <div class="kpi-accent"></div>
-      </div>
-    </div>
-
-    <!-- Tickets Table Card -->
-    <div class="portal-card" style="padding: 22px 24px;">
-      <div class="d-flex align-center justify-between" style="margin-bottom: 14px; border-bottom: 1px solid var(--line); padding-bottom: 8px;">
+      <!-- 1. Header Card -->
+      <div class="hlp-header-card">
         <div>
-          <h3 style="font-size: 1.1rem; color: var(--ink);">Audit Log & Help Desk Tickets</h3>
-          <p class="text-xs text-muted">Field correction requests logged via persistent (h) icon automatically routed to Business HR</p>
+          <div class="hlp-eyebrow">
+            <span>🛡️</span>
+            <span>Talent Governance &amp; Query Desk</span>
+          </div>
+          <h1 class="hlp-title">Persistent Help &amp; Correction Desk</h1>
+          <p class="hlp-subtitle">Data fidelity queries and attribute correction requests automatically routed to designated Business HR Leads</p>
         </div>
-        <span class="badge badge-verified">Live BHR Routing</span>
+
+        <div class="hlp-header-controls">
+          <button type="button" class="hlp-btn-action" onclick="App.openHelpModal()">
+            <span>+</span>
+            <span>Raise New Ticket</span>
+          </button>
+        </div>
       </div>
 
-      <div class="table-container">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Ticket ID</th>
-              <th>Talent & Token</th>
-              <th>Target Section & Field</th>
-              <th>Issue Type</th>
-              <th>Description & Justification</th>
-              <th>Assigned Resolver</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="helpTableBody"></tbody>
-        </table>
+      <!-- 2. 4-Card Hero Ribbon -->
+      <div class="hlp-kpi-ribbon">
+        <!-- KPI 1 -->
+        <div class="hlp-kpi-card">
+          <div class="hlp-kpi-top">
+            <span class="hlp-kpi-label">Open Correction Tickets</span>
+            <div class="hlp-kpi-icon-wrap red">💬</div>
+          </div>
+          <div class="hlp-kpi-main" id="kpiOpenTickets">2</div>
+          <div class="hlp-kpi-sub">Assigned to BHR Lead</div>
+          <div class="hlp-kpi-bar">
+            <div class="hlp-kpi-bar-fill" style="width: 100%; background: var(--hlp-red);"></div>
+          </div>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="hlp-kpi-card">
+          <div class="hlp-kpi-top">
+            <span class="hlp-kpi-label">In Review (Desk / IT)</span>
+            <div class="hlp-kpi-icon-wrap amber">⚙️</div>
+          </div>
+          <div class="hlp-kpi-main" id="kpiReviewTickets">1</div>
+          <div class="hlp-kpi-sub">Evidence &amp; Cert Validation</div>
+          <div class="hlp-kpi-bar">
+            <div class="hlp-kpi-bar-fill" style="width: 35%; background: #f59e0b;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="hlp-kpi-card">
+          <div class="hlp-kpi-top">
+            <span class="hlp-kpi-label">Resolved This Cycle</span>
+            <div class="hlp-kpi-icon-wrap emerald">✅</div>
+          </div>
+          <div class="hlp-kpi-main" id="kpiResolvedTickets">18</div>
+          <div class="hlp-kpi-sub">100% SLA Compliant</div>
+          <div class="hlp-kpi-bar">
+            <div class="hlp-kpi-bar-fill" style="width: 90%; background: #10b981;"></div>
+          </div>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="hlp-kpi-card">
+          <div class="hlp-kpi-top">
+            <span class="hlp-kpi-label">Average Turnaround Time</span>
+            <div class="hlp-kpi-icon-wrap blue">⚡</div>
+          </div>
+          <div class="hlp-kpi-main">6.4 hrs</div>
+          <div class="hlp-kpi-sub">Fast BHR Routing</div>
+          <div class="hlp-kpi-bar">
+            <div class="hlp-kpi-bar-fill" style="width: 80%; background: #3b82f6;"></div>
+          </div>
+        </div>
       </div>
+
+      <!-- 3. Tickets Table Card -->
+      <div class="hlp-table-card">
+        <!-- Filter Toolbar -->
+        <div class="hlp-filter-toolbar">
+          <div class="hlp-filter-pills">
+            <button type="button" class="hlp-pill-btn active" data-filter="All" onclick="filterHelpTickets('All', this)">
+              All Tickets <span class="hlp-pill-count" id="countAll">21</span>
+            </button>
+            <button type="button" class="hlp-pill-btn" data-filter="Open" onclick="filterHelpTickets('Open', this)">
+              Open <span class="hlp-pill-count" id="countOpen">2</span>
+            </button>
+            <button type="button" class="hlp-pill-btn" data-filter="In Review" onclick="filterHelpTickets('In Review', this)">
+              In Review <span class="hlp-pill-count" id="countReview">1</span>
+            </button>
+            <button type="button" class="hlp-pill-btn" data-filter="Resolved" onclick="filterHelpTickets('Resolved', this)">
+              Resolved <span class="hlp-pill-count" id="countResolved">18</span>
+            </button>
+          </div>
+
+          <div style="font-size: 11.5px; color: #64748b;">
+            <span>Rule 01_Logic: <strong>All ticket resolutions generate verified audit trail logs.</strong></span>
+          </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="hlp-table-container">
+          <table class="hlp-table">
+            <thead>
+              <tr>
+                <th>Ticket ID &amp; Date</th>
+                <th>Talent &amp; ID</th>
+                <th>Target Section &amp; Field</th>
+                <th>Issue Type</th>
+                <th>Description &amp; Justification</th>
+                <th>Assigned Resolver</th>
+                <th>Current Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="helpTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
     </div>
-  </main>
 
-  <footer class="portal-footer">
-    <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential & Proprietary)</div>
-    <div>Governing MLP, GMC & MALT Leadership Tracks</div>
-  </footer>
+    <footer class="portal-footer" style="margin-top: 16px;">
+      <div>Mahindra Rise • NextGen Talent Card Architecture (Confidential &amp; Proprietary)</div>
+      <div>Governing MLP, GMC &amp; MALT Leadership Tracks</div>
+    </footer>
+  </main>
 </div>
 
 <script src="../js/mock-data.js"></script>
 <script src="../js/app.js"></script>
 <script>
+  let activeHelpFilter = 'All';
+
   document.addEventListener('DOMContentLoaded', () => {
     renderTickets();
+    updateTicketCounters();
   });
 
+  function filterHelpTickets(filter, btn) {
+    activeHelpFilter = filter;
+    document.querySelectorAll('.hlp-pill-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    renderTickets();
+  }
+
+  function updateTicketCounters() {
+    const list = TalentStore.getHelpTickets() || [];
+    const openCount = list.filter(t => t.status === 'Open').length;
+    const reviewCount = list.filter(t => t.status === 'In Review').length;
+    const resolvedCount = list.filter(t => t.status === 'Resolved').length;
+
+    const elOpen = document.getElementById('countOpen');
+    const elReview = document.getElementById('countReview');
+    const elResolved = document.getElementById('countResolved');
+    const elAll = document.getElementById('countAll');
+    const kpiOpen = document.getElementById('kpiOpenTickets');
+    const kpiReview = document.getElementById('kpiReviewTickets');
+    const kpiResolved = document.getElementById('kpiResolvedTickets');
+
+    if (elOpen) elOpen.textContent = openCount;
+    if (elReview) elReview.textContent = reviewCount;
+    if (elResolved) elResolved.textContent = resolvedCount;
+    if (elAll) elAll.textContent = list.length;
+    if (kpiOpen) kpiOpen.textContent = openCount;
+    if (kpiReview) kpiReview.textContent = reviewCount;
+    if (kpiResolved) kpiResolved.textContent = resolvedCount;
+  }
+
   function renderTickets() {
-    const list = TalentStore.getHelpTickets();
+    const list = TalentStore.getHelpTickets() || [];
     const tbody = document.getElementById('helpTableBody');
     if (!tbody) return;
 
-    tbody.innerHTML = list.map(t => {
-      let statusBadge = `<span class="badge badge-pending">⏳ ${t.status}</span>`;
-      if (t.status === 'Resolved') statusBadge = `<span class="badge badge-active">✓ Resolved</span>`;
-      if (t.status === 'In Review') statusBadge = `<span class="badge badge-persona-mlp27">⚙️ In Review</span>`;
+    let filtered = list;
+    if (activeHelpFilter === 'Open') {
+      filtered = list.filter(t => t.status === 'Open');
+    } else if (activeHelpFilter === 'In Review') {
+      filtered = list.filter(t => t.status === 'In Review');
+    } else if (activeHelpFilter === 'Resolved') {
+      filtered = list.filter(t => t.status === 'Resolved');
+    }
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="8" style="text-align: center; padding: 36px 20px;">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🎉</div>
+            <div class="font-bold text-sm" style="color: #0f172a;">No Tickets Found</div>
+            <div class="text-xs text-muted">All queries in this category have been processed.</div>
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(t => {
+      let statusClass = 'open';
+      let statusText = '⏳ Open';
+      if (t.status === 'Resolved') {
+        statusClass = 'resolved';
+        statusText = '✓ Resolved';
+      } else if (t.status === 'In Review') {
+        statusClass = 'review';
+        statusText = '⚙️ In Review';
+      }
+
+      let chipClass = 'correction';
+      if (t.issueType.includes('Certificate') || t.issueType.includes('Document')) chipClass = 'cert';
+      else if (t.issueType.includes('Access') || t.issueType.includes('Permission')) chipClass = 'access';
+      else if (t.issueType.includes('Stint')) chipClass = 'stint';
+
+      const avatarImg = t.talentName.includes('Aditi') 
+        ? 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&auto=format&fit=crop&q=80'
+        : (t.talentName.includes('Ananya') 
+            ? 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&auto=format&fit=crop&q=80'
+            : (t.talentName.includes('Sneha')
+                ? 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&auto=format&fit=crop&q=80'
+                : 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80'));
+
+      const formattedDate = t.createdAt ? t.createdAt.replace(' ', ' • ') : 'Today';
 
       return `
         <tr>
-          <td><strong class="font-mono">${t.id}</strong><span class="text-xs text-muted" style="display: block;">${t.createdAt}</span></td>
-          <td><strong>${t.talentName}</strong><span class="text-xs text-muted font-mono" style="display: block;">${t.talentId}</span></td>
-          <td><strong>${t.section}</strong><span class="text-xs text-muted" style="display: block;">${t.field}</span></td>
-          <td><span class="badge badge-draft">${t.issueType}</span></td>
-          <td style="max-width: 260px; font-size: 0.82rem; line-height: 1.3;">${t.description}</td>
-          <td><span class="text-xs font-bold">${t.assignedTo}</span></td>
-          <td>${statusBadge}</td>
           <td>
+            <div class="hlp-ticket-cell">
+              <span class="hlp-ticket-id">${t.id}</span>
+              <span class="hlp-ticket-date">${formattedDate}</span>
+            </div>
+          </td>
+          <td>
+            <div class="hlp-talent-cell">
+              <img src="${avatarImg}" alt="${t.talentName}" class="hlp-talent-avatar">
+              <div class="hlp-talent-meta">
+                <a href="talent-card.html?id=${t.talentId}" class="hlp-talent-name">${t.talentName}</a>
+                <span class="hlp-talent-sub">${t.talentId}</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="hlp-section-cell">
+              <span class="hlp-section-title">${t.section}</span>
+              <span class="hlp-field-sub">${t.field}</span>
+            </div>
+          </td>
+          <td>
+            <span class="hlp-issue-chip ${chipClass}">${t.issueType}</span>
+          </td>
+          <td>
+            <div class="hlp-desc-box">${t.description}</div>
+          </td>
+          <td>
+            <div class="hlp-resolver-chip">
+              <span>${t.assignedTo.includes('BHR') ? '🛡️' : '⚙️'}</span>
+              <span>${t.assignedTo}</span>
+            </div>
+          </td>
+          <td>
+            <span class="hlp-status-badge ${statusClass}">${statusText}</span>
+          </td>
+          <td style="text-align: right;">
             ${t.status !== 'Resolved' ? `
-              <button class="btn btn-primary btn-sm" onclick="resolveTicket('${t.id}')">Resolve</button>
+              <button type="button" class="hlp-btn-resolve" onclick="resolveTicket('${t.id}')">✓ Resolve</button>
             ` : `
-              <span class="text-xs text-muted font-bold">Closed</span>
+              <span class="hlp-closed-tag">✓ Closed</span>
             `}
           </td>
         </tr>
@@ -341,8 +409,9 @@
       ticket.resolvedAt = new Date().toISOString();
       TalentStore.set('helpTickets', list);
       renderTickets();
+      updateTicketCounters();
       App.updateHelpBadgeCounter();
-      App.showToast(`Ticket ${ticketId} marked as resolved! Submitter notified.`, 'success');
+      App.showToast(`Ticket ${ticketId} resolved & audit stamp generated!`, 'success');
     }
   }
 </script>

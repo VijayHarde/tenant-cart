@@ -693,6 +693,15 @@
     TalentAnalytics.init();
     renderCleanApprovalsTable();
     initDashboardCharts();
+
+    // Listen to role changes
+    document.addEventListener('roleChanged', (e) => {
+      adaptDashboardForRole(e.detail);
+    });
+
+    // Initial role adaptation
+    const user = TalentStore.get('currentUser') || MAHINDRA_DATA.currentUser;
+    adaptDashboardForRole(user);
   });
 
   function renderCleanApprovalsTable(filter = 'All') {
@@ -1039,6 +1048,26 @@
 
   function onSectorChange(val) {
     App.showToast(`Sector Benchmark updated: ${val === 'All' ? 'Cross-Group' : val}`, 'info');
+  }
+
+  function adaptDashboardForRole(user) {
+    const titleEl = document.querySelector('.db-header-title-group h1');
+    const eyebrowEl = document.querySelector('.db-eyebrow');
+    if (!titleEl || !eyebrowEl) return;
+
+    if (user.role === 'Employee') {
+      eyebrowEl.textContent = "Mahindra Leadership Programme (MLP 2026)";
+      titleEl.textContent = `${user.name} • My Cadre Dashboard`;
+    } else if (user.role === 'Manager') {
+      eyebrowEl.textContent = "Reporting Manager • EV & Auto Business";
+      titleEl.textContent = `${user.name} • Team & Rotations Dashboard`;
+    } else if (user.role === 'BHR') {
+      eyebrowEl.textContent = "Business HR & Governance Protocol";
+      titleEl.textContent = `${user.name} • BHR Verification & Talent Center`;
+    } else if (user.role === 'GroupHR') {
+      eyebrowEl.textContent = "Mahindra Group Executive Council (GEB)";
+      titleEl.textContent = "Executive Board Strategic Dashboard";
+    }
   }
 
   function refreshDashboardData() {
