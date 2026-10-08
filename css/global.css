@@ -1,3 +1,4 @@
+@import url('https://fontsstorage.blob.core.windows.net/html/css/georama.css');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import url('variables.css');
 
@@ -5,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--font-primary);
+  font-family: 'Georama-Regular', 'Georama_SemiExpanded-Regular', var(--font-primary), sans-serif;
 }
 
 html {
@@ -13,6 +14,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Georama-Regular', 'Georama_SemiExpanded-Regular', sans-serif;
 }
 
 body {

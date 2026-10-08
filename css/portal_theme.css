@@ -1,4 +1,5 @@
 
+@import url('https://fontsstorage.blob.core.windows.net/html/css/georama.css');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 :root{
  --red:#e31837;--red-dark:#b3122c;--red-soft:#fff0f2;--ink:#182230;--slate:#475467;
@@ -6,8 +7,8 @@
  --radius:16px;--shadow:0 4px 18px rgba(16,24,40,.055);--shadow-hover:0 12px 30px rgba(16,24,40,.09);
  --ease:cubic-bezier(.2,.8,.2,1)
 }
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif}
-body{background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:hidden}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Georama-Regular', 'Georama_SemiExpanded-Regular', 'Plus Jakarta Sans',sans-serif}
+body{background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:hidden;font-family:'Georama-Regular', 'Georama_SemiExpanded-Regular', 'Plus Jakarta Sans',sans-serif}
 button,input,select{font:inherit}button{cursor:pointer}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes slideIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
